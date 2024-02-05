@@ -33,7 +33,7 @@ for(let x in lista){
     if(lista[x] == "gato")
         alert("verdadeiro")
 }
-*/
+
 
 /*
 Questão 2.	Crie uma lista com os seguintes números, e imprima
