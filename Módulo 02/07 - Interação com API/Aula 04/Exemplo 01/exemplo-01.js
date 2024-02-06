@@ -11,10 +11,10 @@ async function buscar(){
         document.body.innerHTML += produtos[c].descricao+"<br>"
     }*/
 
-    /*for(let produto in produtos){
-        //document.body.innerHTML += produtos[produto].descricao+"<br>"
+    for(let produto in produtos){
+        document.body.innerHTML += produtos[produto].descricao+"<br>"
         document.body.innerHTML += ` <div> o nome do produto é ${produtos[produto].nome} <br> </div>`
-    }*/
+    }
 
     
     /*for(let x in lista){
@@ -34,4 +34,4 @@ document.body.innerHTML += `<div>
 </div>`
 document.querySelector("div").style.border='2px solid'
 document.querySelector("div").style.width="fit-content"
-0000
+
