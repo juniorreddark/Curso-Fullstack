@@ -1,0 +1,17 @@
+.card{
+    border: 2px solid#535353;
+    width: fit-content;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.titulo{
+    color:green
+}
+
+body{   
+    flex-wrap: wrap;
+    display: flex;
+    
+}
