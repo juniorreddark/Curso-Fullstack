@@ -1,4 +1,4 @@
-let urlProdutos = "https://raw.githubusercontent.com/juniorreddark/Curso-Fullstack/master/M%C3%B3dulo%2002/07%20-%20Intera%C3%A7%C3%A3o%20com%20API/Aula%2004/Exemplo%2002/junior.json"
+let urlProdutos = "https://www.google.com/url?sa=i&url=https%3A%2F%2Fblog.cuecastore.com.br%2Fweb-stories%2Fconfira-10-tendencias-de-moda-masculina-para-o-inverno-2023%2F&psig=AOvVaw2MuGEoG3X17TE90s5wAuxg&ust=1707485784381000&source=images&cd=vfe&opi=89978449&ved=2ahUKEwji566u7puEAxUqg5UCHTqPC6MQjRx6BAgAEBQ"
 async function buscar(){
     let resposta = await fetch(urlProdutos)
     let produtos = await resposta.json()

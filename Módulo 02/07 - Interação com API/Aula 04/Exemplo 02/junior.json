@@ -1,11 +1,11 @@
 [
-    {
-        "img":"https://www.google.com/url?sa=i&url=https%3A%2F%2Fblog.cuecastore.com.br%2Fweb-stories%2Fconfira-10-tendencias-de-moda-masculina-para-o-inverno-2023%2F&psig=AOvVaw2MuGEoG3X17TE90s5wAuxg&ust=1707485784381000&source=images&cd=vfe&opi=89978449&ved=2ahUKEwji566u7puEAxUqg5UCHTqPC6MQjRx6BAgAEBQ",
-        "nome": "Smartphone XYZ",
-        "descricao": "Celular de última geração",
-        "valorSemDesconto": 1200.00,
-        "valorComDesconto": 999.99,
-        "tipoEntrega": "Frete GRÁTIS" 
+    { 
+        "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/1200px-Unofficial_JavaScript_logo_2.svg.png",
+      "nome": "Notebook ABC",
+      "descricao": "Notebook ultrafino e potente",
+      "valorSemDesconto": 2500.00,
+      "valorComDesconto": 1999.99,
+      "tipoEntrega": "RECEBA HOJE"      
     
     },
 
