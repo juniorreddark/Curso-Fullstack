@@ -3,7 +3,7 @@ async function buscar(){
     let resposta = await fetch(urlProdutos)
     let produtos = await resposta.json()
     for (let produto in produtos){
-       // alert(produtos[produto].nome)
+       // alert(produtos[produto].img)
     
       document.body.innerHTML +=`
       <div class="card">
