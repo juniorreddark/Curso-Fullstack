@@ -24,7 +24,7 @@ async function procura(){
                     R$ ${produtos[produto].valorSemDesconto}
                 </span>
                 <span class="valorSem">
-                    R$ ${produtos[produto].valorComDesconto}tipoEntrega
+                    R$ ${produtos[produto].valorComDesconto}
                 </span>
 
             </div>

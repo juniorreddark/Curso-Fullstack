@@ -4,7 +4,9 @@ async function procurar(){
     let resposta = await fetch(urlProdutos)
     let produtos = await resposta.json()
 
-    for (let produto in produtos){
+    for (let c in produtos){
+    
+
         document.body.innerHTML += `
             <div class="card">
                 <img 
