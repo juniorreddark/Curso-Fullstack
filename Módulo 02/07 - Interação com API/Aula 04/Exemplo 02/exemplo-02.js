@@ -17,13 +17,20 @@ async function procura(){
                 ${produtos[produto].nome}
             </p>
             <p>
-                ${produtos[produto].descricão}
+                ${produtos[produto].descricao}
             </p>
             <div class="valores">
-                <span>
-                    ${produtos[produto].valorSemDesconto}
+                <span class="valorCom">
+                    R$ ${produtos[produto].valorSemDesconto}
                 </span>
+                <span class="valorSem">
+                    R$ ${produtos[produto].valorComDesconto}tipoEntrega
+                </span>
+
             </div>
+            <p>
+                ${produtos[produto].tipoEntrega}
+            </p>
         </div>
         `
     }

@@ -1,17 +1,32 @@
 .card{
     border: 2px solid#535353;
-    width: fit-content;
+    width: 200px;
     align-items: center;
     display: flex;
     flex-direction: column;
+    row-gap: wrap;
 }
 
 .titulo{
-    color:green
+    font-weight: bold;
 }
 
 body{   
     flex-wrap: wrap;
     display: flex;
-    
+    row-gap:20px ;
+    column-gap: 10px;
+}
+
+.valorCom{
+    font-size: large;
+    font-weight: bold;
+
+
+}
+
+.valorSem{
+    font-size: small;
+    text-decoration: line-through ;
+    color: red;
 }
