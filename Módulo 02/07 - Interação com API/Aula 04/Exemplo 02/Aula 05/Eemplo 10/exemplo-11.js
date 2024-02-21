@@ -9,7 +9,7 @@ async function buscar(){
 
             <div class="card">
                 <div class="grupo-img">
-                    <img src="${produto.img}"  width="auto" height="auto">
+                    <img src="${produto.img}"  width="250" height="auto">
                 </div>                
                 <div class="textos">
                 
