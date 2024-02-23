@@ -14,21 +14,21 @@ async function pesquisa(){
             </div>
             <h3 class="texto">
                 ${procura[produto].nome}
-            </<h3>
+            </h3>
 
-            <p>
+            <p class="titulo">
                 ${procura[produto].descricao}
             </p>
 
             <div class="valores">
 
                 <span class="ComDesconto">
-                    ${procura[produto].valorComDesconto}
+                    R$ ${(procura[produto].valorComDesconto).toFixed(2).replace(".",",")}
                     
                 </span>
 
                 <span class="SemDesconto">
-                    ${procura[produto].valorSemDesconto}
+                    R$ ${procura[produto].valorSemDesconto.toFixed(2).replace(".",",")}
                 </span>
             </div>
 

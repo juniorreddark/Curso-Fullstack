@@ -17,14 +17,17 @@
     align-items: center;
     border-radius: 6px 6px 6px;
     box-shadow: 3px 3px 5px rgb(151, 150, 150);
+    
 
   
 }
 
 .img{
     width: 350px;
-    height: 350px;
+    height: 250px;
     display: flex;
+    padding: 10px;
+
     
 }
 
@@ -38,8 +41,10 @@ body{
 
 .valores{
     align-items: center;
-    flex-direction: column;
-    text-align: center;
+    padding: 10px;
+    flex-wrap: wrap;
+    
+
     
 }
 
@@ -52,4 +57,8 @@ body{
     font-size: small;
     color: red;
     text-decoration: line-through;
+}
+
+.texto{
+    margin: 0px;
 }
