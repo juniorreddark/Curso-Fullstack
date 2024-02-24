@@ -5,13 +5,15 @@ async function buscar(){
     for(produto in convertir){
         //alert(convertir[produto].nome)
         document.getElementById("lista-card").innerHTML+=`
-        <div>
+            <div>
 
-            <h1>
-                ${convertir[produto].nome}
-            </h1>
+                <h1>
+                    ${convertir[produto].nome}
+                </h1>
 
-        </div>`
+            </div>
+            
+        `
     }
 }
 
