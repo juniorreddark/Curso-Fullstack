@@ -7,7 +7,7 @@ async function buscar(){
     for (let produto of produtos){
         listaDiv.innerHTML +=`
 
-            <div class="card">
+            <div class="card" data-id="${produto.id}">
                 <div class="grupo-img">
                     <img src="${produto.img}"  width="250" height="auto">
                 </div>                
@@ -38,6 +38,18 @@ async function buscar(){
 
     }
 
+    let elementosCards = document.querySelectorAll(".card")
+    for (let card of elementosCards){
+        card.addEventListener("click",clicou)
+    }
+
 }
 
 buscar()
+
+function clicou(){
+    let produtoId = this.getAttribute("data-id")
+    window.location.href="detalhes.html?id=" +produtoId
+}
+
+//http://127.0.0.1:5500/Aula%2005/Exemplo%2010/detalhes.html?id=2
