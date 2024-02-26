@@ -14,6 +14,8 @@ async function buscar(){
     }
 
     alert(indice)
+
+    document.body.innerHTML=`<h1>${produtos[indice].nome}</h1>`
     
 
 } 
