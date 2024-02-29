@@ -1,0 +1,56 @@
+.card{
+    display: flex;
+    flex-wrap: wrap;
+    border: 1px solid#333;
+    align-items: center;
+    column-gap: 10px;
+    row-gap: 10px;
+    flex-direction: column;
+    margin: 20px;
+    width: 300px;
+    box-shadow: 3px  3px 3px 3px rgb(177, 176, 176);
+    border-radius: 15px;
+    padding: 10px;
+    cursor: pointer;
+
+}
+    
+body{
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 20px;
+    row-gap: 20px;
+    
+}
+.lista-card{
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+.valorSemDesconto{
+    font-size: small;
+    color: red;
+    text-decoration-line: line-through;
+}
+
+.valorComDesconto{
+    font-size: large;
+    font-weight: bold;
+}
+
+.titulo{
+    font-weight: bold;
+    padding: 10px;
+}
+
+.img{
+    width: 240px;
+    height: 240px;
+    flex-wrap: wrap;
+    row-gap: 10px;
+    column-gap: 10px;
+    display: flex;
+    margin-right: 35px;
+    
+}

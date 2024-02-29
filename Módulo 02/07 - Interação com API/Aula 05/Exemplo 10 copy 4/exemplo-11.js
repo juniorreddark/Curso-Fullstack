@@ -8,8 +8,8 @@ async function buscar(){
 
     for (let produto of produtos){
         listaDiv.innerHTML +=`
-            <div class="card" data-id="${produto.id}">
-                <div class="grupo-img">
+            <div class="card" data-id="${produto.id}" >
+                <div class="grupo-img" >
                     <img src="${produto.img}"  width="250" height="auto">
                 </div>                
                 <div class="textos">
@@ -33,11 +33,16 @@ async function buscar(){
         `
     }
 
-    let elementoscard = document.querySelectorAll(".card")
-    for(let cards of elementoscard ){
-        cards.addEventListener("click",cliquei)
+    let elementocards = document.querySelectorAll(".card")
+   /* for(let card in elementocards ){
+        elementocards[card].addEventListener()
 
+    }*/
+
+    for(let card of elementocards){
+        card.addEventListener("click", cliquei)
     }
+
 
 
 }
@@ -46,7 +51,7 @@ buscar()
 
 function cliquei(){
     let elementoID = this.getAttribute("data-id")
-    window.location.href="detalhes.html?id=" + elementoID
-    //alert(elementoID)
-
+    window.location.href="detalhes.html?prod-id=" + elementoID
+    
 }
+
