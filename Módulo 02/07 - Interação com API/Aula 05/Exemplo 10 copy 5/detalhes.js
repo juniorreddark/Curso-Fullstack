@@ -15,22 +15,29 @@ async function verDetalhes(){
 
     }
 
+    document.title += produtos[inProduto].nome
+
     document.body.innerHTML=`
     <div>
-        <img src="${produtos[inProduto].img}"  width="250" height="auto">
-        <h3>
-            ${produtos[inProduto].nome}
-        </h3>
+      
+        <h1>
+        ${produtos[inProduto].nome}
+          
+        </h1>
+
+        <img src="${produtos[inProduto].img}"  width="300" height="auto" style="border:1px solid #000;border-radius:10px">    
+
         <p>
             ${produtos[inProduto].descricaoCompleta}
         </p>
-        <span>
-            ${produtos[inProduto].valorComDesconto}
-        </span>
-        <span>
-            ${produtos[inProduto].valorSemDesconto}
-        </span>
-        
+        <div class="grupoValores">
+            <span class="valorComDesconto">
+                R$${(produtos[inProduto].valorComDesconto).toFixed(2).replace(".",",")}
+            </span>
+            <span class="valorSemDesconto">
+                R$${(produtos[inProduto].valorSemDesconto).toFixed(2).replace(".",",")}
+            </span>
+        </div>
     </div>
     `
 

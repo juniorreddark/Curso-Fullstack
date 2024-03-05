@@ -53,3 +53,13 @@ body{
     margin-right: 35px;
     
 }
+
+.grupoValores{
+    border:1px solid black;
+    width: fit-content;
+    column-gap: 15px;
+    flex-direction: row;
+    display: flex;
+    
+    
+}

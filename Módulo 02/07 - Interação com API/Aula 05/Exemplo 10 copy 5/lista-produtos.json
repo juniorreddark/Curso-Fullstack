@@ -4,8 +4,8 @@
         "nome":"Relógio Masculino Technos ",
         "descricao":"relógio para ver a hora",
         "descricaoCompleta":"PROVA D'ÁGUA: Sim – selo de resistência 5 ATM (resistência até 50 metros de profundidade) <br> MATERIAL DO VIDRO: Cristal mineral resistente a riscos <br> MAQUINÁRIO: Analógico – quartzo - bateria <br> MATERIAL DO RELÓGIO: Aço inoxidável. <br> COR DO FUNDO: Preto",
-        "valorComDesconto":4250.87,
-        "valorSemDesconto":4800.00
+        "valorComDesconto":265.68,
+        "valorSemDesconto":300.00
     },
 
     {   "id":3,
@@ -30,6 +30,7 @@
         "img":"https://a-static.mlcdn.com.br/800x560/notebook-asus-vivobook-15-intel-core-i3-4gb-256gb-ssd-156-full-hd-linux-endless-os-x1500ea-ej3665/magazineluiza/237655500/412ded7e08ead2f00fc8294302fa063d.jpg",
         "nome":"Notebook Asus Vivobook 156",
         "descricao":"para criar trabalhos",
+        "descricaoCompleta":"Potencialize seu estilo de vida<br>ASUS IceCool Tecnologia térmica<br>NVIDIA®GeForce RTX™ 3050<br>16 GB Memória DDR4 <br>Até 90W CPU + GPU TDP <br>Até 1 TB SSD PCIe® <br>Wi-Fi 6802.11ac",
         "valorComDesconto":4250.87,
         "valorSemDesconto":4800.00
     },
@@ -38,14 +39,16 @@
         "img":"https://a-static.mlcdn.com.br/800x560/notebook-hp-intel-core-i3-8gb-256gb-ssd-156-windows-11-256-g9/magazineluiza/237612600/efdbef0744b833112f7b98e184831cfb.jpg",
         "nome":"Notebook HP Intel Core i3",
         "descricao":"para criar trabalhos",
+        "descricaoCompleta":"Marca Asus <br>Referência 90NB0TY6-M03XH0 Linha Vivobook 15 <br> Processador Intel Core i3 <br>Modelo do Processador 1115G4 Geração do Processado 11ª geração Velocidade do Processador / Frequência Base 3GHz <br> Memória Cache 6MB <br>Memória RAM 4GB Barramento da Memória DDR4<br>Clock da Memória 2400MHz <br> SSD 256GB",
         "valorComDesconto":4250.87,
         "valorSemDesconto":4800.00
     },
 
     {   "id":1,
-        "img":"https://a-static.mlcdn.com.br/800x560/pc-gamer-completo-3green-fps-intel-core-i7-16gb-ram-placa-de-video-geforce-gtx-4gb-ssd-512gb-monitor-20-75hz-fonte-500w-3gf-040/3greentechnology/74575/04847f8beee301f47150cc74fbd622eb.jpeg",
+        "img":"https://a-static.mlcdn.com.br/800x560/pc-gamer-completo-3green-fps-intel-core-i7-16gb-ram-placa-de-video-geforce-gtx-4gb-ssd-512gb-monitor-20-75hz-fonte-500w-3gf-040/3greentechnology/74575/04847f8beee301f47150cc74fbd622eb.jpeg Entradas:HDMI/VGA Modelo Gabinete: GamerKit Gamer:Teclado e Mouse Gamer ",
         "nome":"PC Gamer Completo 3green",
         "descricao":"para me divertir",
+        "descricaoCompleta":"CONFIGURAÇÃO:-Windows 10 TRIAL <br> PROCESSADOR INTEL CORE I5 2400 3.40 GHZ Base / 3.40 GHZ TURBO<br> Placa Mãe H55 <br>Memoria ram: 8 GB Capacidade: SSD 1000 TB ",
         "valorComDesconto":4250.87,
         "valorSemDesconto":4800.00
     }
