@@ -6,6 +6,7 @@ async function buscar(){
 
     let listaDiv= document.getElementById("lista-card")
 
+    
     for (let produto of produtos){
         listaDiv.innerHTML +=`
             <div class="card" data-id="${produto.id}">
@@ -53,4 +54,11 @@ function cliquei(){
     window.location.href="detalhes.html?id=" + elementoID
     //alert(elementoID)
 }
+
+
+
+
+
+
+
 

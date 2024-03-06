@@ -4,7 +4,10 @@
         "nome":"Relógio Masculino Technos ",
         "descricao":"relógio para ver a hora",
         "valorComDesconto":4250.87,
-        "valorSemDesconto":4800.00
+        "valorSemDesconto":4800.00,
+        "formaDepagamento":"cartões,pix"
+        
+        
     },
 
     {   "id":3,

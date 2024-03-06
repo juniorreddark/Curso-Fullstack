@@ -4,7 +4,7 @@ async function verDetalhes(){
     let parametrosURL = new URLSearchParams(window.location.search)
     let idProduto = parametrosURL.get("id")
     let inProduto = null
-
+    
     for(let x in produtos){
         if(produtos[x].id == idProduto ){
             inProduto = x
@@ -15,32 +15,36 @@ async function verDetalhes(){
 
     }
 
-    document.title += produtos[inProduto].nome
+    document.title = produtos[inProduto].nome
 
-    document.body.innerHTML=`
-    <div>
-      
-        <h1>
-        ${produtos[inProduto].nome}
-          
-        </h1>
+    document.body.innerHTML+=`
+    <div class="list-card">
+        <div class="cardImg">
+        
+            <h1>
+            ${produtos[inProduto].nome}
+            
+            </h1>
+            <div class="imagens">
+                <img src="${produtos[inProduto].img}"  width="300" height="auto" style="border:1px solid #000;border-radius:10px">
+            </div>    
 
-        <img src="${produtos[inProduto].img}"  width="300" height="auto" style="border:1px solid #000;border-radius:10px">    
-
-        <p>
-            ${produtos[inProduto].descricaoCompleta}
-        </p>
-        <div class="grupoValores">
-            <span class="valorComDesconto">
-                R$${(produtos[inProduto].valorComDesconto).toFixed(2).replace(".",",")}
-            </span>
-            <span class="valorSemDesconto">
-                R$${(produtos[inProduto].valorSemDesconto).toFixed(2).replace(".",",")}
-            </span>
+            <p>
+                ${produtos[inProduto].descricaoCompleta}
+            </p>
+            <div class="grupoValores">
+                <span class="valorComDesconto">
+                    R$${(produtos[inProduto].valorComDesconto).toFixed(2).replace(".",",")}
+                </span>
+                <span class="valorSemDesconto">
+                    R$${(produtos[inProduto].valorSemDesconto).toFixed(2).replace(".",",")}
+                </span>
+            </div>
         </div>
     </div>
-    `
 
+    `
+    document.body.innerHTML+=`<footer>&copy;Direitos reservados</footer>`
     
 
 
