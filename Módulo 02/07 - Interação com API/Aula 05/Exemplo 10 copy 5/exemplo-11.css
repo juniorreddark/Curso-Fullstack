@@ -117,3 +117,15 @@ h1{
     height: 100%;
     margin: 20px;
 }
+
+.grupos{
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content:space-between;
+    row-gap: 10px;
+    column-gap: 10px;
+    border:solid 1px #333;
+    margin: 20px;
+    padding: 100px;
+}

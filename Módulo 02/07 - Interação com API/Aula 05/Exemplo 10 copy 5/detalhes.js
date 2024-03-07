@@ -18,27 +18,29 @@ async function verDetalhes(){
     document.title = produtos[inProduto].nome
 
     document.body.innerHTML+=`
-    <div class="list-card">
-        <div class="cardImg">
-        
-            <h1>
-            ${produtos[inProduto].nome}
+    <div class="grupos">
+        <div class="list-card">
+            <div class="cardImg">
             
-            </h1>
-            <div class="imagens">
-                <img src="${produtos[inProduto].img}"  width="300" height="auto" style="border:1px solid #000;border-radius:10px">
-            </div>    
+                <h1>
+                ${produtos[inProduto].nome}
+                
+                </h1>
+                <div class="imagens">
+                    <img src="${produtos[inProduto].img}"  width="300" height="auto" style="border:1px solid #000;border-radius:10px">
+                </div>    
 
-            <p>
-                ${produtos[inProduto].descricaoCompleta}
-            </p>
-            <div class="grupoValores">
-                <span class="valorComDesconto">
-                    R$${(produtos[inProduto].valorComDesconto).toFixed(2).replace(".",",")}
-                </span>
-                <span class="valorSemDesconto">
-                    R$${(produtos[inProduto].valorSemDesconto).toFixed(2).replace(".",",")}
-                </span>
+                <p>
+                    ${produtos[inProduto].descricaoCompleta}
+                </p>
+                <div class="grupoValores">
+                    <span class="valorComDesconto">
+                        R$${(produtos[inProduto].valorComDesconto).toFixed(2).replace(".",",")}
+                    </span>
+                    <span class="valorSemDesconto">
+                        R$${(produtos[inProduto].valorSemDesconto).toFixed(2).replace(".",",")}
+                    </span>
+                </div>
             </div>
         </div>
     </div>
@@ -51,3 +53,4 @@ async function verDetalhes(){
 }
 
 verDetalhes()
+
