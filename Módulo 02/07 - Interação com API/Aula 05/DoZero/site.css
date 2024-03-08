@@ -1,0 +1,29 @@
+.lista-card{
+    display: flex;
+    column-gap: 10px;
+    row-gap: 10px;
+    flex-wrap: wrap;
+    
+}
+
+.card{
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 10px;
+    row-gap: 10px;
+    align-items: center;
+    flex-direction: column;
+    border: 1px solid #333;
+    border-radius: 15px;
+    padding: 10px;
+    box-shadow: 4px 6px 5px rgb(33, 54, 211);
+    background: #3ab438;
+ 
+} 
+
+.card-card{
+    width: 250px;
+    height: 150;
+    border: 1px solid #333;
+   
+}

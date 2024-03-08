@@ -1,5 +1,5 @@
 async function pesquisar(){
-    let procura = await fetch("contantos.json")
+    let procura = await fetch("contatos.json")
     let buscar = await procura.json()
     let listaDiv = document.getElementById("lista-div")
 
