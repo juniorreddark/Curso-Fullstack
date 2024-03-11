@@ -11,7 +11,7 @@ async function buscar(){
         listaDiv.innerHTML +=`
             <div class="card" data-id="${produto.id}">
                 <div class="grupo-img">
-                    <img src="${produto.img}"  width="250" height="auto">
+                    <img src="${produto.img[0]}"  width="250" height="auto">
                 </div>                
                 <div class="textos">
                     <h3>

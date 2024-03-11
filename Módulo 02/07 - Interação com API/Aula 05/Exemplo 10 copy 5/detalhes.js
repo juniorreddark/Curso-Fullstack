@@ -17,7 +17,7 @@ async function verDetalhes(){
 
     document.title = produtos[inProduto].nome
 
-    document.body.innerHTML+=`
+    document.getElementById("detalhes").innerHTML+=`
     <div class="grupos">
         <div class="list-card">
             <div class="cardImg">
@@ -27,7 +27,10 @@ async function verDetalhes(){
                 
                 </h1>
                 <div class="imagens">
-                    <img src="${produtos[inProduto].img}"  width="300" height="auto" style="border:1px solid #000;border-radius:10px">
+                    <img src="${produtos[inProduto].img[0]}" id="img-frame"  width="300" height="auto" style="border:1px solid #000;border-radius:10px">
+                </div>
+                <div class="mini-img" id="mini-img">
+
                 </div>    
 
                 <p>
@@ -46,9 +49,25 @@ async function verDetalhes(){
     </div>
 
     `
-    document.body.innerHTML+=`<footer>&copy;Direitos reservados</footer>`
+
+    let divmini = document.getElementById("mini-img")
+    for(let i of produtos[inProduto].img){
+        divmini.innerHTML+=`<img src="${i}" class="miniatura"width="80" height="80" style="border:1px solid #000;border-radius:5px;">`
+    }
+
+    let minicards=document.querySelectorAll("miniatura")
+    for(let card of minicards){
+        card.addEventListener("mouseover",alteraImg)
+    }
+   
     
 
+
+}
+
+function alteraImg(){
+    let frame = document.getElementById("img-frame")
+    frame.src = this.getAttribute("src")
 
 }
 

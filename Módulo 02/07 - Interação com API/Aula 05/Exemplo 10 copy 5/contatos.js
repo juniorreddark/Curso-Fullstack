@@ -10,7 +10,7 @@ async function pesquisar(){
                 ${produto.nome}
             </h1>
             <div class="img">
-                <img src="${produto.img} width="100" height="auto">
+                <img src="${produto.img}">
             </div>            
             <span>
                 ${produto.name}
@@ -23,6 +23,7 @@ async function pesquisar(){
 
     }
 }
+
 
 pesquisar()
 
