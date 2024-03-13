@@ -1,0 +1,119 @@
+[
+    {   "id":2,
+        "img":
+                [
+                    "https://a-static.mlcdn.com.br/800x560/relogio-masculino-technos-analogico-prata-militar-2115myn-1a-calendario/rbmwebshop/15873725206/8572153155b32932894c858c18be8cc6.jpeg",
+                    "https://a-static.mlcdn.com.br/90x90/relogio-masculino-technos-prata-performance-militar-2115nap-1a/rbmrelogios/15914158858/818f6dc4d033ea2634b9ee23c1ee6af7.jpeg",
+                    "https://a-static.mlcdn.com.br/90x90/relogio-masculino-technos-prata-performance-militar-2115nap-1a/rbmrelogios/15914158858/93a2ebef546110fbb8613094d3f7c617.jpeg",
+                    "https://a-static.mlcdn.com.br/90x90/relogio-masculino-technos-prata-performance-militar-2115nap-1a/rbmrelogios/15914158858/face3b66783da9789fffd4dd72bd3cc4.jpeg",
+                    "https://a-static.mlcdn.com.br/96x74/relogio-masculino-technos-prata-performance-militar-2115nap-1a/rbmrelogios/15914158858/611f259ed500c5dd1adb24ec4ac71309.jpeg",
+                    "https://a-static.mlcdn.com.br/96x74/relogio-masculino-technos-prata-performance-militar-2115nap-1a/rbmrelogios/15914158858/dae3a476066b2b4ec44838cb93bb72cc.jpeg",
+                    "https://a-static.mlcdn.com.br/96x74/relogio-masculino-technos-prata-performance-militar-2115nap-1a/rbmrelogios/15914158858/dae3a476066b2b4ec44838cb93bb72cc.jpeg",
+                    "https://a-static.mlcdn.com.br/96x74/relogio-masculino-technos-prata-performance-militar-2115nap-1a/rbmrelogios/15914158858/3eaf37024d219932cc5e7208dcb7654f.jpeg"
+                ],
+        "nome":"Relógio Masculino Technos ",
+        "descricao":"relógio para ver a hora",
+        "descricaoCompleta":"PROVA D'ÁGUA: Sim – selo de resistência 5 ATM (resistência até 50 metros de profundidade) <br> MATERIAL DO VIDRO: Cristal mineral resistente a riscos <br> MAQUINÁRIO: Analógico – quartzo - bateria <br> MATERIAL DO RELÓGIO: Aço inoxidável. <br> COR DO FUNDO: Preto",
+        "valorComDesconto":265.68,
+        "valorSemDesconto":300.00
+    },
+
+    {   "id":3,
+        "img":
+                ["https://a-static.mlcdn.com.br/800x560/smartphone-samsung-galaxy-a14-64-gb-preto-4g-octa-core-4gb-ram-66-cam-tripla-selfie-13mp-dual-chip/magazineluiza/237063500/fcffda15fc0c804be29635dca144c277.jpg",
+                "https://a-static.mlcdn.com.br/90x90/smartphone-samsung-galaxy-a14-128gb-prata-5g-octa-core-4gb-ram-66-cam-tripla-selfie-13mp/magazineluiza/236591900/c7d04dd704797fbae1ba7765b71b2174.jpg",
+                "https://a-static.mlcdn.com.br/90x90/smartphone-samsung-galaxy-a14-128gb-prata-5g-octa-core-4gb-ram-66-cam-tripla-selfie-13mp/magazineluiza/236591900/f489abf5830a086af22996376a565eea.jpg",
+                "https://a-static.mlcdn.com.br/96x74/smartphone-samsung-galaxy-a14-128gb-prata-5g-octa-core-4gb-ram-66-cam-tripla-selfie-13mp/magazineluiza/236591900/87356a0bd467351d9d9a9c36901032dd.jpg",
+                "https://a-static.mlcdn.com.br/96x74/smartphone-samsung-galaxy-a14-128gb-prata-5g-octa-core-4gb-ram-66-cam-tripla-selfie-13mp/magazineluiza/236591900/acb9ddcd6de49a4864b873ed64b882e4.jpg",
+                "https://a-static.mlcdn.com.br/96x74/smartphone-samsung-galaxy-a14-128gb-prata-5g-octa-core-4gb-ram-66-cam-tripla-selfie-13mp/magazineluiza/236591900/acb9ddcd6de49a4864b873ed64b882e4.jpg",
+                "https://a-static.mlcdn.com.br/96x74/smartphone-samsung-galaxy-a14-128gb-prata-5g-octa-core-4gb-ram-66-cam-tripla-selfie-13mp/magazineluiza/236591900/acb9ddcd6de49a4864b873ed64b882e4.jpg",
+                "https://a-static.mlcdn.com.br/96x74/smartphone-samsung-galaxy-a14-128gb-prata-5g-octa-core-4gb-ram-66-cam-tripla-selfie-13mp/magazineluiza/236591900/401d02e37699cf9cf8becbf82b53d011.jpg",
+                "https://a-static.mlcdn.com.br/96x74/smartphone-samsung-galaxy-a14-128gb-prata-5g-octa-core-4gb-ram-66-cam-tripla-selfie-13mp/magazineluiza/236591900/401d02e37699cf9cf8becbf82b53d011.jpg",
+                "https://a-static.mlcdn.com.br/96x74/smartphone-samsung-galaxy-a14-128gb-prata-5g-octa-core-4gb-ram-66-cam-tripla-selfie-13mp/magazineluiza/236591900/401d02e37699cf9cf8becbf82b53d011.jpg"
+                ],
+        "nome":"Smartphone Samsung Galaxy A14 ",
+        "descricao":"para me comunicar com o mundo",
+        "descricaoCompleta":"Tenha uma solução para o seu dia a dia sem deixar nada para trás com o Galaxy A12 da Samsung.<br> Realize fotos especiais e únicas com o sistema de quatro câmeras na traseira, além de ser repleta em recursos.<br>Divirta-se e compartilhe seus momentos especiais ao fotografar com a câmera de selfie de 8MP",
+        "valorComDesconto":4250.87,
+        "valorSemDesconto":4800.00
+    },
+
+    {   "id":4,
+        "img":
+                ["https://a-static.mlcdn.com.br/800x560/smartphone-samsung-galaxy-a14-128gb-prata-5g-octa-core-4gb-ram-66-cam-tripla-selfie-13mp/magazineluiza/236591900/8b1090aa70f218aee19eaeca7654d2a5.jpg",
+                "https://a-static.mlcdn.com.br/800x560/smartphone-samsung-galaxy-a14-64-gb-preto-4g-octa-core-4gb-ram-66-cam-tripla-selfie-13mp-dual-chip/magazineluiza/237063500/fcffda15fc0c804be29635dca144c277.jpg",
+                "https://a-static.mlcdn.com.br/90x90/smartphone-samsung-galaxy-a14-128gb-prata-5g-octa-core-4gb-ram-66-cam-tripla-selfie-13mp/magazineluiza/236591900/c7d04dd704797fbae1ba7765b71b2174.jpg",
+                "https://a-static.mlcdn.com.br/90x90/smartphone-samsung-galaxy-a14-128gb-prata-5g-octa-core-4gb-ram-66-cam-tripla-selfie-13mp/magazineluiza/236591900/f489abf5830a086af22996376a565eea.jpg",
+                "https://a-static.mlcdn.com.br/96x74/smartphone-samsung-galaxy-a14-128gb-prata-5g-octa-core-4gb-ram-66-cam-tripla-selfie-13mp/magazineluiza/236591900/87356a0bd467351d9d9a9c36901032dd.jpg",
+                "https://a-static.mlcdn.com.br/96x74/smartphone-samsung-galaxy-a14-128gb-prata-5g-octa-core-4gb-ram-66-cam-tripla-selfie-13mp/magazineluiza/236591900/acb9ddcd6de49a4864b873ed64b882e4.jpg",
+                "https://a-static.mlcdn.com.br/96x74/smartphone-samsung-galaxy-a14-128gb-prata-5g-octa-core-4gb-ram-66-cam-tripla-selfie-13mp/magazineluiza/236591900/acb9ddcd6de49a4864b873ed64b882e4.jpg",
+                "https://a-static.mlcdn.com.br/96x74/smartphone-samsung-galaxy-a14-128gb-prata-5g-octa-core-4gb-ram-66-cam-tripla-selfie-13mp/magazineluiza/236591900/acb9ddcd6de49a4864b873ed64b882e4.jpg",
+                "https://a-static.mlcdn.com.br/96x74/smartphone-samsung-galaxy-a14-128gb-prata-5g-octa-core-4gb-ram-66-cam-tripla-selfie-13mp/magazineluiza/236591900/401d02e37699cf9cf8becbf82b53d011.jpg",
+                "https://a-static.mlcdn.com.br/96x74/smartphone-samsung-galaxy-a14-128gb-prata-5g-octa-core-4gb-ram-66-cam-tripla-selfie-13mp/magazineluiza/236591900/401d02e37699cf9cf8becbf82b53d011.jpg",
+                "https://a-static.mlcdn.com.br/96x74/smartphone-samsung-galaxy-a14-128gb-prata-5g-octa-core-4gb-ram-66-cam-tripla-selfie-13mp/magazineluiza/236591900/401d02e37699cf9cf8becbf82b53d011.jpg"
+                ],
+        "nome":"Smartphone Samsung Galaxy A14 ",
+        "descricao":"para me comunicar com o mundo",
+        "descricaoCompleta":"Marca,Samsung<br>ReferênciaSM-A146MZKRZTO<br>Modelo A14<br>Linha Galaxy<br>Cor Preto<br>Armazenamento Interno 128GB <br>Informações da Armazenamento Interno<br>A memória total pode variar conforme aplicativos pré-instalados e sistema operacional<br>Memória RAM 4G<br>Tipo de Tela PLS LCD<br>Tamanho da Tela 6,6",
+        "valorComDesconto":4250.87,
+        "valorSemDesconto":4800.00
+    },
+
+    {   "id":5,
+        "img":
+                ["https://a-static.mlcdn.com.br/800x560/notebook-asus-vivobook-15-intel-core-i3-4gb-256gb-ssd-156-full-hd-linux-endless-os-x1500ea-ej3665/magazineluiza/237655500/412ded7e08ead2f00fc8294302fa063d.jpg",
+                "https://a-static.mlcdn.com.br/800x560/notebook-asus-vivobook-15-intel-core-i3-4gb-256gb-ssd-156-full-hd-linux-endless-os-x1500ea-ej3665/magazineluiza/237655500/412ded7e08ead2f00fc8294302fa063d.jpg",
+                "https://a-static.mlcdn.com.br/90x90/notebook-asus-vivobook-15-amd-ryzen-5-4600h-8gb-ram-ssd-256gb-15-6-full-hd-amd-radeon-graphics-win-11-prata-metalico-m1502ia-ej251w/kabum/393218/cb418246104fe7aa28b93fcf40605cee.jpeg",
+                "https://a-static.mlcdn.com.br/800x560/notebook-asus-vivobook-15-amd-ryzen-5-4600h-8gb-ram-ssd-256gb-15-6-full-hd-amd-radeon-graphics-win-11-prata-metalico-m1502ia-ej251w/kabum/393218/1770fa44a3e8806a957e8f13ae9fb5ac.jpeg",
+                "https://a-static.mlcdn.com.br/96x74/notebook-asus-vivobook-15-amd-ryzen-5-4600h-8gb-ram-ssd-256gb-15-6-full-hd-amd-radeon-graphics-win-11-prata-metalico-m1502ia-ej251w/kabum/393218/b9190131a73a26d0adda98e746afbf03.jpeg",
+                "https://a-static.mlcdn.com.br/96x74/notebook-asus-vivobook-15-amd-ryzen-5-4600h-8gb-ram-ssd-256gb-15-6-full-hd-amd-radeon-graphics-win-11-prata-metalico-m1502ia-ej251w/kabum/393218/37167de0864fd92386b770631c8a5704.jpeg",
+                "https://a-static.mlcdn.com.br/96x74/notebook-asus-vivobook-15-amd-ryzen-5-4600h-8gb-ram-ssd-256gb-15-6-full-hd-amd-radeon-graphics-win-11-prata-metalico-m1502ia-ej251w/kabum/393218/b701836c45caf146f2be20a2c9fc1b6e.jpeg",
+                "https://a-static.mlcdn.com.br/96x74/notebook-asus-vivobook-15-amd-ryzen-5-4600h-8gb-ram-ssd-256gb-15-6-full-hd-amd-radeon-graphics-win-11-prata-metalico-m1502ia-ej251w/kabum/393218/b8d9b6d646240f56e13f12335239cc3a.jpeg",
+                "https://a-static.mlcdn.com.br/96x74/notebook-asus-vivobook-15-amd-ryzen-5-4600h-8gb-ram-ssd-256gb-15-6-full-hd-amd-radeon-graphics-win-11-prata-metalico-m1502ia-ej251w/kabum/393218/b92bb810462290845d8153a96fa7844c.jpeg",
+                "https://a-static.mlcdn.com.br/96x74/notebook-asus-vivobook-15-amd-ryzen-5-4600h-8gb-ram-ssd-256gb-15-6-full-hd-amd-radeon-graphics-win-11-prata-metalico-m1502ia-ej251w/kabum/393218/d9f935202eac020b6dd86def8c0d1354.jpeg"
+                ],
+        
+        "nome":"Notebook Asus Vivobook 156",
+        "descricao":"para criar trabalhos",
+        "descricaoCompleta":"Potencialize seu estilo de vida<br>ASUS IceCool Tecnologia térmica<br>NVIDIA®GeForce RTX™ 3050<br>16 GB Memória DDR4 <br>Até 90W CPU + GPU TDP <br>Até 1 TB SSD PCIe® <br>Wi-Fi 6802.11ac",
+        "valorComDesconto":4250.87,
+        "valorSemDesconto":4800.00
+    },
+
+    {   "id":6,
+        "img":
+                ["https://a-static.mlcdn.com.br/800x560/notebook-hp-intel-core-i3-8gb-256gb-ssd-156-windows-11-256-g9/magazineluiza/237612600/efdbef0744b833112f7b98e184831cfb.jpg",
+                "https://a-static.mlcdn.com.br/800x560/notebook-asus-vivobook-15-intel-core-i3-4gb-256gb-ssd-156-full-hd-linux-endless-os-x1500ea-ej3665/magazineluiza/237655500/412ded7e08ead2f00fc8294302fa063d.jpg",
+                "https://a-static.mlcdn.com.br/800x560/notebook-asus-vivobook-15-intel-core-i3-4gb-256gb-ssd-156-full-hd-linux-endless-os-x1500ea-ej3665/magazineluiza/237655500/412ded7e08ead2f00fc8294302fa063d.jpg",
+                "https://a-static.mlcdn.com.br/90x90/notebook-asus-vivobook-15-amd-ryzen-5-4600h-8gb-ram-ssd-256gb-15-6-full-hd-amd-radeon-graphics-win-11-prata-metalico-m1502ia-ej251w/kabum/393218/cb418246104fe7aa28b93fcf40605cee.jpeg",
+                "https://a-static.mlcdn.com.br/800x560/notebook-asus-vivobook-15-amd-ryzen-5-4600h-8gb-ram-ssd-256gb-15-6-full-hd-amd-radeon-graphics-win-11-prata-metalico-m1502ia-ej251w/kabum/393218/1770fa44a3e8806a957e8f13ae9fb5ac.jpeg",
+                "https://a-static.mlcdn.com.br/96x74/notebook-asus-vivobook-15-amd-ryzen-5-4600h-8gb-ram-ssd-256gb-15-6-full-hd-amd-radeon-graphics-win-11-prata-metalico-m1502ia-ej251w/kabum/393218/b9190131a73a26d0adda98e746afbf03.jpeg",
+                "https://a-static.mlcdn.com.br/96x74/notebook-asus-vivobook-15-amd-ryzen-5-4600h-8gb-ram-ssd-256gb-15-6-full-hd-amd-radeon-graphics-win-11-prata-metalico-m1502ia-ej251w/kabum/393218/37167de0864fd92386b770631c8a5704.jpeg",
+                "https://a-static.mlcdn.com.br/96x74/notebook-asus-vivobook-15-amd-ryzen-5-4600h-8gb-ram-ssd-256gb-15-6-full-hd-amd-radeon-graphics-win-11-prata-metalico-m1502ia-ej251w/kabum/393218/b701836c45caf146f2be20a2c9fc1b6e.jpeg",
+                "https://a-static.mlcdn.com.br/96x74/notebook-asus-vivobook-15-amd-ryzen-5-4600h-8gb-ram-ssd-256gb-15-6-full-hd-amd-radeon-graphics-win-11-prata-metalico-m1502ia-ej251w/kabum/393218/b8d9b6d646240f56e13f12335239cc3a.jpeg",
+                "https://a-static.mlcdn.com.br/96x74/notebook-asus-vivobook-15-amd-ryzen-5-4600h-8gb-ram-ssd-256gb-15-6-full-hd-amd-radeon-graphics-win-11-prata-metalico-m1502ia-ej251w/kabum/393218/b92bb810462290845d8153a96fa7844c.jpeg",
+                "https://a-static.mlcdn.com.br/96x74/notebook-asus-vivobook-15-amd-ryzen-5-4600h-8gb-ram-ssd-256gb-15-6-full-hd-amd-radeon-graphics-win-11-prata-metalico-m1502ia-ej251w/kabum/393218/d9f935202eac020b6dd86def8c0d1354.jpeg"
+                ],
+        "nome":"Notebook HP Intel Core i3",
+        "descricao":"para criar trabalhos",
+        "descricaoCompleta":"Marca Asus <br>Referência 90NB0TY6-M03XH0 Linha Vivobook 15 <br> Processador Intel Core i3 <br>Modelo do Processador 1115G4 Geração do Processado 11ª geração Velocidade do Processador / Frequência Base 3GHz <br> Memória Cache 6MB <br>Memória RAM 4GB Barramento da Memória DDR4<br>Clock da Memória 2400MHz <br> SSD 256GB",
+        "valorComDesconto":4250.87,
+        "valorSemDesconto":4800.00
+    },
+
+    {   "id":1,
+        "img":
+            ["https://a-static.mlcdn.com.br/800x560/pc-gamer-completo-3green-fps-intel-core-i7-16gb-ram-placa-de-video-geforce-gtx-4gb-ssd-512gb-monitor-20-75hz-fonte-500w-3gf-040/3greentechnology/74575/04847f8beee301f47150cc74fbd622eb.jpeg ",
+            "https://a-static.mlcdn.com.br/90x90/computador-gamer-completo-rgb-intel-core-i5-8gb-ssd-512gb-kit-gamer-com-headset-monitor-20-windows-10-3green-premium/3greentechnology/73917/5003955183dfa652a2370910894e845e.jpeg",
+            "https://a-static.mlcdn.com.br/90x90/computador-gamer-completo-rgb-intel-core-i5-8gb-ssd-512gb-kit-gamer-com-headset-monitor-20-windows-10-3green-premium/3greentechnology/73917/97f02ba505af86bfe3acb37aef838913.jpeg",
+            "https://a-static.mlcdn.com.br/90x90/computador-gamer-completo-rgb-intel-core-i5-8gb-ssd-512gb-kit-gamer-com-headset-monitor-20-windows-10-3green-premium/3greentechnology/73917/bce1ad31fcb751bf34f40ff6a0f6573c.jpeg",
+            "https://a-static.mlcdn.com.br/96x74/computador-gamer-completo-rgb-intel-core-i5-8gb-ssd-512gb-kit-gamer-com-headset-monitor-20-windows-10-3green-premium/3greentechnology/73917/bd6168e0d102a811b7ce5743ff36298b.jpeg",
+            "https://a-static.mlcdn.com.br/96x74/computador-gamer-completo-rgb-intel-core-i5-8gb-ssd-512gb-kit-gamer-com-headset-monitor-20-windows-10-3green-premium/3greentechnology/73917/b87196dbf23a65be38e0cc3ea25b8dc8.jpeg"
+            ],
+        "nome":"PC Gamer Completo 3green",
+        "descricao":"para me divertir",
+        "descricaoCompleta":"CONFIGURAÇÃO:-Windows 10 TRIAL <br> PROCESSADOR INTEL CORE I5 2400 3.40 GHZ Base / 3.40 GHZ TURBO<br> Placa Mãe H55 <br>Memoria ram: 8 GB Capacidade: SSD 1000 TB <br>Jacks de Áudio HD: Linha / Alto falante / Microfone Rede (Lan)<br>Headset GAMER<br>Teclado GAMER RGB",
+        "valorComDesconto":4250.87,
+        "valorSemDesconto":4800.00
+    }
+]
