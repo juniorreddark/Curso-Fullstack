@@ -1,10 +1,10 @@
-/*
-setTimeout(teste, 3000)
+
+/*setTimeout(teste, 3000)
 
 function teste(){
     alert("oi")
-}
-*/
+}*/
+
 
 /*
 setInterval(teste, 2000)
@@ -14,8 +14,8 @@ function teste(){
 }
 */
 
-setInterval(acionar, 2000)
+/*setInterval(acionar, 1000)
 
 function acionar(){
     document.getElementById("demo").textContent += "Estuda"
-}
+}*/

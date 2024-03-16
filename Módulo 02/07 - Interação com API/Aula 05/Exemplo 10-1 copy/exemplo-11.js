@@ -53,3 +53,4 @@ function cliquecard(){
 
     //alert(elementoID)
 }
+

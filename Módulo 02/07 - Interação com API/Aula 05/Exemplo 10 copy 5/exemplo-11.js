@@ -29,6 +29,12 @@ async function buscar(){
                     <span class="valorSemDesconto">
                         R$${(produto.valorSemDesconto).toFixed(2).replace(".",",")}
                     </span>
+                    <p>Quantidade<p>
+                    <div>
+                        <button>+</button>
+                        <span>0</span>
+                        <button>-</button>
+                    </div.
                 </div>
             </div>
         `
@@ -54,6 +60,9 @@ function cliquei(){
     window.location.href="detalhes.html?id=" + elementoID
     //alert(elementoID)
 }
+
+
+
 
 
 
