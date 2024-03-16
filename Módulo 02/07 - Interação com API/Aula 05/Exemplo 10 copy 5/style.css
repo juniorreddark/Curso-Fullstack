@@ -129,3 +129,9 @@ h1{
     margin: 20px;
     padding: 100px;
 }
+
+.mini-img{
+    display: flex;
+    flex-direction: row;
+    column-gap: 10px;
+}
