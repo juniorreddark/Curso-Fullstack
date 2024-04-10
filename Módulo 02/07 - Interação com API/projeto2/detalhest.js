@@ -66,9 +66,13 @@ async function verDetalhes(){
         </div>
         <div class="textos1">
             <p>Formas de Pagamento </p>
-            <span>cartões e Pix </p>
+            <div class="formaspg">
+                <div class="Cartão" onclick="cartão()" > cartões </div>
+                <div class="Pix" onclick="pix()"> Pix </div>
+                <div  class="display" id="display"></div>
+            </div>
             <p>frete grátis </p>
-            <button>Comprar</button>
+            <div class="comprar">Comprar</div>
         </div>
     </div>
        
@@ -95,4 +99,14 @@ async function verDetalhes(){
 }
 
 verDetalhes()
+
+function cartão(){
+let tela = document.getElementById("display")        
+tela.textContent="cartão"
+}
+
+function pix(){
+    let ela = document.getElementById("display")
+    ela.textContent="pix"
+}
 

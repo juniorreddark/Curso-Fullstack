@@ -128,3 +128,27 @@ setInterval(() => {
     slideIndex++;
     showSlide();
 }, 5000);*/
+
+function listaItem(){
+    let lista = document.getElementById("lista-item1")
+    lista.addEventListener("mouseover",apertar)
+    lista.addEventListener("mouseout",sair)
+    
+}
+
+listaItem()
+
+function apertar(){
+    let lista = document.getElementById("lista-item1")
+    for(li in lista){
+        lista.innerHTML+=`<div><a href="http://127.0.0.1:5500/site1.html?id=6">$</a></div>
+        <div<a href="http://127.0.0.1:5500/site1.html?id=3">1</a></div>
+        `
+    }
+    
+}
+
+function sair(){
+    let lista = document.getElementById("lista-item1").innerHTML=`<div>celular</div>`
+
+}
