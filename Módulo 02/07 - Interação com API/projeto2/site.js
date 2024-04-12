@@ -129,7 +129,7 @@ setInterval(() => {
     showSlide();
 }, 5000);*/
 
-function listaItem(){
+/*function listaItem(){
     let lista = document.getElementById("lista-item1")
     lista.addEventListener("mouseover",apertar)
     lista.addEventListener("mouseout",sair)
@@ -151,4 +151,4 @@ function apertar(){
 function sair(){
     let lista = document.getElementById("lista-item1").innerHTML=`<div>celular</div>`
 
-}
+}*/

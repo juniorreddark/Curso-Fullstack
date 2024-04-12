@@ -430,4 +430,23 @@ body{
 
 }
 
+#divBusca{
+    background-color: #2f4f4f;
+    border: solid;
+    width: 300px;
+    margin-left: 85%;
+    margin-top: -50px;
+}
+
+#txtBusca{
+    float: left;
+    background-color: transparent;
+    padding-left: 5px;
+    font-style: italic;
+    border: none;
+    height: 32px;
+    width: 260px;
+    
+}
+
 
