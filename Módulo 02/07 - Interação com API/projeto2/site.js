@@ -153,9 +153,9 @@ function sair(){
 
 }*/
 
-let boxBuscar = document.querySelector('.buscar-boxk')
-let lupa = document.querySelector('.lupa-buscark')
-let btnFechar = document.querySelector('.btn-fechark')
+let boxBuscar = document.querySelector('.buscar-box')
+let lupa = document.querySelector('.lupa-buscar')
+let btnFechar = document.querySelector('.btn-fechar')
 
 lupa.addEventListener("click",()=>{
     boxBuscar.classList.add('ativar')
@@ -171,10 +171,10 @@ let boxBuscark = document.querySelector('.buscar-boxk')
 let lupak = document.querySelector('.lupa-buscark')
 let btnFechark = document.querySelector('.btn-fechark')
 
-lupa.addEventListener("click",()=>{
+lupak.addEventListener("click",()=>{
     boxBuscark.classList.add('ativar')
 })
 
-btnFechar.addEventListener("click",()=>{
+btnFechark.addEventListener("click",()=>{
     boxBuscark.classList.remove('ativar')
 })
