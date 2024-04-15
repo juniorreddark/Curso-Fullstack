@@ -152,3 +152,29 @@ function sair(){
     let lista = document.getElementById("lista-item1").innerHTML=`<div>celular</div>`
 
 }*/
+
+let boxBuscar = document.querySelector('.buscar-boxk')
+let lupa = document.querySelector('.lupa-buscark')
+let btnFechar = document.querySelector('.btn-fechark')
+
+lupa.addEventListener("click",()=>{
+    boxBuscar.classList.add('ativar')
+})
+
+btnFechar.addEventListener("click",()=>{
+    boxBuscar.classList.remove('ativar')
+})
+
+
+
+let boxBuscark = document.querySelector('.buscar-boxk')
+let lupak = document.querySelector('.lupa-buscark')
+let btnFechark = document.querySelector('.btn-fechark')
+
+lupa.addEventListener("click",()=>{
+    boxBuscark.classList.add('ativar')
+})
+
+btnFechar.addEventListener("click",()=>{
+    boxBuscark.classList.remove('ativar')
+})

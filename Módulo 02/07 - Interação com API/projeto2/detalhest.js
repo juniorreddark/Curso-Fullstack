@@ -24,11 +24,12 @@ async function verDetalhes(){
                 <img src="${produtos[inProdutos].img[0]}" id="img-frame" width="250" height="auto">
             </div>
             <div class="mini-img" id="mini-img">
-
             </div>
-            <p>
+
+            <div class="texto">
                 ${produtos[inProdutos].descricaoCompleta}
-            </p>
+            </div>
+         
             <div class="grupoValores">
                 <span class="valorComDesconto">
                     ${produtos[inProdutos].valorComDesconto}
@@ -109,4 +110,7 @@ function pix(){
     let ela = document.getElementById("display")
     ela.textContent="pix"
 }
+
+
+
 

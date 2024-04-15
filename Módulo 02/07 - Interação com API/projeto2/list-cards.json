@@ -10,9 +10,9 @@
             ],
         "nome":"Notebook Samsung Book2",
         "descricao":"Full HD LED Antirreflexiva",
-        "descricaoCompleta":"Notebook Samsung Book2 NP550XED-KT3BR Intel core I3 1215U 4GB 256 gb ssd Tela 15.6Full HD LED Antirreflexiva Windows 11 Home<br>Linha: Galaxy Book2<br>Modelo da Placa de Vídeo: Intel Iris Xe Graphics",
-        "valorComDesconto":"1.974.96",
-        "valorSemDesconto":"2.194.40"
+        "descricaoCompleta":"Notebook Samsung Book2 NP550XED-KT3BR Intel core I3 1215U 4GB 256 gb ssd Tela 15.6Full HD LED Antirreflexiva Windows 11 Home<br>Linha:Galaxy Book2<br>Modelo da Placa de Vídeo: Intel Iris Xe Graphics<br>Com uma tela IPS antirreflexiva o Galaxy Book2 entrega cores mais vivas,mais contraste e menos distorção de imagem independente do ângulo de visão",
+        "valorComDesconto":1974.96,
+        "valorSemDesconto":2194.40
         
     },
 
@@ -27,8 +27,8 @@
         "nome":"Celular 13C 256GB 8GB ram amoled 6.71 Azul",
         "descricao":"O Smartphone 13C 256Gb 8Gb Ram Azul é a combinação perfeita de potência e beleza.",
         "descricaoCompleta":"O Smartphone 13C 256Gb 8Gb Ram Azul é a combinação perfeita de potência e beleza. Impulsionado por um processador de 8 núcleos, o 13C oferece um desempenho impecável para todas as suas tarefas diárias. Com uma tela amoled de 90Hz,",
-        "valorComDesconto":"R$ 1.086,30",
-        "valorSemDesconto":"R$ 1.278,00"
+        "valorComDesconto": 1086.30,
+        "valorSemDesconto": 1278
         
     },
     
@@ -49,8 +49,8 @@
         "nome":"Smartwatch w68 ultra Série 8 Original",
         "descricao":"Smartwatch w68 ultra Série 8 Original Lançamento 2023 Português Masculino ou Feminino 49mm compativel com samsung motorola iphone xiaomi",
         "descricaoCompleta":"W68 Ultra smartwatch srie 8 ecg ppg monitor de frequncia cardaca: MActivePro App mudando o estilo do menu, o aplicativo verifica a faixa esportiva, a sade da famlia e a funo de compartilhamento de localizao, sos Caractersticas principais: Visor gigante de 2,0 polegadas, download gratuito de 500 + watchfaces, chr sem fio, chamada",
-        "valorComDesconto":"R$ 195,99",
-        "valorSemDesconto":"R$ 195,99"
+        "valorComDesconto":195.99,
+        "valorSemDesconto":195.99
     },
 
     {
@@ -66,8 +66,8 @@
         "nome":"Kit com 2 Relógio Inteligente SmartWatch",
         "descricao":"Kit com 2 Relógio Inteligente SmartWatch iOS Android Bluetooth Troca Pulseira Mult-Funções.",
         "descricaoCompleta":"Sejam bem vindos A shopping mdproduto novo A pronta entrega envio IMEDIATO!!Compatvel Para Android e iOS! Aplicativo Fit Pro Um dos mais procurados pelo custo benefcio e lindo design. Para quem gosta de estilo, alta tecnologia e qualidade a timo preo. O modo de carregamento por entrada USB por isso no acompanha nem h necessidade de carregador. O relgio Smartwatch D20 possui diversas funes para seu dia a dia. Monitor de batimentos cardacos ou pedmetro para ajudar voc a viver uma vida saudvel. - Funo de software - Exibio de tempo - Modo esportivo - Levante",
-        "valorComDesconto":"R$ 103,35",
-        "valorSemDesconto":"R$ 159,00"
+        "valorComDesconto": 103.35,
+        "valorSemDesconto": 159.00
     },
 
     {
@@ -82,16 +82,15 @@
                 "https://images-americanas.b2w.io/produtos/7478203897/imagens/smartphone-motorola-moto-g73-5g-128gb-8gb-ram-tela-6-5-camera-dupla-selfie-de-16mp-branco/7478203898_5_xlarge.jpg",
                 "https://images-americanas.b2w.io/produtos/7478203897/imagens/smartphone-motorola-moto-g73-5g-128gb-8gb-ram-tela-6-5-camera-dupla-selfie-de-16mp-branco/7478203898_6_xlarge.jpg",
                 "https://images-americanas.b2w.io/produtos/7478203897/imagens/smartphone-motorola-moto-g73-5g-128gb-8gb-ram-tela-6-5-camera-dupla-selfie-de-16mp-branco/7478203898_7_xlarge.jpg",
-                "https://images-americanas.b2w.io/produtos/7478203897/imagens/smartphone-motorola-moto-g73-5g-128gb-8gb-ram-tela-6-5-camera-dupla-selfie-de-16mp-branco/7478203898_8_xlarge.jpg",
-                "https://images-americanas.b2w.io/produtos/7478203897/imagens/smartphone-motorola-moto-g73-5g-128gb-8gb-ram-tela-6-5-camera-dupla-selfie-de-16mp-branco/7478203898_9_xlarge.jpg",
-                "https://images-americanas.b2w.io/produtos/7478203897/imagens/smartphone-motorola-moto-g73-5g-128gb-8gb-ram-tela-6-5-camera-dupla-selfie-de-16mp-branco/7478203898_10_xlarge.jpg"
+                "https://images-americanas.b2w.io/produtos/7478203897/imagens/smartphone-motorola-moto-g73-5g-128gb-8gb-ram-tela-6-5-camera-dupla-selfie-de-16mp-branco/7478203898_8_xlarge.jpg"
+                
             ],
             
         "nome":"Smartphone Motorola Moto G73",
         "descricao":"Smartphone Motorola Moto G73 5G 128GB 8GB ram Tela 6.5 Câmera Dupla Selfie de 16MP - Branco",
         "descricaoCompleta":"Para quem busca um aparelho que oferece recursos essenciais para o dia a dia, bom desempenho e bateria potente que aguente seu ritmo, a Motorola traz o moto g73 5G. Embarcado com tecnologia 5G, que proporciona altíssima velocidade na conexão, para garantir que você faça tudo que quiser, e entregando mensagens mais rápidas, maior taxa de dados e menos interferência, reprodução de vídeos sem atrasos e com qualidade e rapidez. Seu sistema de câmera traseira dupla com sensor de 50 mp e câmera frontal 16 mp é ideal para qualquer momento. Destaque para sua câmera principal de 50 mp que conta com tecnologia Ultra Pixel, que traz mais luminosidade às suas fotos, combinando quatro pixels em um, o resultado são fotos nítidas mesmo em situações de baixa iluminação. Além do 5G e câmeras fantásticas, o aparelho vem equipado com 8 gb de memória ram, 128 gb de armazenamento interno e processador MediaTek Dimensity 930. E não podia faltar uma bateria com longa duração e carregamento TurboPower 30W para você não se preocupar. E tudo isso, com um design sofisticado.",
-        "valorComDesconto":"R$ 983,20",
-        "valorSemDesconto":"R$ 1.229,00"
+        "valorComDesconto": 983.20,
+        "valorSemDesconto": 1.229
     },
 
     {
@@ -111,8 +110,8 @@
         "nome":"Notebook Samsung Galaxy Book3",
         "descricao":"Notebook Samsung Galaxy Book3 360 i7-1360p Tela 15.6 16GB 1TB ssd W11H NP750QFG-KS2BR",
         "descricaoCompleta":"Notebook Samsung Galaxy Book3 360 Intel Core i7-1360P Windows 11 Home,16GB 1TB ssd Tela de 15.6'' Full HD amoled Design Power Integrado. Compacto e potente - tudo o que você precisa O Galaxy Book3 360 vem com uma bateria com capacidade de 67.1Wh e um carregador USB tipo C que é compacto leve e compatível com outros dispositivos Galaxy.",
-        "valorComDesconto":"R$ 7.499,00",
-        "valorSemDesconto":"R$ 8.500,99" 
+        "valorComDesconto": 7.499,
+        "valorSemDesconto":8.50099
     },
 
     {
@@ -129,8 +128,8 @@
         "nome":"Fone Ouvido Bluetooth Sem Fio",
         "descricao":"Fone Ouvido Bluetooth Sem Fio Tws Microfone Todos Celulares",
         "descricaoCompleta":"Material: ABSFunções: reprodução de música, atender / desligar ligação, replay, comandos de voz. Capacidade da bateria do fone de ouvido: 3.7v 50mAhDistância de conexão: 10 metros (sem barreiras)Tempo de carregamento: 1-2hTempo de uso: 2-3 horas, depende do usoTempo de espera: 7-10 diasCapacidade da case de carga: 350 mANúmero de fornecimento de energia: 1.5 vezesTempo de carregamento da caixa de carregamento: 2 horasTensão de carregamento da caixa de carregamento: 5VFreqência sem fio: 20-20000HzPotência de transmissão: classe 2Tensão de carregamento: 5 v",
-        "valorComDesconto":"R$ 29,42",
-        "valorSemDesconto":"R$ 32,69"
+        "valorComDesconto":29.42,
+        "valorSemDesconto":32.69
     },
 
     {
@@ -145,8 +144,8 @@
         "nome":"Fone Ouvido Sem Fio Xiaomi Haylou X1",
         "descricao":"Fone Ouvido Sem Fio Xiaomi Haylou X1 Neo Bt 5.3 Codec Aac",
         "descricaoCompleta":"O fone de ouvido sem fio Haylou X1 Neo foi projetado para proporcionar excelente desempenho e liberdade de movimentos, é isso mesmo, totalmente wireless e com um grande driver dinâmico para um som Hi-Fi para mais detalhes de áudio e para atingir um equilíbrio adequado entre agudos, médios e graves; Equipada com Bluetooth 5.3 avançado, você pode desfrutar de modo jogo de latência ultrabaixa com transmissão mais rápida e estável, Ambos os modos mono e estéreo estão disponíveis e com apenas uma recarga completa você pode dispor de até 5 horas de reprodução, mais cargas extras a partir do estojo de carregamento; Seu design meio intra-auricular também oferece um ajuste seguro e confortável para o uso prolongado, o controle de toque de alta precisão possibilita realizar comandos com alta versatilidade e basta pressionar e segurar por 2s para ativar o modo de jogo com latência tão baixa quanto 0,06s;",
-        "valorComDesconto":"R$ 98,07",
-        "valorSemDesconto":"R$ 108,97" 
+        "valorComDesconto": 98.07,
+        "valorSemDesconto": 108.97 
     },
 
     {
@@ -160,9 +159,9 @@
             ],
         "nome":"Pc Gamer Completo ",
         "descricao":"Pc Gamer Completo Intel Core i5 Memoria Ram 16GB ssd 240GB Monitor hdmi 20 Polegadas Kit Gamer Wifi",
-        "descricaoCompleta":"Padrão de montagem<br>Montagem Profissional. Sua máquina será entregue pronta para isp, com todos os componentes devidamente instalados e atualizados<br>maquinas testa<br>100% Testado. Garantimos que todas as peças foram instaladas e sua maquina funcionando 100%<br>qualidade garantida<br>Melhores marcas. Os componentes são das marcas mais conhecidas do mercado e escolhidos a dedo para que você não se preocupe com a qualidade<br>embalagem E entrega<br>Embalagem Personalizada. A sua máquina esta segura com a nossa embalagem especial para pc Gamer e entregue em seu endereço.<br>peças com garantia<br>Garantia por Componente. Os prazos de cada peça é indicada em Nota Fiscal. Os PCs Gamer são livre para modificar da forma que desejar.",
-        "valorComDesconto":"R$ 1.729,89",
-        "valorSemDesconto":"R$ 1.922,11" 
+        "descricaoCompleta":"Padrão de montagem<br>Montagem Profissional. Sua máquina será entregue pronta para isp, com todos os componentes devidamente instalados e atualizados<br>maquinas testa<br>100% Testado. Garantimos que todas as peças foram instaladas e sua maquina funcionando 100%<br>qualidade garantida<br>Melhores marcas. Os componentes são das marc entrega",
+        "valorComDesconto":1.72989,
+        "valorSemDesconto":1.922 
 
     },
 
@@ -175,8 +174,8 @@
         ],
         "nome":"Mouse Óptico ",
         "descricao":"Mouse Óptico 1000 dpi USB Geek Max Maxprint",
-        "descricaoCompleta":"Mouse Óptico 1000 dpi USB Geek Max MaxprintResolução: 1000 dpi Botões: 3 Conexão: USB 2.0 Com led Comprimento do fio: 1,25mDimensões: 12,4 x 6,8 x 3,88mm Peso: 65g",
-        "valorComDesconto":"R$ 10,70",
-        "valorSemDesconto":"R$ 20,50"
+        "descricaoCompleta":"Mouse Óptico 1000 dpi USB Geek Max MaxprintResolução: 1000 dpi Botões: 3 Conexão: USB 2.0 Com led Comprimento do fio: 1,25mDimensões: 12,4 x 6,8 x 3,88mm Peso: 65g<br>1 x Sensor USB ( esta encaixado em baixo do mouse é só plugar no PC)Mouse Gamer Sem Fio T-Wolf Q13 Recarregavel (Acompanha cabo USB)- Luz fria, que troca de cor aleatoriamente Pegada confortável e suave<br>Obs.: Produto com jogo de Luzes RGB1 x Sensor USB ( esta encaixado em baixo do mouse é só plugar no PC)",
+        "valorComDesconto": 10.70,
+        "valorSemDesconto": 20.50
     }
 ]
