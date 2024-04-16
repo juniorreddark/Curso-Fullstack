@@ -64,6 +64,7 @@ nav{
     border-radius: 15px;
     box-shadow:3px 3px 4px rgb(177, 176, 176) ;
     background-color:white;
+  
  
 }
 
@@ -311,14 +312,14 @@ body{
 
 .carrossel{
     position: static;
-    width: 500px;
+    width: 590px;
     margin: auto;
     align-items: center;
    
 }
 
 .slides{
-    width: 560px;
+    width: 590px;
     height: 445px;
     position: fixed;
     margin: 0px 30px 0px 30px;
@@ -347,7 +348,7 @@ body{
 
 
 .button{
-    width: 620px;
+    width: 649px;
     display: flex;
     justify-content: space-between;
     height: 300px;
