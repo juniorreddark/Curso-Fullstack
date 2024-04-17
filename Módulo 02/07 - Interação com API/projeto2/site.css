@@ -53,6 +53,7 @@ nav{
 .cards{
     border: 1px solid #333;
     width: 350px;
+ 
     padding: 10px;
     align-items: center;
     display: flex;
@@ -64,9 +65,24 @@ nav{
     border-radius: 15px;
     box-shadow:3px 3px 4px rgb(177, 176, 176) ;
     background-color:white;
-  
- 
+    transition: 0.5s;
+   
 }
+
+.cards:hover{
+    width: 372px;
+    height: 459px;
+
+}
+
+.grupo-cards:hover{
+    width: 328px;
+    height: 250px;
+}
+
+
+
+ 
 
 .list-cards{
     display: flex;
@@ -108,13 +124,14 @@ nav{
    flex-direction: column;
    flex-wrap: wrap;
    border: 1px solid #333; 
-   width: 50%;
-   height: 610px;
+   width: 55%;
+   height: 615px;
    padding: 9px;
    align-items: center;
    margin: 15px;
    border-radius: 10px;
    background-color: #fff;
+
 }
 
 .imagens{
@@ -281,9 +298,9 @@ body{
     column-gap: 20px;
 }
 
-.nav-bar{
-    width: 100%;
-    height: 100%;
+.nav{
+    width: 1436px;
+    height: 151px;
     margin: 10px;
 }
 
@@ -444,6 +461,8 @@ body{
     margin-left: 10px;
     margin-top: -50px;
     
+
+    
     
 }
 
@@ -520,7 +539,7 @@ body{
     position: relative;
     transition: .5s;
     background-color: rgb(241, 19, 130);
-    margin-left: 79%;
+    margin-left: 75%;
 }
 
 .buscar-boxk.ativar{

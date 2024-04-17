@@ -23,11 +23,11 @@ async function pesquisar(){
 
                 <div class="valores">
                     <span class="valorComDesconto">
-                        ${photos.valorComDesconto}
+                        R$${photos.valorComDesconto}
                     </span>
 
                     <span class="valorSemDesconto">
-                        ${photos.valorSemDesconto}
+                        R$${photos.valorSemDesconto}
                     </span>
                     
                 </div>

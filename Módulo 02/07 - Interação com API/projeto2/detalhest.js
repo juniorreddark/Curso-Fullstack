@@ -32,11 +32,11 @@ async function verDetalhes(){
          
             <div class="grupoValores">
                 <span class="valorComDesconto">
-                    ${produtos[inProdutos].valorComDesconto}
+                    R$${produtos[inProdutos].valorComDesconto}
                 </span>
 
                 <span class="valorSemDesconto">
-                    ${produtos[inProdutos].valorSemDesconto}
+                    R$${produtos[inProdutos].valorSemDesconto}
                 </span>
             </div>
 
