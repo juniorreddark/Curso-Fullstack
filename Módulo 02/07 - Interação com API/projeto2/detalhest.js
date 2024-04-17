@@ -70,6 +70,7 @@ async function verDetalhes(){
             <div class="formaspg">
                 <div class="Cartão" onclick="cartão()" > cartões </div>
                 <div class="Pix" onclick="pix()"> Pix </div>
+                <span>a opção foi</span>
                 <div  class="display" id="display"></div>
             </div>
             <p>frete grátis </p>
@@ -109,6 +110,20 @@ tela.textContent="cartão"
 function pix(){
     let ela = document.getElementById("display")
     ela.textContent="pix"
+}
+
+function somarUm(){
+    let valor = document.getElementById("t1")
+
+    valor.textContent = parseInt(valor.textContent) + 1
+}
+
+function subtrair(){
+    let valor = document.getElementById("t1")
+
+    valor.textContent = parseInt(valor.textContent) - 1
+
+    
 }
 
 

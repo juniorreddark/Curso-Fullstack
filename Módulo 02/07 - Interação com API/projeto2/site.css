@@ -458,11 +458,8 @@ body{
     transition: .5s;
     background-color: rgb(17, 17, 17);
     border-radius: 15px;
-    margin-left: 10px;
-    margin-top: -50px;
-    
-
-    
+    margin-left: 10px;  
+    margin-top: 34px;
     
 }
 
@@ -539,14 +536,16 @@ body{
     position: relative;
     transition: .5s;
     background-color: rgb(241, 19, 130);
-    margin-left: 75%;
+    margin-left: 79%;
+    margin-top: -105px;
+    border-radius: 15px;
 }
 
 .buscar-boxk.ativar{
     width: 400px;
 }
 
-.buscar-boxk .lupa-buscark, .buscar-boxk .btn-fechar{
+.buscar-boxk .lupa-buscark, .buscar-boxk .btn-fechark{
     min-width: 80px;
     height: 80px;
     display: flex;
@@ -586,6 +585,8 @@ body{
     outline: 0;
     font-size: 20px;
 }
+
+
 
 
 
