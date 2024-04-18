@@ -71,6 +71,7 @@ nav{
 
 .cards:hover{
     width: 372px;
+    align-items: center;
     height: 459px;
 
 }
@@ -281,9 +282,12 @@ body{
 
 
 .bot{
-    width:40px;
+    width:60px;
     height: 27px;
     margin: 15px;
+    text-align: center;
+    margin-left: -95px;
+    margin-top: -950px;
 }
 
 .cardts{
@@ -473,7 +477,7 @@ body{
 }
 
 .buscar-box.ativar{
-    height: 370px;
+    height: 355px;
     width: 400px;
 }
 
@@ -527,8 +531,8 @@ body{
 
 
 .buscar-boxk{
-    width: 80px;
-    height: 80px;
+    width: 75px;
+    height: 75px;
     background-color: #fff;
     overflow: hidden;
     display: flex;
@@ -566,6 +570,7 @@ body{
 .buscar-boxk .lupa-buscark i{
     font-size: 35px;
     color: #fff;
+    align-items: center;
    
     
 }
@@ -585,6 +590,20 @@ body{
     outline: 0;
     font-size: 20px;
 }
+
+.boton{
+    width:60px;
+    height: 27px;
+  
+    text-align: center;
+    margin-left: 15px;
+    
+    
+    margin-top: 20px;
+
+}
+
+
 
 
 

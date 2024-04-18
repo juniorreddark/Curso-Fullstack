@@ -13,8 +13,9 @@ async function verDetalhes(){
     }
 
     document.title = produtos[inProdutos].nome
-
+    
     document.getElementById("detalhes").innerHTML+=`
+    <button class="bot" onclick="window.history.back()">volta</button>
     <div class="detalhes">
         <div class="cardImg">
             <h1>
@@ -122,7 +123,6 @@ function subtrair(){
     let valor = document.getElementById("t1")
 
     valor.textContent = parseInt(valor.textContent) - 1
-
     
 }
 

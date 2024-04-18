@@ -23,11 +23,11 @@ async function pesquisar(){
 
                 <div class="valores">
                     <span class="valorComDesconto">
-                        R$${photos.valorComDesconto}
+                        R$ ${photos.valorComDesconto}
                     </span>
 
                     <span class="valorSemDesconto">
-                        R$${photos.valorSemDesconto}
+                        R$ ${photos.valorSemDesconto}
                     </span>
                     
                 </div>
@@ -178,3 +178,4 @@ lupak.addEventListener("click",()=>{
 btnFechark.addEventListener("click",()=>{
     boxBuscark.classList.remove('ativar')
 })
+
