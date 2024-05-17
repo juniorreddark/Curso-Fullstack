@@ -2,7 +2,7 @@
 
 > Levando em consideração que você já criou um projeto e que já criou um app, partiremos desse ponto para criar uma tabela.
 
-1- Abra a pasta do app que você criou, e nele abra o arquivo "models.py". Para criar uma tabela se o comando "class". Segue o código abaixo:
+1- Abra a pasta do app que você criou, e nele abra o arquivo "models.py". Para criar uma tabela use o comando "class". Segue o código abaixo:
 
 class Estudante(models.Model):
 
