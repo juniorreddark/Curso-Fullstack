@@ -1,0 +1,15 @@
+
+{% load static %}
+<html>
+    <link rel="stylesheet" type="text/css" href="{% static 'style.css' %}">
+    <body>
+        <p>
+            Minha lista de Produtos:
+        </p>
+        <ul>
+            {% for Produto in produtos %}
+                <li>{{ Produto.nome_produto }} - R$ {{ Produto.valor_produto }}</li>
+            {% endfor %}
+        </ul>
+    </body>
+</html>''
