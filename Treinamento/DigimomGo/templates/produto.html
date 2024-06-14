@@ -1,0 +1,19 @@
+{% load static %}
+<html>
+    <link rel="stylesheet" type="text/css" href="{% static 'style.css' %}">
+    <body>
+        <a href="{% url 'pagina_index' %}">Página inicial</a>
+        <p>
+            Esta é a página de Produto
+        </p>
+        <ul>
+            {% for Produtos in produtos %}
+            <li>
+                {{Produtos.nome_produto}} - {{Produtos.valor_produto}} 
+            </li>
+            {% endfor %}
+        </ul>
+
+	
+    </body>
+</html>

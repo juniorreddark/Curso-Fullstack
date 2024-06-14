@@ -9,3 +9,19 @@ def LinkInicial(request):
 
 def LinkCadastro(request):
     return render(request, 'cadastro.html')
+
+def LinkCliente(request):
+    cliente_lista = Cliente.objects.all()
+    return render(request,'cliente.html', {'cliente':cliente_lista})
+
+def LinkVendedor(request):
+    vendedor_lista = Vendedor.objects.all()
+    return render(request,'vendedor.html', {'vendedores': vendedor_lista })
+
+def LinkPagamento(request):
+    pagamento_lista = FormaPagamento.objects.all()
+    return render(request,'pagamento.html', {'pagamentos':pagamento_lista})
+
+def LinkProduto(request):
+    produto_lista = Produto.objects.all()
+    return render(request,'produto.html', {'produtos': produto_lista})

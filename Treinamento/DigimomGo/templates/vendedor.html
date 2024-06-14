@@ -1,0 +1,19 @@
+{% load static %}
+<html>
+    <link rel="stylesheet" type="text/css" href="{% static 'style.css' %}">
+    <body>
+        <a href="{% url 'pagina_index' %}">Página inicial</a>
+        <p>
+            Esta é a página de Vendedor
+        </p>
+        <ul>
+            {% for Vendedores in vendedores %}
+            <li>
+                {{Vendedores.nome_vendedor}} - {{Vendedores.matricula}} - {{Vendedores.email}} - {{Vendedores.contato}} 
+            </li>
+            {% endfor %}
+        </ul>
+
+	
+    </body>
+</html>
