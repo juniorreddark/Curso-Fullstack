@@ -7,9 +7,9 @@
             Esta é a página de Pagamento
         </p>
         <ul>
-            {% for Pagamentos in pagamentos %}
+            {% for Pagamento in pagamentos %}
             <li>
-                {{Pagamentos.forma_pagamento}} - {{Pagamentos.valor}} - {{Pagamentos.produto}} 
+                {{Pagamento.forma_pagamento}} - {{Pagamento.valor}} - {{Pagamento.produto}} 
             </li>
             {% endfor %}
         </ul>

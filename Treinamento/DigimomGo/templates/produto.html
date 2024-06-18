@@ -7,10 +7,11 @@
             Esta é a página de Produto
         </p>
         <ul>
-            {% for Produtos in produtos %}
-            <li>
-                {{Produtos.nome_produto}} - {{Produtos.valor_produto}} 
-            </li>
+            {% for produto in produtos %}
+                <li>
+                {{produto.nome_produto}} - {{produto.valor_produto}}
+                <img src="{{produto.foto.url}}" height="100" width="100">
+                </li>
             {% endfor %}
         </ul>
 
