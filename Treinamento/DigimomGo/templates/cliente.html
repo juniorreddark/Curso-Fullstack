@@ -1,18 +1,25 @@
-{% load static %}
-<html>
-    <link rel="stylesheet" type="text/css" href="{% static 'style.css' %}">
-    <body>
-        <a href="{% url 'pagina_index' %}">Página inicial</a>
-        <p>
-            Esta é a página de Cliente
-        </p>
-        <ul>
-            {% for Clientes in cliente %}
-            <li>
-                {{Clientes.nome_cliente}} - {{Clientes.email}} - {{Clientes.cpf}} - {{Clientes.celular}} 
-            </li>
-            {% endfor %}
-        </ul>
+{% extends "base.html" %}
 
-    </body>
-</html>
+{% block titulo %} 
+
+    <p>
+        Esta é a página de Cliente
+    </p>
+
+{% endblock %}
+
+
+
+{% block conteudo %} 
+
+    <a href="{% url 'pagina_index' %}">Página inicial</a>
+
+    <ul>
+        {% for Clientes in cliente %}
+        <li>
+            {{Clientes.nome_cliente}} - {{Clientes.email}} - {{Clientes.cpf}} - {{Clientes.celular}} 
+        </li>
+        {% endfor %}
+    </ul>
+
+{% endblock %}
