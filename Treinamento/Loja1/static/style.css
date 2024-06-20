@@ -1,0 +1,12 @@
+body{
+    background-image: url("https://duarteluminosos.com.br/storage/2020/06/fachadas-de-lojas-de-roupas-femininas_09.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+li{
+    list-style: none;
+    color: white;
+}
+p{
+    color: white;
+}
