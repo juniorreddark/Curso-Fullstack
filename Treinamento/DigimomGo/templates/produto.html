@@ -8,10 +8,12 @@
         </p>
         <ul>
             {% for produto in produtos %}
-                <li>
-                {{produto.nome_produto}} - {{produto.valor_produto}}
-                <img src="{{produto.foto.url}}" height="100" width="100">
-                </li>
+                <div class="lista-card">
+                    <p>
+                    {{produto.nome_produto}} - {{produto.valor_produto}}
+                    <img src="{{produto.foto.url}}" height="100" width="100">
+                    </p>
+                </div>
             {% endfor %}
         </ul>
 

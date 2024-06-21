@@ -1,18 +1,25 @@
 body{
-    background-color: #5f7C8A;
+    background-size: cover;
+    background-repeat: "no-repeat";
+    background-image: url("https://3.bp.blogspot.com/-_PDpMo3sMXo/W_GNUsMojiI/AAAAAAAATRo/TKdxR2wJzQIXaH1zMuJS0n8rp6ZKiQN-wCLcBGAs/s2560/lamborghini-huracan-2880x1800-port-yellow-hd-5k-16657.jpg");
 }
+
 
 p{
     color: yellow;
 }
 
-nav{
-    background-color:blue ;
-    height: 30px;
-    width: 40px;
+a{
+    padding: 20px;
+    cursor: pointer;
+    text-decoration: none;
+    color: white;
+    box-shadow: 6px 6px 8px rgb(167,184 ,175 );
+    border: 1px solid #333;
+    border-radius: 10px;
+    width: fit-content;
+    height: fit-content;
 }
 
-body{
-    background-repeat: "no-repeat";
-    background-image: url("");
-}
+    
+
