@@ -1,0 +1,139 @@
+[
+    {
+        "id":"11",
+        "img":"https://www.sospedro.com.br/wp-content/uploads/2021/02/Moda-masculina-para-2020_-10-tendencias-para-este-ano-1-768x958.jpg",
+        "nome":"camisa e calça",
+        "descricao":"conjunto mordeno",
+        "valorComDesconto":"R$ 300,00",
+        "valorSemDesconto":"R$ 350,00"
+    },
+
+    {
+        "id":"12",
+        "img":"https://www.sospedro.com.br/wp-content/uploads/2022/11/Primavera-verao-2023-Shorts-cargo-masculino-1.jpg",
+        "nome":"camisa e bermuda",
+        "descricao":"conjunto mordeno",
+        "valorComDesconto":"R$ 250,00",
+        "valorSemDesconto":"R$ 300,00"
+    },
+
+    {
+        "id":"13",
+        "img":"https://i.pinimg.com/originals/87/ef/17/87ef17d9109c6853fe8b888bb575bb43.jpg",
+        "nome":"camisa e calça",
+        "descricao":"conjunto mordeno",
+        "valorComDesconto":"R$ 350,00",
+        "valorSemDesconto":"R$ 400,00"
+    },
+
+    {
+        "id":"14",
+        "img":"https://homensquesecuidam.com/wp-content/uploads/2020/05/futuro-da-moda-masculina-homens-que-se-cuidam-por-juan-alves-a-a-821x1024.jpg",
+        "nome":"camisa e calça",
+        "descricao":"conjunto classico",
+        "valorComDesconto":"R$ 200,00",
+        "valorSemDesconto":"R$ 250,00"
+    },
+
+    {
+        "id":"15",
+        "img":"http://modaparahomem.weebly.com/uploads/1/3/3/1/133111414/moda-masculina-de-verao-dicas-e-tend-ncias-5_orig.jpg",
+        "nome":"camisa e bermuda",
+        "descricao":"conjunto mordeno",
+        "valorComDesconto":"R$ 400,00",
+        "valorSemDesconto":"R$ 450,00"
+    },
+
+    {
+        "id":"16",
+        "img":"https://homensquesecuidam.com/wp-content/uploads/2020/09/estilos-de-roupa-masculino-para-voce-se-inspirar-e-criar-o-seu-por-juan-alves-homens-que-se-cuidam-15.jpg",
+        "nome":"camisa e calça",
+        "descricao":"conjunto classico",
+        "valorComDesconto":"R$ 350,00",
+        "valorSemDesconto":"R$ 400,00"
+    },
+
+    {
+        "id":"17",
+        "img":"https://homensquesecuidam.com/wp-content/uploads/2020/09/look-masculino-esporte-fino-modelos-para-voce-se-inspirar-por-juan-alves-homens-que-se-cuidam.png",
+        "nome":"camisa e calça",
+        "descricao":"conjunto classico",
+        "valorComDesconto":"R$ 250,00",
+        "valorSemDesconto":"R$ 360,00"
+    },
+
+    {
+        "id":"18",
+        "img":"https://i.pinimg.com/originals/8a/84/5a/8a845a6cd32e37e4865229a3fa653b6b.jpg",
+        "nome":"camisa e calça",
+        "descricao":"conjunto mordeno",
+        "valorComDesconto":"R$ 400,00",
+        "valorSemDesconto":"R$ 500,00"
+    },
+
+    {
+        "id":"19",
+        "img":"http://blog.newoldman.com.br/wp-content/uploads/2018/12/Looks-Masculinos-Para-O-Reveillon-e-Ano-Novo-Dicas-e-Inspiracoes-3.jpg",
+        "nome":"camisa e bermuda",
+        "descricao":"conjunto mordeno",
+        "valorComDesconto":"R$ 150,00",
+        "valorSemDesconto":"R$ 250,00"
+    },
+
+    {
+        "id":"20",
+        "img":"https://i.pinimg.com/originals/72/7c/f2/727cf2f398d3a7e9af04c8d5c8d2cce3.jpg",
+        "nome":"camisa e calça",
+        "descricao":"conjunto classico",
+        "valorComDesconto":"R$ 450,00",
+        "valorSemDesconto":"R$ 500,00"
+    },
+
+    {
+        "id":"21",
+        "img":"https://i.pinimg.com/originals/19/60/e3/1960e3e93d5068105601b098b06be531.jpg",
+        "nome":"camisa e bermuda",
+        "descricao":"conjunto mordeno",
+        "valorComDesconto":"R$ 270,00",
+        "valorSemDesconto":"R$ 290,00"
+    },
+
+    {
+        "id":"22",
+        "img":"https://www.sospedro.com.br/wp-content/uploads/2020/12/Acessorios-masculinos_-Dicas-de-como-usar-no-seu-estilo.jpg",
+        "nome":"camisa e bermuda",
+        "descricao":"conjunto mordeno",
+        "valorComDesconto":"R$ 235,00",
+        "valorSemDesconto":"R$ 300,00"
+    },
+
+    {
+        "id":"23",
+        "img":"https://marcodamoda.com.br/wp-content/uploads/2018/12/Jaqueta-Puffer-Rowan-Row-822x1024.jpg",
+        "nome":"camisa e calça",
+        "descricao":"conjunto mordeno",
+        "valorComDesconto":"R$ 550,00",
+        "valorSemDesconto":"R$ 600,00"
+    },
+
+    {
+        "id":"24",
+        "img":"https://i.pinimg.com/736x/d2/1e/58/d21e58092ca130a17976647d6f910780.jpg",
+        "nome":"camisa e calça",
+        "descricao":"conjunto classico",
+        "valorComDesconto":"R$ 500,00",
+        "valorSemDesconto":"R$ 600,00"
+    },
+
+    
+    {
+        "id":"25",
+        "img":"https://i.pinimg.com/originals/f8/26/9b/f8269b91834510f9ce578c61b000db95.png",
+        "nome":"camisa e calça",
+        "descricao":"conjunto mordeno",
+        "valorComDesconto":"R$ 450,00",
+        "valorSemDesconto":"R$ 550,00"
+    }
+
+
+]

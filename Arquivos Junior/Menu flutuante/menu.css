@@ -1,0 +1,77 @@
+
+body{
+    height: 100vh;
+    background-color: #282828;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.buscar-box{
+    width: 80px;
+    height: 80px;
+    background-color: #fff;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    transition: .5s;
+    background-color: rgb(241, 19, 130);
+    border-radius: 15px;
+    
+}
+
+.buscar-box .lupa-buscar .buscar-box .btn-fechar{
+    min-width: 80px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.buscar-box.ativar{
+    height: 370px;
+    width: 400px;
+}
+
+.buscar-box .btn-fechar{
+    font-size: 27px;
+    margin-left: 15px;
+    color: #fff;
+ 
+}
+
+.buscar-box .lupa-buscar{
+    font-size: 70px;
+    color: #fff;
+}
+
+.buscar-box .input-buscar{
+    position: absolute;
+    left: 80px;
+    width: calc(100%-120px);
+    height: 100%;
+    line-height: 80px;
+}
+
+.buscar-box .input-buscar input{
+    border: 0;
+    outline: 0;
+    font-size: 20px;
+}
+
+.item{
+    border: 1px solid #333;
+    display: flex;
+    width: 250px;
+    height: 90px;
+    margin: 20px;
+    align-items: center;
+    justify-content: center;
+    background-color: #eeb854;
+    border-radius: 10px;
+    flex-direction: column;
+}
+
+
