@@ -2,6 +2,7 @@ from django.db import models
 
 # Create your models here.
 
+
 class Produto(models.Model):
     nome_produto = models.CharField(max_length= 100)
     valor_produto = models.DecimalField(decimal_places=2, max_digits=6)
@@ -10,6 +11,13 @@ class Produto(models.Model):
     def __str__(self):
         return self.nome_produto
     
+class Cadastro(models.Model):
+    nome = models.CharField(max_length=50)
+    email = models.EmailField() 
+
+    def __str__(self):
+        return self.nome
+      
 class Vendedor(models.Model):
     nome_vendedor = models.CharField(max_length=100)
     matricula = models.IntegerField()
@@ -38,4 +46,7 @@ class FormaPagamento(models.Model):
 
     def __str__(self):
         return self.forma_pagamento + '|' + str(self.valor)
+    
+
+
     

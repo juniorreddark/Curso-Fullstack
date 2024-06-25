@@ -8,7 +8,8 @@ def LinkInicial(request):
     return render(request, 'index.html')
 
 def LinkCadastro(request):
-    return render(request, 'cadastro.html')
+    cadastro_lista = Cadastro.objects.all()
+    return render(request, 'cadastro.html', {'cadastros': cadastro_lista})
 
 def LinkCliente(request):
     cliente_lista = Cliente.objects.all()

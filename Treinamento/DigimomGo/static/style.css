@@ -9,6 +9,10 @@ p{
     color: yellow;
 }
 
+.titulo{
+    margin: 15px;
+}
+
 a{
     padding: 20px;
     cursor: pointer;
@@ -21,5 +25,24 @@ a{
     height: fit-content;
 }
 
-    
+.lista-card{
+    display:flex;
+    flex-wrap: wrap;
+    column-gap: 15px;
+    row-gap: 15px;
+
+}
+
+.card{
+    display: flex;
+    width: fit-content;
+    height: fit-content;
+    border: 2px solid #000;
+    border-radius: 10px;
+    box-shadow: 6px 6px 8px rgb(167, 184,175);
+    flex-direction: column;
+    padding: 10px;
+    align-items: center;
+    color: white;
+}
 

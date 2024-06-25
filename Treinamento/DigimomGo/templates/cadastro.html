@@ -1,17 +1,27 @@
 {% extends "base.html" %}
 
 {% block titulo %} 
-
-    <p>
-        Esta é a página de Cadastro
-    </p>
-
+    <div class="titulo">
+        <p>
+            Esta é a página de Cadastro
+        </p>
+        <h3> 
+            <a href="{% url 'pagina_index' %}">Página inicial</a>
+        </h3>
+    </div>
 {% endblock %}
 
 
 
 {% block conteudo %} 
 
-    <a href="{% url 'pagina_index' %}">Página inicial</a>
-
+   
+    <div class="lista-card">
+        {% for cadastro in cadastros %}
+            <div class="card">
+                <p> {{cadastro.nome}} </p>
+                <p> {{cadastro.email}} </p>
+            </div>
+        {% endfor %}
+    </div>
 {% endblock %}
