@@ -1,0 +1,16 @@
+<html>
+    <body>
+        <h3>
+            Lista de Produtos:
+        </h3>
+
+        <ul>
+            {% for produto in produtos %}
+                <li>{{produto.nome_produtos}}</li> 
+                <li>{{produto.valor_produtos}}</li>
+                <li>{{produto.informacoes}}</li>
+            {% endfor %}
+        </ul>
+    
+    </body>
+</html>
