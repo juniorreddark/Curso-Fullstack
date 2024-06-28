@@ -17,7 +17,7 @@
 
 5- Continuando no arquivo "urls.py", crie uma tupla usando o comando urlpatterns, e dentro dele registre o caminho usando o comando "path", que define a URL que o usuario vai acessar no navegador e qual função que você criou dentro do arquivo views será executada:
 	==> urlpatterns = [
-    		path('apresentacao/',saudacao)
+    		path('apresentacao/', saudacao)
 	    ]
 
 6- Agora dentro da pasta do projeto procure o arquivo "urls.py", nele procure a linha que está fazendo o seguinte importe "from django.urls import path". Ao final dele você vai acrescentar uma virgula e o comando "include", ficando dessa maneira:
