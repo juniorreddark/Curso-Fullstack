@@ -1,0 +1,28 @@
+<html>
+    <body>
+        <a href="{% url "pagina-lista" %}">Pagina Lista</a>
+        <h3>
+            Formulário de Produtos 
+        <h3>
+
+        <form method="post" enctype="multipart/form-data">
+            {% csrf_token %}
+            {{ formulario.as_p }}
+            <button type="submit"> Salvar </button>
+            <button type="reset" onclick="resetForm()"> Cancelar </button>
+        </form>
+
+        <h3>
+            Lista de Produtos
+        </h3>
+
+        <ul>
+            {% for produto in produtos %}
+            <li> {{ produto.nome_produto}} - {{produto.valor_produto}} </li>
+            <img src="{{produto.foto.url }}" height="100" width="100">
+            {% endfor %}
+        </ul>
+
+    </body>
+
+</html>
