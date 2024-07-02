@@ -1,7 +1,6 @@
 <html>
     <body>
-      
-
+        <a href="{% url "pagina_inicial" %}"> Pagina Inicial</a>
         <h3>
             Lista de Produtos
         </h3>
@@ -9,6 +8,7 @@
         <ul>
             {% for produto in produtos %}
             <li> {{ produto.nome_produto}} - {{produto.valor_produto}} </li>
+            <img src="{{produto.foto.url}}" width="255" height="auto">
             {% endfor %}
         </ul>
 

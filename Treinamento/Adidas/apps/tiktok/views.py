@@ -20,9 +20,15 @@ def listaProdutos(request):
     busca_produtos = Produto.objects.all()
     return render(request, "lista.html", {"produtos":busca_produtos})
 
-    """def DetalhesProduto(request, id_produto):
+
+def VerProdutos(request):
+    produtos_lista = Produto.objects.all()
+    return render(request, "produtos.html", {"produtos": produtos_lista})
+
+
+def DetalhesProduto(request, id_produto):
     busca = Produto.objects.get(id=id_produto)
+    return render(request, "detalhes_produtos.html", {"produtos":busca})
 
-
-    return render(request, "detalhes_produto.html", {"produto": busca})"""
+    
 

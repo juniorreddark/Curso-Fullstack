@@ -1,0 +1,15 @@
+<html>
+    <body>
+        <a href="{% url "pg_produtos" %}"> Produto </a>
+        <P>
+            Detalhes do Produto
+        </p>
+
+        <li>
+           {{ produtos.nome_produto}} - R$ {{ produtos.valor_produto}}
+        </li>
+        <img src="{{produtos.foto.url}}" width="255" height="auto">
+
+    </body>
+
+</html>
