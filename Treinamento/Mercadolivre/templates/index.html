@@ -1,0 +1,27 @@
+{% load static %}
+<html>
+
+    <body>
+        <link rel="stylesheet" type="text/css" href="{% static 'style.css' %}">
+        <h3> Pagina Inicial </h3>
+        <button><a href="{% url "cadastra-produto"%}"> mais produtos </a></button>
+        <button><a href="{% url "cadastra-categoria" %}"> mais categorias </a></button>
+
+        <h3>
+            Lista de Produtos 
+        </h3>
+
+       
+            {% for produto in produtos %}
+                <div class="lista-card">
+                   
+                    <img src="{{produto.foto.url}}" height="250" widht="auto">
+                    <p> {{ produto.nome_produto }}<a href="{% url 'detalhes_produto' produto.id %}">  - {{produto.valor_produto}} - <a href="{% url 'detalhes_produto' produto.id %}"> </p>
+                </div>
+            {% endfor%}
+      
+       
+
+    </body>
+
+</html>

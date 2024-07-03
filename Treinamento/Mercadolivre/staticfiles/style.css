@@ -1,0 +1,15 @@
+.lista-card{
+    padding: 20px;
+    cursor: pointer;
+    text-decoration: none;
+    
+    box-shadow: 6px 6px 8px rgb(167,184 ,175 );
+    border: 1px solid #333;
+    border-radius: 10px;
+    width: fit-content;
+    height: fit-content;
+}
+
+h3{
+    color: blue;
+}

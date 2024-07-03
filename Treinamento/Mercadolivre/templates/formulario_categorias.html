@@ -1,0 +1,22 @@
+<html>
+    <body>
+        <h3> Formulario de Categorias </h3>
+
+        <form method="post">
+            {% csrf_token %}
+            {{ formulario.as_p }}
+            <button type="submit"> Salvar </button>
+            <button type="reset" onclick="resetForm()"> Cancelar </button>
+        </form>
+
+        <h3>  Lista de Categorias </h3>
+
+        <ul>
+            {% for categoria in categorias %}
+            <li> {{categoria.nome_categoria}} </li>
+            {% endfor %}
+        </ul>
+
+    </body>
+
+</html> 
