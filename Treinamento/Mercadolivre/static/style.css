@@ -1,15 +1,29 @@
 .lista-card{
-    padding: 20px;
-    cursor: pointer;
-  
-    margin: 20px;
-    box-shadow: 6px 6px 8px rgb(167,184 ,175 );
-    border: 1px solid #333;
-    border-radius: 10px;
-    width: fit-content;
-    height: fit-content;
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 10px;
+    column-gap: 10px;
 }
 
 h3{
     color: blue;
+}
+
+.card{
+    box-shadow: 6px 6px 8px rgb(167,184 ,175 );
+    border: 1px solid #333;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    width: fit-content;
+    height: fit-content;
+    cursor: pointer;
+}
+
+p{
+    text-align: center;
+}
+
+.foto_capa{
+    border-radius: 10px 10px 0px 0px;
 }

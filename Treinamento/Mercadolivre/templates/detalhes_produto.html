@@ -1,0 +1,21 @@
+{% load static %}
+<html>
+    <body>
+        <link rel="stylesheet" type="text/css" href="{% static 'style.css' %}">
+            <P>
+                Detalhes do Produto
+            </p>
+            <div class="lista-card">
+               
+                <img src="{{produto.foto.url}}" width="auto" height="250">
+                <p>
+                    {{ produto.nome_produto}} - R$ {{ produto.valor_produto}}
+                </p>
+                <span>{{ produto.informacao}}</span>
+                
+            </div>
+        
+
+    </body>
+
+</html>

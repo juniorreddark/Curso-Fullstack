@@ -11,15 +11,23 @@
             Lista de Produtos 
         </h3>
 
-       
+        <div class="lista-card">
             {% for produto in produtos %}
-                <div class="lista-card">
-                   
-                    <img src="{{produto.foto.url}}" height="250" widht="auto">
-                    <p> {{ produto.nome_produto }}<a href="{% url 'detalhes_produto' produto.id %}">  - {{produto.valor_produto}} - <a href="{% url 'detalhes_produto' produto.id %}"> </p>
-                </div>
+                <a href="{% url 'detalhes_produto' produto.id %}">
+                    <div class="card">
+                        <img class="foto_capa" src="{{produto.foto.url}}" height="250" widht="auto">
+                        <p>
+                            {{ produto.nome_produto }} - R$ {{produto.valor_produto}}
+                        </p>
+                        <p>
+                            <a href="{% url 'conf_excluir_produto' produto.id %}">Excluir produto</a>
+                            <a href="{% url 'pg_editar_prooduto' produto.id %}">Editar paciente</a>
+ 
+                        </p>
+                    </div>
+                </a>
             {% endfor%}
-      
+        </div>
        
 
     </body>
