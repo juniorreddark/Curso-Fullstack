@@ -8,6 +8,6 @@ urlpatterns = [
     path("produto", CriarProduto , name="cadastra-produto" ),
     path("categoria",CriarCategoria, name="cadastra-categoria" ),
     path("excluir-produto/<int:id_produto>",ExcluirProduto, name="conf_excluir_produto"),
-    path("editar-paciente/<int:id_produto>/", EditarProduto, name="pg_editar_produto")
+    path("editar-produto/<int:id_produto>/", EditarProduto, name="pg_editar_produto")
    
 ]

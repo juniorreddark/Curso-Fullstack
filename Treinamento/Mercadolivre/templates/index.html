@@ -16,12 +16,12 @@
                 <a href="{% url 'detalhes_produto' produto.id %}">
                     <div class="card">
                         <img class="foto_capa" src="{{produto.foto.url}}" height="250" widht="auto">
-                        <p>
+                        <p class="texto">
                             {{ produto.nome_produto }} - R$ {{produto.valor_produto}}
                         </p>
                         <p>
-                            <a href="{% url 'conf_excluir_produto' produto.id %}">Excluir produto</a>
-                            <a href="{% url 'pg_editar_prooduto' produto.id %}">Editar paciente</a>
+                            <button class="red"><a href="{% url 'conf_excluir_produto' produto.id %}">Excluir produto</a></button>
+                            <button class="red"><a href="{% url 'pg_editar_produto' produto.id %}">Editar produto</a></button>
  
                         </p>
                     </div>

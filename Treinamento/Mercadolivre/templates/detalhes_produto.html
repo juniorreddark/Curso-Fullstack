@@ -2,16 +2,25 @@
 <html>
     <body>
         <link rel="stylesheet" type="text/css" href="{% static 'style.css' %}">
-            <P>
+        <div class="lista-card">
+            
+            <button><a href="{% url "cadastra-categoria" %}"> mais Categorias </a></button>
+            <button><a href="{% url "cadastra-produto"%}"> mais produtos </a></button>
+            <button><a href="{% url "pagina-inicial" %}"> Pagina Inicial </a><button>
+            <button><a href="{% url 'conf_excluir_produto' produto.id %}">Excluir produto</a></button>
+            <button><a href="{% url 'pg_editar_produto' produto.id %}">Editar produto</a></button>
+        </div>
+            <h3>
                 Detalhes do Produto
-            </p>
+        </h3>
             <div class="lista-card">
-               
-                <img src="{{produto.foto.url}}" width="auto" height="250">
-                <p>
-                    {{ produto.nome_produto}} - R$ {{ produto.valor_produto}}
-                </p>
-                <span>{{ produto.informacao}}</span>
+                <div class="card">
+                    <img src="{{produto.foto.url}}" width="auto" height="250">
+                    <p>
+                        {{ produto.nome_produto}} - R$ {{ produto.valor_produto}}
+                    </p>
+                    <p>{{ produto.informacao}}</p>
+                </div>
                 
             </div>
         

@@ -51,9 +51,9 @@ def ExcluirProduto(request, id_produto):
         return redirect("pagina-inicial")
     return render(request, "conf_exclusao_produto.html", {"produto": busca_produto})
 
-def VerPacientes(request):
+def VerProdutos(request):
     produto_lista = Produto.objects.all()
-    return render(request, "lista-produtos.html", {"pacientes":produto_lista})
+    return render(request, "lista-produtos.html", {"produtos":produto_lista})
 
 def EditarProduto(request, id_produto):
     busca_produto = Produto.objects.get(id=id_produto)
@@ -61,7 +61,7 @@ def EditarProduto(request, id_produto):
         produto_editado = FormularioProduto(request.POST, instance=busca_produto)
         if produto_editado.is_valid():
             produto_editado.save()
-            return redirect('pagina_inicial')
+            return redirect("pagina-inicial")
     else:
         produto_editado = FormularioProduto(instance=busca_produto)
-    return render(request, "index.html", {"formulario": produto_editado})
+    return render(request, "formulario_produto.html", {"formulario": produto_editado})
