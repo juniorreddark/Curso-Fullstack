@@ -1,0 +1,15 @@
+<html>
+    <body>
+   
+        <h3> lista de Produtos </h3>
+        <a href="{% url "pagina_inicial" %}"> Cadastrar Produtos</a>
+        <a href="{% url "pg_editar_produto" %}"> Editar </a>
+        <ul>
+            {% for produto in produtos %}
+                <a href="{% url "detalhes_produto" %}">Ver Detalhes</a>
+                <li>{{produto.nome_produto}} - {{produto.valor_produto}}</li>
+                <img src="{{produto.foto.url}}" width ="250" height="300">
+            {% endfor %}
+        </ul>
+    </body>
+</html>
