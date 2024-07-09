@@ -27,13 +27,25 @@ def EditarProduto(request, id_produto):
         produto_editado = FormularioProduto(request.POST, instance=busca_produto)
         if produto_editado.is_valid():
             produto_editado.save()
-            return redirect("index.html")
+            return redirect("pagina-produto")
     else:
         produto_editado = FormularioProduto(instance=busca_produto)
     return render(request, "pagina-produtos.html", {"formulario": produto_editado})
 
 def DetalhesProduto(request, id_produto):
-    busca = Produto.objects.all()
+    busca = Produto.objects.get()
     return render(request, "detalhes.html", {"produto":busca})
+
+def ExcluirProduto(request, id_produto):
+    busca_produto=Produto.objects.get(id=id_produto)
+    if request.method== "POST":
+        busca_produto.delete()
+        return redirect("pagina-produto")
+
+
+    return render(request, "conf_exclusão_produto.html", {"produto":busca_produto})       
+    
+      
+    
         
     

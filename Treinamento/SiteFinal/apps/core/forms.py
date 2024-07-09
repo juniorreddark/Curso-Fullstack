@@ -16,5 +16,13 @@ class FormularioCategoria(forms.ModelForm):
         model = Categoria
         fields = "__all__"
 
+class FormularioServico(forms.ModelForm):
+    class Meta:
+        model = Servico
+        fields ="__all__"
 
+class FormularioOrdemServico(forms.ModelForm):
+    class Meta:
+        model = OrdemServico
+        fields = "__all__"
     

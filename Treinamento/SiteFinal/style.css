@@ -1,0 +1,14 @@
+.div_botoes{
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 10px;
+    column-gap: 10px;
+}
+
+button{
+    color: blue;
+}
+
+h2{
+    color: blueviolet;
+}

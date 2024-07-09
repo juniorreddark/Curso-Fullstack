@@ -33,7 +33,7 @@ class Servico(models.Model):
         return self.tipo_servico
     
 
-class OrdemServiço(models.Model):
+class OrdemServico(models.Model):
     cliente = models.ForeignKey(cliente, on_delete=models.CASCADE)
     Servico = models.ManyToManyField(Servico)
     data_servico = models.DateTimeField(auto_now_add=True)
