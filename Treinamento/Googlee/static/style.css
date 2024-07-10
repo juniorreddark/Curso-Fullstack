@@ -1,5 +1,8 @@
 p{
     color: blue;
+    text-align: center;
+    text-decoration: none;
+    list-style: none;
 }
 
 .lista-card{
@@ -23,14 +26,21 @@ h3{
     width: fit-content;
     height: fit-content;
     cursor: pointer;
-    background-color: aliceblue;
+    background-color: rgb(211, 222, 231);
 }
 
-p{
-    text-align: center;
-    text-decoration: none;
-    list-style: none;
+link{
+    box-shadow: 6px 6px 8px rgb(167,184 ,175 );
+   
+    display: flex;
+    flex-direction: column;
+    
+    cursor: pointer;
+   
 }
+
+
+   
 
 .foto_capa{
     border-radius: 10px 10px 0px 0px;
@@ -39,7 +49,8 @@ p{
 body{
     background-size: cover;
     background-repeat: "no-repeat";
-    background-image: url("https://3.bp.blogspot.com/-_PDpMo3sMXo/W_GNUsMojiI/AAAAAAAATRo/TKdxR2wJzQIXaH1zMuJS0n8rp6ZKiQN-wCLcBGAs/s2560/lamborghini-huracan-2880x1800-port-yellow-hd-5k-16657.jpg");
+    background-image: url("https://blog.paitomotors.com.br/wp-content/uploads/2020/12/post_thumbnail-9cc533c0e725c8cd219edbebe3d483ec.jpeg");
+
 }
 
 button{
@@ -60,22 +71,11 @@ a{
     
     cursor: pointer;
     text-decoration: none;
-    color: rgba(241, 236, 236, 0.986);
-    
+    color: rgba(0, 0, 0, 0.986);
+    align-items: center;
 }
 
-.red{
-    padding: 10px;
-    cursor: pointer;
-    text-decoration: none;
-    color: white;
-    box-shadow: 6px 6px 8px rgb(167,184 ,175 );
-    border: 1px solid #333;
-    border-radius: 10px;
-    width: fit-content;
-    height: fit-content;
-    background-color: #e90909; 
-}
+
 
 h3{
     color: #68f808;
@@ -85,10 +85,6 @@ h3{
     color: black;
 }
 
-.fundo{
-    background-size: cover;
-    background-repeat: "no-repeat";
-    background-image: url("C:\Users\ALUNO-13\Downloads\HD-wallpaper-tuned-lamborghini-italian.jpg");
-}   
+ 
 
 

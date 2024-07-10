@@ -12,9 +12,11 @@
                     <div class="card">
                         <img src="{{produto.foto.url}}" width ="250" height="300">  
                         <p>{{produto.nome_produto}} - {{produto.valor_produto}}</p>
-                            <a href="{% url "detalhes_produto" produto.id %}">Ver produto</a>
-                            <a href="{% url "pg-editar-produto" produto.id %}">  editar </a>
-                            <a href="{% url "conf_excluir_produto" produto.id %}"> Excluir </a>
+                        <div class="link">
+                            <a href="{% url "detalhes_produto" produto.id %}"><span>Ver produto</span></a>
+                            <a href="{% url "pg-editar-produto" produto.id %}"> <span> editar</span> </a>
+                            <a href="{% url "conf_excluir_produto" produto.id %}"><p>Excluir</p></a>
+                        </div>
                     </div>
                     
                 {% endfor %}

@@ -1,3 +1,88 @@
 p{
     color: blue;
+    text-align: center;
+    text-decoration: none;
+    list-style: none;
 }
+
+.lista-card{
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 10px;
+    column-gap: 10px;
+   
+}
+
+h3{
+    color: blue;
+}
+
+.card{
+    box-shadow: 6px 6px 8px rgb(167,184 ,175 );
+    border: 1px solid #333;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    width: fit-content;
+    height: fit-content;
+    cursor: pointer;
+    background-color: rgb(211, 222, 231);
+}
+
+span{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    row-gap: 10px;
+    column-gap: 10px;
+}
+
+
+   
+
+.foto_capa{
+    border-radius: 10px 10px 0px 0px;
+}
+
+body{
+    background-size: cover;
+    background-repeat: "no-repeat";
+    background-image: url("https://blog.paitomotors.com.br/wp-content/uploads/2020/12/post_thumbnail-9cc533c0e725c8cd219edbebe3d483ec.jpeg");
+
+}
+
+button{
+
+    padding: 10px;
+    cursor: pointer;
+    text-decoration: none;
+    color: white;
+    box-shadow: 6px 6px 8px rgb(167,184 ,175 );
+    border: 1px solid #333;
+    border-radius: 10px;
+    width: fit-content;
+    height: fit-content;
+    background-color: #e99b09; 
+}
+
+a{
+    
+    cursor: pointer;
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.986);
+    align-items: center;
+}
+
+
+
+h3{
+    color: #68f808;
+}
+
+.texto{
+    color: black;
+}
+
+ 
+
+
