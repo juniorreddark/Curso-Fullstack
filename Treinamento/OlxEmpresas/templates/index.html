@@ -1,0 +1,50 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <h2> Elabore Ordens de Servico </h2>
+
+        <div class="div_botoes">
+            <a href="">
+                <button>Ordem de Servico</button>
+            </a>
+
+            <a href="pg_criar_cliente">
+                <button> Cliente</button>
+            </a>
+
+            <a href="">
+                <button> Empresa </button>
+            </a>
+
+            <a href="">
+                <button> Servico </button>
+            </a>
+
+        </div>
+        {% for Ordemservico in Ordemservicos%}
+            <div class="card">
+                <div class="rotulo-card">
+                    <span>{{ Ordemservico.clente.nome }}</span>
+                    <span>{{Ordemservico.data_servico}}</span>
+                </div>
+
+                <ul>
+                    {% for servico in Ordemservico.servico.all %}
+                        <li>{{servico.tipo_servico }} - R$ {{ servico.valor_servico}} - {{ servico.empresa }}</li>
+                    {% endfor %}
+                </ul>
+
+                <span class="valor-total"> R$ {{ Ordemservico.valor_total }} </span>
+                <a class="valor-total" href="">
+                    <span> Excluir OS </span>
+                </a>
+            </div>
+        {% endfor %}
+    </body>
+</html>

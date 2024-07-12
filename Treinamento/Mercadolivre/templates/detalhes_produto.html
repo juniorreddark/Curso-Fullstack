@@ -4,11 +4,11 @@
         <link rel="stylesheet" type="text/css" href="{% static 'style.css' %}">
         <div class="lista-card">
             
-            <button><a href="{% url "cadastra-categoria" %}"> mais Categorias </a></button>
-            <button><a href="{% url "cadastra-produto"%}"> mais produtos </a></button>
-            <button><a href="{% url "pagina-inicial" %}"> Pagina Inicial </a><button>
-            <button><a href="{% url 'conf_excluir_produto' produto.id %}">Excluir produto</a></button>
-            <button><a href="{% url 'pg_editar_produto' produto.id %}">Editar produto</a></button>
+            <a href="{% url "cadastra-categoria" %}"><button> mais Categorias </button></a>
+            <a href="{% url "cadastra-produto"%}"> <button> mais produtos </button></a>
+            <a href="{% url "pagina-inicial" %}"> <button> Pagina Inicial <button></a>
+            <a href="{% url 'conf_excluir_produto' produto.id %}"><button> Excluir produto </button></a>
+            <a href="{% url 'pg_editar_produto' produto.id %}"><button> Editar produto </button></a>
         </div>
             <h3>
                 Detalhes do Produto
