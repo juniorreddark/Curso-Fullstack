@@ -1,6 +1,7 @@
 from django.shortcuts import render, redirect
 from .models import *
 from .forms import *
+import requests
 
 def VerIndex(request):
     busca_os = OrdemServico.objects.all()
@@ -42,6 +43,37 @@ def ExcluirCliente(request, id_cliente):
         busca_cliente.delete()
         return redirect("pg_criar_cliente")
     titulo_objeto = busca_cliente.nome
+    return render(request, "conf-excluir.html", {"valor": titulo_objeto})
+
+def CriarProduto(request):
+    busca_produtos = Produto.objects.all()
+    
+    if request.method == "GET":
+        novo_produto = FormularioProduto()
+    else:
+        produto_preenchido = FormularioProduto(request.POST)
+        if produto_preenchido.is_valid():
+            produto_preenchido.save()
+            return redirect("pg_criar_produto")
+    return render(request, "form-produto.html", {"form_produto": novo_produto, "produtos": busca_produtos})
+
+def EditarProduto(request, id_produto):
+    busca_produtos = Produto.objects.get(id=id_produto)
+    if request.method == "GET":
+        editar_produto = FormularioProduto(instance=busca_produtos)
+    else:
+        produto_editado = FormularioProduto(request.POST, instance=busca_produtos)
+        if produto_editado.is_valid():
+            produto_editado.save()
+            return redirect("pg_criar_produto")
+    return render(request, "form-produto.html", {"form_produto": editar_produto})
+
+def ExcluirProduto(request, id_produto):
+    busca_produto = Produto.objects.get(id=id_produto)
+    if request.method == "POST":
+        busca_produto.delete()
+        return redirect("pg_criar_produto")
+    titulo_objeto = busca_produto.nome_produto
     return render(request, "conf-excluir.html", {"valor": titulo_objeto})
 
 def CriarEmpresa(request):
@@ -154,3 +186,22 @@ def ExcluirOrdemServico(request, id_os):
         return redirect("pg_inicial")
     titulo_objeto = "OS: " + str(busca_os.id) + " | " + busca_os.cliente.nome
     return render(request, "conf-excluir.html", {"valor": titulo_objeto})
+
+def Ibge(request):
+    api="https://servicodados.ibge.gov.br/api/v1/localidades/estados/24/municipios"
+    requisicao = requests.get(api)
+
+    try:
+        municipios = requisicao.json()
+    except ValueError:
+        print("A resposta não chegou com o formato esperado.")
+
+    lista_municipios = []
+    for municipio in municipios:
+        lista_municipios.append(municipio)
+
+    return render(request, "ibgeRN.html", {"municipios":lista_municipios, "requisicao": requisicao})
+
+
+
+
