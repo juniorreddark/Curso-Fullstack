@@ -17,6 +17,7 @@
     <form method="post" id="form-empresa">
         {% csrf_token %}
         
+        
         <p>
         <label for="id_empresa">Razão Social:</label>
         <input type="text" name="razao_social" maxlength="100"  id="razao_social" value="{{ empresa.razao_social }}">  

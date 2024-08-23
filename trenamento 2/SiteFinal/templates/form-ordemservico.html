@@ -16,8 +16,8 @@
 
             <p>
                 <label for="cliente">Cliente:</label>
-                <select name="cliente_id" required="" id="cliente_id">
-                    <option value="" selected=""></option>
+                <select name="cliente_id" required="" id="cliente_id"> {{ ordemservico.cliente.nome }}
+                    <option value="{{ ordemservico.cliente_id }}" selected="{{ ordemservico.cliente_id }}">{{ ordemservico.cliente.nome }}</option>
                     {% for cliente in clientes %}
                         <option value="{{ cliente.id }}">{{ cliente.nome }}</option>
                     {% endfor %}
@@ -27,7 +27,7 @@
                 <p>
                     <label for="servico">Servico:</label>
                     <select name="servico_id" required="" id="servico_id">
-                        <option value="" selected=""></option>
+                        <option value="{{ ordemservico.servico_id }}" selected="{{ ordemservico.servico_id }}">{{ ordemservico.servico.tipo }}</option>
                         {% for servico in servicos %}
                             <option value="{{ servico.id }}">{{ servico.tipo }}</option>
                         {% endfor %}
