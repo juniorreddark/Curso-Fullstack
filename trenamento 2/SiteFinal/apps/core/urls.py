@@ -16,10 +16,12 @@ urlpatterns = [
     path("editar-categoria/<int:id_categoria>", EditarCategoria, name="pg_editar_categoria"),
     path("excluir-categoria/<int:id_categoria>", ExcluirCategoria, name="pg_excluir_categoria"),
     path("criar-ordemservico", CriarOrdemServico, name="pg_criar_ordemservico"),
-    path("excluir-ordemservico/<int:id_os>", ExcluirOrdemServico, name="pg_excluir_ordemservico"),
+    path("excluir-ordemservico/<int:id_ordemservico>", ExcluirOrdemservico, name="pg_excluir_ordemservico"),
+    path("editar-ordemservico/<int:id_ordemservico>", EditarOrdemservico, name="pg_editar_ordemservico"),
     path("criar_produto",CriarProduto, name="pg_criar_produto"),
-    path("editar_produto/<int:id_produto>",EditarProduto, name="editar_produto"),
-    path("excluir_produto/<int:id_produto>",ExcluirProduto, name="excluir_produto"),
-    path("ibge", Ibge, name="ibge"),
+    path("editar_produto/<int:id_produto>",EditarProduto, name="pg_editar_produto"),
+    path("excluir_produto/<int:id_produto>",ExcluirProduto, name="pg_excluir_produto"),
+    #path("ibge", Ibge, name="ibge"),
+    path("token", RetornaToken, name="token"),
 
 ]

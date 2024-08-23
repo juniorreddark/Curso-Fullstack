@@ -1,25 +1,95 @@
+{% extends "base.html" %}
 {% load static %}
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Formulário Ordem de Serviço</title>
-    </head>
-    <body>
-        <a href="{% url "pg_inicial" %}">
-            <button>Voltar</button>
+{% block titulo %}
+    <script src="{% static 'js/validacoes.js' %}"></script>
+    <title>Formulário Ordem de Serviço</title>
+{% endblock %}
+
+{% block conteudo %}
+    <a href="{% url "pg_inicial" %}">
+        <button class="btn btn-warning">Voltar</button>
         </a>
         <h2>Formulário Ordem de Serviço</h2>
 
-        <form method="post">
+        <form method="post" id="form-ordemservico">
             {% csrf_token %}
-            {{ form_ordemservico.as_p }}
-            <button type="submit">Salvar</button>
-            <a href="{% url "pg_inicial" %}">
-                <button type="button">Cancelar</button>
-            </a>
+
+            <p>
+                <label for="cliente">Cliente:</label>
+                <select name="cliente_id" required="" id="cliente_id">
+                    <option value="" selected=""></option>
+                    {% for cliente in clientes %}
+                        <option value="{{ cliente.id }}">{{ cliente.nome }}</option>
+                    {% endfor %}
+                </select>
+                </p>
+
+                <p>
+                    <label for="servico">Servico:</label>
+                    <select name="servico_id" required="" id="servico_id">
+                        <option value="" selected=""></option>
+                        {% for servico in servicos %}
+                            <option value="{{ servico.id }}">{{ servico.tipo }}</option>
+                        {% endfor %}
+                    </select>
+                </p>
+
+                <p>
+                    
+                <label for="data">Escolhe a data:</label>
+                <input type="date" name="data" id="data" value="{{ ordemservico.data }}">
+                </p>
+
+                <button type="submit" class="btn btn-primary">Salvar</button>
+                <a href="{% url "pg_inicial" %}">
+                    <button type="button" class="btn btn-danger" >Cancelar</button>
+                </a>
+            </p>
         </form>
 
-    </body>
-</html>
+        <h2>Lista de Ordem de Serviços</h2>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th scope="col">ID</th>
+                    <th scope="col">Cliente</th>
+                    <th scope="col">Servico</th>
+                    <th scope="col">Data</th>
+                    <th scope="col">Opções</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for ordemservico in ordemservicos %}
+                    <tr>
+                        <th scope="row">{{ordemservico.id }}</th>
+                        <td>{{ordemservico.cliente.nome }}</td>
+                        <td>{{ ordemservico.servico.tipo }}</td>
+                        <td>{{ ordemservico.data }}</td>
+                        <td>
+                            <div class="btns_formulario">
+                                <a href="{% url "pg_editar_ordemservico" ordemservico.id %}">
+                                    <img src="https://img.icons8.com/?size=100&id=LYxuAJx02Ige&format=png&color=000000" heght="35" width="40" data-bs-toggle="tooltip"
+                                    title="Editar Categoria">
+                                  
+                                </a>
+                                <a href="{% url "pg_excluir_ordemservico" ordemservico.id %}" onclick="confirm('Deseja excluir?')">
+                                    <img src="data:image/png;base64,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" heght="30" width="40" 
+                                    title="Excluir Categoria">
+                                   
+                                </a>
+                            </div>
+
+                          
+                        </td>
+                    </tr>
+                </div>
+                {% endfor %}
+            </tbody>
+        </table>
+
+
+      
+
+   
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+{% endblock %}
