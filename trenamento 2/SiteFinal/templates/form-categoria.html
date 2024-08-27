@@ -3,33 +3,43 @@
 {% block titulo %}
    
     <title>Formulario de Categoria</title>
+    <link rel="stylesheet" href="{% static "style.css" %}">
     <script src="{% static 'js/validacoes_categoria.js' %}"></script>
+    <div class="bts_voltar">
+        <a href="{% url "pg_inicial" %}">
+            <button class="btn btn-warning" >Voltar</button>
+        </a>
+    </div>
 {% endblock %}
 
 {% block conteudo %}
-        <a href="{% url "pg_criar_servico" %}">
-            <button class="btn btn-warning" >Voltar</button>
-        </a>
+    <div class="container">    
         <h2>Formulário Categoria</h2>
 
         <form method="post" id="form_categoria">
             {% csrf_token %}
-            <p>
-            <label for="id_tipo">Tipo:</label>
-            <input type="text" name="tipo" maxlength="100" required="" id="id_tipo" value="{{ categoria.tipo }}">  
-            </p>
-            <button type="submit" class="btn btn-primary">Salvar</button>
-            <a href="{% url "pg_criar_servico" %}">
-                <button type="button" class="btn btn-danger">Cancelar</button>
-            </a>
-        </form>
+            <div>
+                <p>
+                <label for="id_tipo">Tipo:</label>
+                <input type="text" name="tipo" maxlength="100" required="" id="id_tipo" value="{{ categoria.tipo }}">  
+                </p>
+            </div>
 
+            <div>
+                <button type="submit" class="btn btn-primary">Salvar</button>
+                <a href="{% url "pg_criar_servico" %}">
+                    <button type="button" class="btn btn-danger">Cancelar</button>
+                </a>
+            </div>
+        </form>
+    </div>
+    <div class="container"> 
         <h2>Lista de Categorias</h2>
         <table class="table">
             <thead>
                 <tr>
                     <th scope="col">ID</th>
-                    <th scope="col">Tipo<th>
+                    <th scope="col">Tipo</th>
                     <th scope="col">Opçôes</th>
                 </tr>
             </thead>
@@ -54,9 +64,11 @@
                             
                         </div>
                     </td>
+                </tr>
                    
                 {% endfor %}
             </tbody>
         </table>
+    </div>
 
 {% endblock%}

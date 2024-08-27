@@ -3,7 +3,7 @@
     flex-direction: column;
     border: 1px solid #000;
     width: fit-content;
-    align-items: center;
+    
     margin-bottom: 20px;
 }
 
@@ -17,3 +17,6 @@ img{
     column-gap: 20px;
 }
 
+body{
+
+}

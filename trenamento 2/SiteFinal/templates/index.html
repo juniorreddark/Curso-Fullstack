@@ -1,80 +1,42 @@
+{% extends "base.html" %}
 {% load static %}
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+{% block titulo %}
+
         <link rel="stylesheet" href="{% static "style.css" %}">
         <script src="{% static 'js/validacoes.js' %}"></script>
         <title>Elabore Ordens de Serviços</title>
-    </head>
-    <body>
         <h2>Elabore Ordens de Serviços</h2>
+{% endblock%}
+
+{% block conteudo %}
 
         <ul class="nav nav-tabs">
             <li class="nav-item">
-              <a class="nav-link active" href="{% url "pg_criar_ordemservico" %}">ordemservico</a>
+              <a class="nav-link active" href="{% url "pg_criar_ordemservico" %}">Ordem de Serviço</a>
             </li>
+
             <li class="nav-item">
-              <a class="nav-link" href="#">servico</a>
+              <a class="nav-link" href="{% url "pg_criar_cliente" %}">Cliente</a>
             </li>
+
             <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
+              <a class="nav-link" href="{% url "pg_criar_empresa" %}">Empresa</a>
             </li>
+
             <li class="nav-item">
-              <a class="nav-link disabled" href="#">Desativado</a>
+                <a class="nav-link" href="{% url "pg_criar_servico" %}">Serviço</a>
             </li>
-          </ul>
-  
 
-        <div class="div_botoes">
-            <a href="{% url "pg_criar_ordemservico" %}">
-                <button>Ordem de Serviço</button>
-            </a>
+            <li class="nav-item">
+                <a class="nav-link  " href="{% url "pg_criar_produto" %}">Produto</a>
+            </li>
+            
+            
 
-            <a href="{% url "pg_criar_cliente" %}">
-                <button>Cliente</button>
-            </a>
-
-            <a href="{% url "pg_criar_empresa" %}">
-                <button>Empresa</button>
-            </a>
-
-            <a href="{% url "pg_criar_servico" %}">
-                <button>Serviço</button>
-            </a>
-
-            <a href="{% url "pg_criar_produto" %}">
-                <button>Produto</button>
-            </a>
-
-            <a href="{% url "pg_criar_categoria" %}">
-                <button>Categoria</button>
-            </a>
-
-           
-        </div>
+            <li class="nav-item">
+                <a class="nav-link disabled " href="{% url "pg_criar_categoria" %}">Categoria</a>
+            </li>
+        </ul>
         
-        {% for os in ordemservicos %}
-            <div class="card">
-                <div class="rotulo-card">
-                    <span>{{ os.cliente.nome }}</span>
-                    <span>{{ os.data_servico }}</span>
-                </div>
-                
-                <ul>
-                    {% for servico in os.servico.all %}
-                        <li>{{ servico.tipo_servico }} - R$ {{ servico.valor_servico }} - {{ servico.empresa }}</li>
-                    {% endfor %}
-                </ul>
-                
-                <span class="valor-total">R$ {{ os.valor_total }}</span>
-                <a class="valor-total" href="{% url "pg_excluir_ordemservico" os.id %}">
-                    <span>Excluir OS</span>
-                </a>
-            </div>
-        {% endfor %}
-
-    </body>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-</html>
+{% endblock%}

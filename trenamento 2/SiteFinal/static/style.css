@@ -30,3 +30,17 @@ body{
 .valor-total{
     text-align: right;
 }
+
+body {
+    background-color: rgb(70,90,70); /* Cor de fundo cinza claro */
+}
+
+.bts_voltar{
+    margin-left: 0;
+    margin-right: auto;
+}
+
+.container{
+    background-color:rgb(255,255,255);
+    border-radius:4,4,4,4; 
+}
