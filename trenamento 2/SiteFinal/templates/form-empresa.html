@@ -3,7 +3,7 @@
 
 {% block titulo %}
     
-    <link rel="stylesheet" href="{% static "style.css" %}">
+
     <title>Formulário Empresa</title>
     <div class="bts_voltar">
         <a href="{% url "pg_inicial" %}">
@@ -33,11 +33,42 @@
                 <input type="text" name="cnpj" maxlength="14" id="cnpj" value="{{ empresa.cnpj }}">  
                 </p>
             </div>
+
             <div>
-                <button type="submit" class="btn btn-primary">Salvar</button>
-                <a href="{% url "pg_criar_empresa" %}">
-                    <button type="button" class="btn btn-danger">Cancelar</button>
-                </a>
+                <p>
+                <label for="id_empresa">Endereço</label>
+                <input type="text" name="endereco" maxlength="100"  id="endereco" value="{{ empresa.endereco }}">  
+                </p>
+            </div>
+
+            <div>
+                <p>
+                <label for="id_empresa">Telefone</label>
+                <input type="text" name="telefone" maxlength="20"  id="telefone" value="{{ empresa.telefone }}">  
+                </p>
+            </div>
+
+            <div>
+                <p>
+                <label for="id_empresa">Número</label>
+                <input type="text"name="numero" maxlength="6"  id="numero" value="{{ empresa.numero }}">  
+                </p>
+            </div>
+
+            <div>
+                <p>
+                <label for="id_empresa">Cep</label>
+                <input type="text"name="cep" maxlength="12"  id="cep" value="{{ empresa.cep }}">  
+                </p>
+            </div>
+
+            <div>
+                <p>
+                    <button type="submit" class="btn btn-primary">Salvar</button>
+                    <a href="{% url "pg_criar_empresa" %}">
+                        <button type="button" class="btn btn-danger">Cancelar</button>
+                    </a>
+                </p>
             </div>
         </form>
     </div>
@@ -50,6 +81,10 @@
                 <th scope="col">ID</th>
                 <th scope="col">Razão Social</th>
                 <th scope="col">CNPJ</th>
+                <th scope="col">Endereço</th>
+                <th scope="col">Número</th>
+                <th scope="col">Cep</th>
+                <th scope="col">Telefone</th>
                 <th scope="col">Opções</th>
             </tr>
             </thead>
@@ -60,6 +95,10 @@
                         <th scope="row">{{ empresa.id }}</th>
                         <td>{{ empresa.razao_social }}</td>
                         <td>{{ empresa.cnpj }}</td>
+                        <td>{{ empresa.endereco }}</td>
+                        <td>{{ empresa.numero }}</td>
+                        <td>{{ empresa.cep }}</td>
+                        <td>{{ empresa.telefone }}</td>
                         <td>
                                 <div class="btns_formulario">
                                     <a href="{% url "pg_editar_empresa" empresa.id %}">

@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Criar Ordem de Serviço</title>
+</head>
+<body>
+    <form action="{{ route('orders.store') }}" method="POST">
+        @csrf
+        <!-- Outros campos do formulário -->
+        
+        <input type="hidden" name="status" value="0"> <!-- Define o status como falso por padrão -->
+        
+        <button type="submit">Salvar Ordem de Serviço</button>
+    </form>
+</body>
+</html>

@@ -2,15 +2,17 @@
 {% load static %}
 {% block titulo %}
     <script src="{% static 'js/validacoes.js' %}"></script>
-    <link rel="stylesheet" href="{% static "style.css" %}">
+   
     <title>Formulário Serviço</title>
     <div class="bts_voltar">
-        <a href="{% url "pg_inicial" %}">
-            <button class="btn btn-warning" >Voltar</button>
-        </a>
-        <a href="{% url "pg_criar_categoria" %}">
-            <button  class="btn btn-info">+ Categoria</button>
-        </a>
+        
+            <a href="{% url "pg_inicial" %}">
+                <button class="btn btn-warning" >Voltar</button>
+            </a>
+            <a href="{% url "pg_criar_categoria" %}">
+                <button  class="btn btn-info">+ Categoria</button>
+            </a>
+      
     </div>
     
 {% endblock%}
@@ -60,10 +62,12 @@
                 </div>
 
                 <div>
-                    <button type="submit" class="btn btn-primary">Salvar</button>
-                    <a href="{% url "pg_inicial" %}">
-                        <button type="button" class="btn btn-danger">Cancelar</button>
-                    </a>
+                    <p>
+                        <button type="submit" class="btn btn-primary">Salvar</button>
+                        <a href="{% url "pg_inicial" %}">
+                            <button type="button" class="btn btn-danger">Cancelar</button>
+                        </a>
+                    </p>
                 </div>
             </form>
 

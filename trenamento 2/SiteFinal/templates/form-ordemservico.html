@@ -2,7 +2,7 @@
 {% load static %}
 {% block titulo %}
     <script src="{% static 'js/validacoes.js' %}"></script>
-    <link rel="stylesheet" href="{% static "style.css" %}">
+   
     <title>Formulário Ordem de Serviço</title>
     <div class="bts_voltar">
         <a href="{% url "pg_inicial" %}">
@@ -51,6 +51,27 @@
 
             <div>
                 <p>
+                    <label for="status">Status</label>
+                    <select name="status" id="status">
+                        {% if ordemservico %}
+                            <option value="{{ ordemservico.status }}" selected="{{ ordemservico.status }}">
+                                {% if ordemservico.status == 0 %}
+                                    <td> Em andamento </td>
+                                {% else %}
+                                    <td> concluido </td>
+                                {% endif %}
+                            </option>
+                        {% else %}
+                        <option value=""></option>
+                        {% endif %}
+                        <option value="0">Em andamento</option>
+                        <option value="1">concluido</option>
+                    </select>
+                </p>
+            </div>
+
+            <div>
+                <p>
                     <button type="submit" class="btn btn-primary">Salvar</button>
                     <a href="{% url "pg_inicial" %}">
                         <button type="button" class="btn btn-danger" >Cancelar</button>
@@ -69,7 +90,9 @@
                         <th scope="col">Cliente</th>
                         <th scope="col">Servico</th>
                         <th scope="col">Data</th>
+                        <th scope="col">Status</th>
                         <th scope="col">Opções</th>
+                       
                     </tr>
                 </thead>
                 <tbody>
@@ -79,6 +102,11 @@
                             <td>{{ordemservico.cliente.nome }}</td>
                             <td>{{ ordemservico.servico.tipo }}</td>
                             <td>{{ ordemservico.data }}</td>
+                            {% if ordemservico.status == 0 %}
+                                <td> Em andamento </td>
+                            {% else %}
+                                <td> Concluido </td>
+                            {% endif %}
                             <td>
                                 <div class="btns_formulario">
                                     <a href="{% url "pg_editar_ordemservico" ordemservico.id %}">
@@ -92,14 +120,16 @@
                                     
                                     </a>
                                 </div>
-
-                            
                             </td>
+                           
                         </tr>
                     </div>
                     {% endfor %}
                 </tbody>
             </table>
+
+
+
     </div>
 
 

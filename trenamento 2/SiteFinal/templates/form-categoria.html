@@ -3,7 +3,7 @@
 {% block titulo %}
    
     <title>Formulario de Categoria</title>
-    <link rel="stylesheet" href="{% static "style.css" %}">
+   
     <script src="{% static 'js/validacoes_categoria.js' %}"></script>
     <div class="bts_voltar">
         <a href="{% url "pg_inicial" %}">
@@ -26,10 +26,12 @@
             </div>
 
             <div>
-                <button type="submit" class="btn btn-primary">Salvar</button>
-                <a href="{% url "pg_criar_servico" %}">
-                    <button type="button" class="btn btn-danger">Cancelar</button>
-                </a>
+                <p>
+                    <button type="submit" class="btn btn-primary">Salvar</button>
+                    <a href="{% url "pg_criar_servico" %}">
+                        <button type="button" class="btn btn-danger">Cancelar</button>
+                    </a>
+                </p>
             </div>
         </form>
     </div>

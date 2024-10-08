@@ -17,6 +17,14 @@ img{
     column-gap: 20px;
 }
 
-body{
-
+.container{
+    background-color:rgb(255,255,255);
+    
+    width: 200px;
+    height: 100px;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 15px 10px 20px 5px;
+    
+    background-color: #333;
 }

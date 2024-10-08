@@ -501,6 +501,11 @@ def CriarEmpresa(request):
             json = {
                 'razao_social': request.POST['razao_social'],
                 'cnpj': request.POST['cnpj'],
+                'endereco': request.POST['endereco'],
+                'telefone': request.POST['telefone'],
+                'numero': request.POST['numero'],
+                 'cep': request.POST['cep'],
+
             }
                    
             # Fazendo a solicitação POST
@@ -548,7 +553,8 @@ def EditarEmpresa(request, id_empresa):
         # Dados que você deseja enviar no corpo da solicitação POST
         json = {
             'cnpj': request.POST['cnpj'],
-            'razao_social': request.POST['razao_social']
+            'razao_social': request.POST['razao_social'],
+            'endereco': request.POST['endereco'],
         }
                
         # Fazendo a solicitação POST
@@ -640,6 +646,8 @@ def CriarCliente(request):
                     print("A resposta não é um JSON válido.")
             else:
                 return HttpResponse('Erro ao consumir a API: ', response.status_code)
+
+
     
 def EditarCliente(request, id_cliente):
     url_editar_cliente = 'http://127.0.0.1:9000/api/clientes/' + str(id_cliente) # Substitua pela URL da API real
@@ -925,6 +933,7 @@ def CriarOrdemServico(request):
             'cliente_id': request.POST['cliente_id'],
             'servico_id': request.POST['servico_id'],
             'data': request.POST['data'],
+            'status': request.POST['status'],
             
         }
                
