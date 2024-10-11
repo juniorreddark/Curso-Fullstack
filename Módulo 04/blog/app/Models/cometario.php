@@ -8,4 +8,5 @@ use Illuminate\Database\Eloquent\Model;
 class cometario extends Model
 {
     use HasFactory;
+    protected $fillable = ['coteudo','data_comentario','foto'];
 }

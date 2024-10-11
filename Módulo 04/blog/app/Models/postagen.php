@@ -8,4 +8,5 @@ use Illuminate\Database\Eloquent\Model;
 class postagen extends Model
 {
     use HasFactory;
+    protected $fillable = ['titulo','conteudo','foto'];
 }
