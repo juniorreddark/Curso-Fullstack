@@ -22,6 +22,8 @@ return new class extends Migration
                 ->on('users')
                 ->onDelete('cascade');
             $table->unsignedBigInteger('postagem_id');
+            /*$table->foreignId('postagem_id')->constrained()->onDelete('cascade');
+            $table->foreignId('user_id')->constrained()->onDelete('cascade');*/
             $table->foreign('postagem_id')
                 ->references('id')
                 ->on('postagens')

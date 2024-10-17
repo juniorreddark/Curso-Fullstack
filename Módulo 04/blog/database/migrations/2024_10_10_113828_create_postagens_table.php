@@ -16,6 +16,7 @@ return new class extends Migration
             $table->string('titulo');
             $table->longText('conteudo');
             $table->date('data_postagens');
+            /*$table->foreignId('user_id')->constrained()->onDelete('cascade');*/
             $table->unsignedBigInteger('user_id');
             $table->foreign('user_id')
                 ->references('id')

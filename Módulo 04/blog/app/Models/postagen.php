@@ -4,6 +4,7 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use App\Models\cometario;
 
 class postagen extends Model
 {
@@ -13,5 +14,10 @@ class postagen extends Model
     public function user()
     {
         return $this->belongsTo(User::class);
+    }
+
+    public function comentarios()
+    {
+        return $this->hasMany(Cometario::class);
     }
 }
