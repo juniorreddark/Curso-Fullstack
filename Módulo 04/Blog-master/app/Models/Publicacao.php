@@ -8,10 +8,19 @@ use Illuminate\Database\Eloquent\Model;
 class Publicacao extends Model
 {
     use HasFactory;
-    protected $fillable =["user_id","id_publicacao","foto","titulo_prato","local",];
+
+    public $fillable = ['user_id', 'empresa_id','titulo_prato', 'conteudo', 'foto', 'local','cidade'];
 
     public function user()
     {
-        return $this->belongsTo(Useer::class);
+        return $this->belongsTo(User::class);
+    }
+
+    public function cometario()
+    {
+
+        return $this->hasMany(Cometario::class);
     }
 }
+
+

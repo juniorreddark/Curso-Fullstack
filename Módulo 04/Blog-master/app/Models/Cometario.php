@@ -8,10 +8,6 @@ use Illuminate\Database\Eloquent\Model;
 class Cometario extends Model
 {
     use HasFactory;
-    protected $fillable = ['conteudo','data_comentario','foto'];
 
-    public function user()
-    {
-        return $this->belongsTo(User::class);
-    }
+    protected $fillable = ['coteudo','data_cometario','foto'];
 }
