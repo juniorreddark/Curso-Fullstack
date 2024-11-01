@@ -548,6 +548,8 @@ O ChatGPT disse:
 ChatGPT
 Aqui está o diagrama de estrutura de banco de dados para o sistema de gerenciamento de uma loja de roupas.
 
+O diagrama inclui tabelas como 'Produtos', 'Categorias', 'Clientes', 'Pedidos' e 'Itens do Pedido', com as relações entre elas. Espero que ajude no seu projeto!
+
 
 
 
