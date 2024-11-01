@@ -1,0 +1,90 @@
+ body{
+
+    
+    background-image: url(https://static.vecteezy.com/ti/fotos-gratis/t1/3164360-quarto-escuro-vazio-com-fundo-preto-e-luz-fraca-foto.jpg);
+    text-align: center;
+font-family:Arial, Helvetica, sans-serif ;
+}
+#botao{
+    background-color: rgb(230, 213, 213);
+    color: rgb(0, 0, 0);
+    border: 1px solid rgb(209, 193, 193);
+    padding: 40px;
+    font-size: 1.4em;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 20px
+    
+
+}
+
+#botao:hover{
+    background-color: rgb(209, 193, 193);
+    color: rgb(0, 0, 0);
+    border: 1px solid rgb(230, 213, 213);
+    padding: 40px;
+    font-size: 1.4em;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 20px
+}
+#botao2{
+    background-color: rgb(230, 213, 213);
+    color: rgb(0, 0, 0);
+    border: 1px solid rgb(209, 193, 193);
+    padding: 40px;
+    font-size: 1.4em;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-left: 20px;
+    margin-right: 10px;
+    margin-top: 20px
+}
+#botao2:hover{
+    background-color: rgb(209, 193, 193);
+    color: rgb(0, 0, 0);
+    border: 1px solid rgb(230, 213, 213);
+    padding: 10px;
+    font-size: 1.2em;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 20px
+}
+#mais{
+    background-color: rgb(230, 213, 213);
+    color: rgb(0, 0, 0);
+    border: 1px solid rgb(209, 193, 193);
+    padding: 40px;
+    font-size: 1.2em;
+    border-radius: 20px;
+    cursor: pointer;
+    
+}
+#mais:hover{
+    background-color: rgb(209, 193, 193);
+    color: rgb(0, 0, 0);
+    border: 1px solid rgb(230, 213, 213);
+    padding: 40px;
+    font-size: 1.2em;
+    border-radius: 20px;
+    cursor: pointer;
+    
+}
+#boneco{
+    background-color: rgb(230, 213, 213);
+    color: rgb(0, 0, 0);
+    border: 1px solid rgb(209, 193, 193);
+    padding: 40px;
+    font-size: 1.2em;
+    border-radius: 20px;
+    cursor: pointer;
+    
+}
+
+

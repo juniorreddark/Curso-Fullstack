@@ -1,0 +1,59 @@
+body{
+    font-family:Georgia, 'Times New Roman', Times, serif
+    'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+header{
+    background-color:beige;
+}
+label{
+    color:rgb(2, 140, 94) 
+}
+body{
+    background-image: url("https://agenciagov.ebc.com.br/noticias/202309/fiocruz-lanca-plataforma-de-dados-climaticos-ambientais-e-de-saude/@@download/image/IMAGEM_CLIMA_MENOR.jpg");
+}
+h2{
+    background-color: beige;
+}
+
+h1{
+    color:cadetblue;
+}
+
+h2{
+    color:cadetblue
+}
+footer{
+    text-align: center;
+    background-color: dodgerblue;
+}
+section{
+    background-color: beige;
+}
+article{
+    line-height: 2em;
+    background-color: beige;
+}
+:hover main{
+    background-color: rgb(212, 178, 178);
+    color: rgb(0, 88, 88);
+    
+}
+button{
+    
+    padding: 10px;
+    font-size: 1.2em;
+    font-weight: 100px;
+    border: none;
+    border-radius: 5px;
+     margin-right: 20px;
+     box-shadow: 1px,2px 2px rgb(7, 7, 84);
+     cursor: pointer;
+     display: block;
+    }
+nav{
+    margin-inline: 4px;
+
+}
+button:hover{
+    background-color: rgb(100, 100, 100);
+    color: rgb(0, 0, 0);}

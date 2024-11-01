@@ -1,0 +1,22 @@
+div{
+    width: 200px;
+    height: 200px;
+    border: 2px solid black;
+    border-radius: 5px;
+    display: inline-block;
+    margin: 10px;
+    
+}
+
+.D1{
+    background-color:burlywood;
+
+}
+.D2{
+    background-image: linear-gradient(90deg,  blue,yellow);
+
+}
+.D3{
+    background-image: url("leao.jpg");
+    background-position: center center;
+}

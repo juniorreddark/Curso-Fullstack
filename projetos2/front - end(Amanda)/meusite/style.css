@@ -1,0 +1,234 @@
+*{ 
+    /* serve para deixar o menu no topo */
+    margin: 0;
+    padding: 0;
+}
+/* serve para mudar a cor do fundo do site */
+:root{
+    background: linear-gradient(to right, #FFDEE9, #B5FFFC);
+}
+/* o > serve para mexer no filho da teg ou seja no que esta entre a teg body */
+body > nav{
+    font-family:roboto-regular {
+        font-family: "Roboto", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        background-repeat: no-repeat;
+        cursor: pointer;
+    }
+}
+/* este é o corpo do site  */
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(156, 99, 99, 0.606) ;
+
+}
+/* esta teg serve para modificar o que está dentro do link  */
+nav{
+   padding: 10PX;
+    margin: 0; 
+    text-align: right;
+    padding: 20px;
+    cursor: pointer;
+    
+}
+/* está classe serve para mecher somente no que está dentro do link */
+.home{
+   
+ padding: 10PX; 
+    margin: 20px; 
+    text-align: right;
+    
+    cursor: pointer;
+}
+/* com está teg pode mexer nas imagens */
+main{
+    display: flex;
+    justify-content: center;
+     align-items: center; 
+    text-align: center;
+}
+/* serve para mexer na imagem da logo */
+#logo{
+    border-radius: 50%;
+    cursor: pointer;
+}
+/*  */
+#div{
+     display: flex;
+    justify-content: center;
+    align-items: center;
+ 
+
+} 
+/* serve para mexer no titulo */
+section{
+    background: linear-gradient(45deg, #ffcc99, #ff99cc);
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* serve para mexer na borda da imagem */
+.cachorros{
+    border-radius: 10%;
+    border: black solid;
+
+}
+/* serve para mexer nas imagens para deixar centralizada */
+.produto{
+    text-align: center;
+   margin-top: 100px;
+   margin-right: 10px;
+
+/*  essas dos pets é para mexer com o delizamento do mouse */
+}#pet1{ 
+ cursor: pointer; 
+}
+#pet2{
+    display: inline-block;
+    cursor: pointer;
+    text-align: center; 
+}
+#pet3{
+    text-align: center; 
+    display: inline-block;
+    cursor: pointer;
+    
+}  
+nav > a{
+    
+    padding: 10px;
+    color: rgb(241, 241, 241);
+    text-decoration: none;
+    cursor: pointer;
+}
+nav > a:hover{
+    color: rgb(25, 16, 16);
+    text-decoration: underline;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+main > a {
+    text-align: left;
+    cursor: pointer;
+
+}
+/* abrir e fechar os botoes (dialog) serve para colocar o model e paprecer para o usuário os dados do produto */
+#Abrir1{
+
+    background-color:bisque;
+    color:  black;
+    text-decoration: none;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 10px;
+    text-align: center;
+    font-weight: bold;  
+    cursor: pointer;
+}
+#dialog1{
+    background-color: bisque;
+    color: black;
+    text-decoration: none;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 10px;
+    text-align: center;
+    font-weight: bold;  
+    cursor: pointer;
+}
+#tamanho1{
+    background-color: greenyellow;
+    color:  black;
+    text-decoration: none;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 10px;
+    text-align: center;
+    font-weight: bold;  
+    cursor: pointer;
+
+}
+
+#Abrir2{
+    background-color: antiquewhite;
+    color:  black;
+    text-decoration: none;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 10px;
+    text-align: center;
+    font-weight: bold;  
+    cursor: pointer;
+}
+#tamanho2{
+    background-color: greenyellow;
+    color:  black;
+    text-decoration: none;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 10px;
+    text-align: center;
+    font-weight: bold;  
+    cursor: pointer;
+
+}
+
+#Abrir3{
+    background-color:antiquewhite;
+    color:  black;
+    text-decoration: none;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 10px;
+    text-align: center;
+    font-weight: bold;  
+    cursor: pointer;
+}
+#tamanho3{
+    background-color: greenyellow;
+    color:  black;
+    text-decoration: none;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 10px;
+    text-align: center;
+    font-weight: bold;  
+    cursor: pointer;
+}
+#fecha1{
+    background-color:  antiquewhite;
+    color:  black;
+    text-decoration: none;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 10px;
+    text-align: center;
+    font-weight: bold;  
+    cursor: pointer;
+}
+nav > #imagem {
+    display: flex;
+}
+footer{
+    margin-top: 20px;
+    background: linear-gradient(#0f0e0e, #494d4d);
+    text-align: center;
+    font-weight:"Roboto", sans-serif ;
+    color: rgb(0, 0, 0);
+}
+
+
+
+
+
+
+
+        
+        
+
+
+    

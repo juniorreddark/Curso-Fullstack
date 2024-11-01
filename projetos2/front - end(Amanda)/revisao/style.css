@@ -1,0 +1,53 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+body{
+
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+    
+
+}
+.texto1{
+    background-color: rgb(133, 133, 177);
+    color: rgb(1, 0, 0);
+    padding: 10px;
+    line-height: 20px;
+    font-weight: bold;
+}
+
+h1{
+    text-align: center;
+    color:brown;
+    font-size:  xx-large;
+}
+button  > a{
+   font-size: 1.3em; 
+   color: rgb(88, 23, 152); 
+     text-decoration:none; 
+
+ }    
+
+#btn2{
+box-shadow: rgba(0, 0, 0, 0.62) 10px 10px 1px;
+background-color: blanchedalmond;
+font-size: 1.2em;
+font-weight: bold; 
+border: none; 
+border-radius: 20px;
+padding: 5px;
+cursor: pointer;
+
+}
+#btn2:hover{
+    background-color: black;
+    color: rgb(243, 104, 104);
+}
+div p{
+    border: 10px solid rgb(243, 104, 104);
+}
+
+
+

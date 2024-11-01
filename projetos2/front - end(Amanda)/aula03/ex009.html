@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cauculadora</title>
+ 
+    
+</head>
+<body>
+    <h1>Calcule os valores</h1>
+    <input type="number" name="txtn1" id="txtn1">
+    <input type="number" name="txtn2" id="txtn2">
+    <input type="button" value="somar" onclick="soma()">
+    
+     
+    <div  id="res" >Resultado
+    </div> 
+    
+</body>
+<script> 
+function soma(){
+    var tn1 = document.getElementById("txtn1")
+    var tn2 = document.getElementById("txtn2")
+    var res = document.getElementById("res")
+
+    var n1 = Number(tn1.value)
+    var n2 = Number(tn2.value)
+
+    var s = n1 + n2
+    res.innerHTML = `A soma de ${n1} e ${n2} é igual a ${s}`
+}
+    
+</script>
+</html>
