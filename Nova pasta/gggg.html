@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Denali Blog</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+        .header {
+            background-color: #4caf50;
+            color: white;
+            position: relative;
+        }
+        .sidebar {
+            background-color: #e8f5e9;
+        }
+        .post {
+            background-color: #ffffff;
+        }
+        .btn-primary {
+            background-color: #388e3c;
+            border-color: #388e3c;
+        }
+        .user-photo {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            position: absolute;
+            right: 20px;
+            top: 20px;
+            display: none;
+        }
+        .post-img {
+            width: 100%;
+            height: auto;
+        }
+        .comment-meta {
+            font-size: 0.9em;
+            color: #6c757d;
+        }
+    </style>
+</head>
+<body>
+    
+    <main class="container mt-4">
+        <div class="row">
+            <aside class="col-md-3">
+                <div class="card mb-4 sidebar">
+                    <div class="card-body">
+                        
+                        <p>Denali é um template de blog responsivo e simples.</p>
+                        <h5 class="card-title">Usuário Logado:</h5>
+                        <div id="user-info" style="display: none; text-align: center;">
+                            <div class="user-profile" style="margin-top: 20px;">
+                                <img id="userPhotoSidebar" class="user-photo" src="data:image/jpeg;base64,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" alt="Foto do usuário" style="width: 60px; height: 60px; border-radius: 50%;">
+                                <p id="userName" style="margin-top: 10px;"></p>
+                            
+                            </div>
+                        </div>
+                        <h5 class="card-title">Posts em Destaque:</h5>
+                        <ul class="list-unstyled">
+                            
+                            <li><a href="#">Post em destaque 1</a></li>
+                            <li><a href="#">Post em destaque 2</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </aside>
+            
+            <section class="col-md-9">
+                <div class="row">
+                    <article class="col-md-12 mb-4">
+                        <div class="card post">
+                            <img src="https://image.freepik.com/fotos-gratis/bela-foto-de-um-mar-calmo-com-colinas-ao-lado-sob-um-ceu-azul-em-asturies-espanha_181624-27979.jpg" class="card-img-top post-img" alt="Imagem do post">
+                            <div class="card-body">
+                                <h2 class="card-title"><a href="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.honda.com.br%2Fmotos%2Fadventure%2Ftrail%2Fnxr-160-bros&psig=AOvVaw1Wu1K3vI9xdGc-KMxNGLL2&ust=1729965842533000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCLiQmY6PqokDFQAAAAAdAAAAABAE">Colinas</a></h2>
+                                <p class="card-text"><small class="text-muted">17 de março de 2018 | Música</small></p>
+                                <div class="post-content">
+                                     <h2><a href="#">As colinas dançam sob o toque do vento, vestindo-se de verdes e dourados, como um manto de tranquilidade."</a></h2>
+                                     <p>17 de março de 2018 | Música</p>
+                                     <p>"Entre as colinas, o tempo parece desacelerar, permitindo que a alma respire e se reconecte com a beleza do mundo."</p>
+                                </div>  
+                                <div class="like-dislike">
+                                    <button class="btn btn-success" id="like-post1" onclick="likePost('post1')">Curtir</button>
+                                    <button class="btn btn-danger" id="dislike-post1" onclick="dislikePost('post1')">Descurtir</button>
+                                    <span id="post1-likes">0</span> Likes | <span id="post1-dislikes">0</span> Dislikes
+                                </div>
+                                <div class="comments mt-4">
+                                    <h5>Comentários:</h5>
+                                    <div id="post1-comments" class="comment-list"></div>
+                                    <textarea id="comment-input-post1" class="form-control" placeholder="Escreva um comentário..."></textarea>
+                                    <button class="btn btn-primary mt-2" onclick="addComment('post1')">Enviar Comentário</button>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="col-md-12 mb-4">
+                        <div class="card post">
+                            <img src="https://th.bing.com/th/id/OIP.UtmvFGGAsrV9gOh1leonpAHaEK?rs=1&pid=ImgDetMain" class="card-img-top post-img" alt="Imagem do post">
+                            <div class="card-body">
+                                <h2 class="card-title"><a href="#">A beleza e os desafios do deserto</a></h2>
+                                <p class="card-text"><small class="text-muted">25 de agosto de 2021 | Natureza</small></p>
+                                <p>Nos vastos desertos, onde a areia encontra o céu, a resiliência da vida se revela em cada cacto e miragem...</p>
+                                <div class="like-dislike">
+                                    <button class="btn btn-success" id="like-post2" onclick="likePost('post2')">Curtir</button>
+                                    <button class="btn btn-danger" id="dislike-post2" onclick="dislikePost('post2')">Descurtir</button>
+                                    <span id="post2-likes">0</span> Likes | <span id="post2-dislikes">0</span> Dislikes
+                                </div>
+                                <div class="comments mt-4">
+                                    <h5>Comentários:</h5>
+                                    <div id="post2-comments" class="comment-list"></div>
+                                    <textarea id="comment-input-post2" class="form-control" placeholder="Escreva um comentário..."></textarea>
+                                    <button class="btn btn-primary mt-2" onclick="addComment('post2')">Enviar Comentário</button>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="col-md-12 mb-4">
+                        <div class="card post">
+                            <img src="https://th.bing.com/th/id/OIP.PF3Bj8_WNxDWBPrGsfnEogHaE7?w=626&h=417&rs=1&pid=ImgDetMain" class="card-img-top post-img" alt="Imagem do post">
+                            <div class="card-body">
+                                <h2 class="card-title"><a href="#">A dança da luz e suas nuances</a></h2>
+                                <p class="card-text"><small class="text-muted">25 de agosto de 2021 | Fotografia</small></p>
+                                <p>A luz transforma o mundo ao nosso redor, revelando cores e sombras que contam histórias invisíveis...</p>
+                                <div class="like-dislike"></div>
+                                    <button class="btn btn-success" id="like-post2" onclick="likePost('post2')">Curtir</button>
+                                    <button class="btn btn-danger" id="dislike-post2" onclick="dislikePost('post2')">Descurtir</button>
+                                    <span id="post2-likes">0</span> Likes | <span id="post2-dislikes">0</span> Dislikes
+                                </div>
+                                <div class="comments mt-4">
+                                    <h5>Comentários:</h5>
+                                    <div id="post2-comments" class="comment-list"></div>
+                                    <textarea id="comment-input-post2" class="form-control" placeholder="Escreva um comentário..."></textarea>
+                                    <button class="btn btn-primary mt-2" onclick="addComment('post2')">Enviar Comentário</button>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="col-md-12 mb-4">
+                        <div class="card post">
+                            <img src="https://th.bing.com/th/id/OIP.ZVgFCFyMamOx788eYTfTOQHaE8?w=1200&h=800&rs=1&pid=ImgDetMain" class="card-img-top post-img" alt="Imagem do post">
+                            <div class="card-body">
+                                <h2 class="card-title"><a href="#">A arte da fotografia e suas emoções</a></h2>
+                                <p class="card-text"><small class="text-muted">25 de agosto de 2021 | Fotografia</small></p>
+                                <p>Com uma máquina fotográfica, capturamos momentos efêmeros, transformando instantes em memórias eternas...</p>
+                                <div class="like-dislike">
+                                    <button class="btn btn-success" id="like-post2" onclick="likePost('post2')">Curtir</button>
+                                    <button class="btn btn-danger" id="dislike-post2" onclick="dislikePost('post2')">Descurtir</button>
+                                    <span id="post2-likes">0</span> Likes | <span id="post2-dislikes">0</span> Dislikes
+                                </div>
+                                <div class="comments mt-4">
+                                    <h5>Comentários:</h5>
+                                    <div id="post2-comments" class="comment-list"></div>
+                                    <textarea id="comment-input-post2" class="form-control" placeholder="Escreva um comentário..."></textarea>
+                                    <button class="btn btn-primary mt-2" onclick="addComment('post2')">Enviar Comentário</button>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+                <button class="btn btn-primary">Mais posts &rarr;</button>
+            </section>
+        </div>
+    </main>
+
+    <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="loginModalLabel">Login</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form id="loginForm">
+                        <div class="form-group">
+                            <label for="username">Usuario</label>
+                            <input type="text" class="form-control" id="username" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="password">Senha</label>
+                            <input type="password" class="form-control" id="password" required>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Entrar</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        const likes = {
+            post1: 0,
+            post2: 0
+        };
+
+        const dislikes = {
+            post1: 0,
+            post2: 0
+        };
+
+        const userInteractions = {
+            post1: null,
+            post2: null
+        };
+
+        const comments = {
+            post1: [],
+            post2: []
+        };
+
+        let loggedInUser = null;  // Guarda o nome do usuário logado
+
+        function likePost(postId) {
+            if (loggedInUser) {
+                if (userInteractions[postId] !== 'like') {
+                    likes[postId]++;
+                    if (userInteractions[postId] === 'dislike') {
+                        dislikes[postId]--;
+                    }
+                    userInteractions[postId] = 'like';
+                    updateLikesDislikes(postId);
+                }
+            } else {
+                alert("Por favor, faça login para curtir.");
+            }
+        }
+        function updateSidebarUserInfo() {
+            const userInfoDiv = document.getElementById('user-info');
+            const userPhotoSidebar = document.getElementById('userPhotoSidebar');
+            const userName = document.getElementById('userName');
+        
+            if (loggedInUser) {
+                userPhotoSidebar.src = 'https://via.placeholder.com/60';  // Substitua pelo link da foto do usuário se disponível
+                userName.innerText = loggedInUser;
+                userInfoDiv.style.display = 'block';  // Exibe a seção do usuário
+            } else {
+                userInfoDiv.style.display = 'none';  // Esconde se não houver usuário logado
+            }
+        }
+        
+        // Chame a função após o login
+        document.getElementById('loginForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const username = document.getElementById('username').value;
+            if (username) {
+                loggedInUser = username;  // Guarda o nome do usuário logado
+                document.getElementById('loginItem').style.display = 'none';
+                document.getElementById('logoutItem').style.display = 'block';
+                document.getElementById('userPhoto').src = 'https://www.google.com/imgres?q=fotos%20de%20usuario&imgurl=https%3A%2F%2Fstatic.vecteezy.com%2Fsystem%2Fresources%2Fpreviews%2F019%2F879%2F186%2Fnon_2x%2Fuser-icon-on-transparent-background-free-png.png&imgrefurl=https%3A%2F%2Fpt.vecteezy.com%2Fpng%2F19879186-icone-do-usuario-em-fundo-transparente&docid=hVCFQbiHFwiunM&tbnid=-lTR1n_YC1teAM&vet=12ahUKEwjR2IihkaqJAxXirpUCHTCbMb8QM3oECD4QAA..i&w=1616&h=980&hcb=2&ved=2ahUKEwjR2IihkaqJAxXirpUCHTCbMb8QM3oECD4QAA';
+                document.getElementById('userPhoto').style.display = 'block';
+                updateSidebarUserInfo();  // Atualiza as informações do usuário na barra lateral
+                $('#loginModal').modal('hide');
+            }
+        });
+        
+        function dislikePost(postId) {
+            if (loggedInUser) {
+                if (userInteractions[postId] !== 'dislike') {
+                    dislikes[postId]++;
+                    if (userInteractions[postId] === 'like') {
+                        likes[postId]--;
+                    }
+                    userInteractions[postId] = 'dislike';
+                    updateLikesDislikes(postId);
+                }
+            } else {
+                alert("Por favor, faça login para descurtir.");
+            }
+        }
+
+        function updateLikesDislikes(postId) {
+            document.getElementById(`${postId}-likes`).innerText = likes[postId];
+            document.getElementById(`${postId}-dislikes`).innerText = dislikes[postId];
+        }
+
+        function addComment(postId) {
+            const commentInput = document.getElementById(`comment-input-${postId}`);
+            const commentText = commentInput.value;
+            if (commentText) {
+                comments[postId].push({ user: loggedInUser || 'Visitante', text: commentText });
+                commentInput.value = '';
+                renderComments(postId);
+            }
+        }
+
+        function renderComments(postId) {
+            const commentList = document.getElementById(`${postId}-comments`);
+            commentList.innerHTML = '';
+            comments[postId].forEach(comment => {
+                const commentElement = document.createElement('div');
+                commentElement.innerHTML = `<strong>${comment.user}</strong>: ${comment.text}`;
+                commentElement.className = 'comment-meta';
+                commentList.appendChild(commentElement);
+            });
+        }
+
+        function toggleLogin() {
+            $('#loginModal').modal('show');
+        }
+
+        function logout() {
+            loggedInUser = null;
+            document.getElementById('logoutItem').style.display = 'none';
+            document.getElementById('loginItem').style.display = 'block';
+            document.getElementById('userPhoto').style.display = 'none';
+        }
+
+        document.getElementById('loginForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const username = document.getElementById('username').value;
+            if (username) {
+                loggedInUser = username;  // Guarda o nome do usuário logado
+                document.getElementById('loginItem').style.display = 'none';
+                document.getElementById('logoutItem').style.display = 'block';
+                document.getElementById('userPhoto').src = 'https://www.google.com/imgres?q=fotos%20de%20usuario&imgurl=https%3A%2F%2Fstatic.vecteezy.com%2Fsystem%2Fresources%2Fpreviews%2F019%2F879%2F186%2Fnon_2x%2Fuser-icon-on-transparent-background-free-png.png&imgrefurl=https%3A%2F%2Fpt.vecteezy.com%2Fpng%2F19879186-icone-do-usuario-em-fundo-transparente&docid=hVCFQbiHFwiunM&tbnid=-lTR1n_YC1teAM&vet=12ahUKEwjR2IihkaqJAxXirpUCHTCbMb8QM3oECD4QAA..i&w=1616&h=980&hcb=2&ved=2ahUKEwjR2IihkaqJAxXirpUCHTCbMb8QM3oECD4QAA';
+                document.getElementById('userPhoto').style.display = 'block';
+                $('#loginModal').modal('hide');
+            }
+        });
+    </script>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    
+</body>
+</html>

@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Denali Blog</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+        .header {
+            background-color: #4caf50;
+            color: white;
+            position: relative;
+        }
+        .sidebar {
+            background-color: #e8f5e9;
+        }
+        .post {
+            background-color: #ffffff;
+        }
+        .btn-primary {
+            background-color: #388e3c;
+            border-color: #388e3c;
+        }
+        .user-photo {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            position: absolute;
+            right: 20px;
+            top: 20px;
+            display: none;
+        }
+        .post-img {
+            width: 100%;
+            height: auto;
+        }
+        .comment-meta {
+            font-size: 0.9em;
+            color: #6c757d;
+        }
+    </style>
+</head>
+<body>
+
+    <header class="header text-center py-4">
+        <h1>Denali</h1>
+        <img id="userPhoto" class="user-photo" src="" alt="Foto do usuário">
+        <nav>
+            <ul class="nav justify-content-center">
+                <li class="nav-item"><a class="nav-link text-white" href="#">Home</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="#">Sobre</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="#">Contato</a></li>
+                <li class="nav-item" id="loginItem"><a class="nav-link text-white" href="#" onclick="toggleLogin()">Login</a></li>
+                <li class="nav-item" id="logoutItem" style="display:none;"><a class="nav-link text-white" href="#" onclick="logout()">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container mt-4">
+        <div class="row">
+            <aside class="col-md-3">
+                <div class="card mb-4 sidebar">
+                    <div class="card-body">
+                        <img>  </img>
+                        <p>Denali é um template de blog responsivo e simples.</p>
+                        <h5 class="card-title">Usuário Logado:</h5>
+                        <div id="user-info" style="display: none; text-align: center;">
+                            <p>
+                                <img id="userPhotoSidebar" class="user-photo" src="" alt="Foto do usuário" style="width: 60px; height: 60px; border-radius: 50%;">
+                                <br>
+                                <span id="userName"></span>
+                            </p>
+                        </div>
+                        <h5 class="card-title">Posts em Destaque:</h5>
+                        <ul class="list-unstyled">
+                            <li><a href="#">Post em destaque 1</a></li>
+                            <li><a href="#">Post em destaque 2</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </aside>
+            
+            
+            
+
+            <section class="col-md-9">
+                <div class="row">
+                    <article class="col-md-12 mb-4">
+                        <div class="card post">
+                            <img src="https://via.placeholder.com/800x400" class="card-img-top post-img" alt="Imagem do post">
+                            <div class="card-body">
+                                <h2 class="card-title"><a href="#">Café, açúcar e chicória no barista americano</a></h2>
+                                <p class="card-text"><small class="text-muted">17 de março de 2018 | Música</small></p>
+                                <p>Atria, crema, aromático...</p>
+                                <div class="like-dislike">
+                                    <button class="btn btn-success" id="like-post1" onclick="likePost('post1')">Curtir</button>
+                                    <button class="btn btn-danger" id="dislike-post1" onclick="dislikePost('post1')">Descurtir</button>
+                                    <span id="post1-likes">0</span> Likes | <span id="post1-dislikes">0</span> Dislikes
+                                </div>
+                                <div class="comments mt-4">
+                                    <h5>Comentários:</h5>
+                                    <div id="post1-comments" class="comment-list"></div>
+                                    <textarea id="comment-input-post1" class="form-control" placeholder="Escreva um comentário..."></textarea>
+                                    <button class="btn btn-primary mt-2" onclick="addComment('post1')">Enviar Comentário</button>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="col-md-12 mb-4">
+                        <div class="card post">
+                            <img src="https://via.placeholder.com/800x400" class="card-img-top post-img" alt="Imagem do post">
+                            <div class="card-body">
+                                <h2 class="card-title"><a href="#">O impacto do café no desempenho mental</a></h2>
+                                <p class="card-text"><small class="text-muted">25 de agosto de 2021 | Ciência</small></p>
+                                <p>Estudos recentes mostram que o café pode aumentar a produtividade...</p>
+                                <div class="like-dislike">
+                                    <button class="btn btn-success" id="like-post2" onclick="likePost('post2')">Curtir</button>
+                                    <button class="btn btn-danger" id="dislike-post2" onclick="dislikePost('post2')">Descurtir</button>
+                                    <span id="post2-likes">0</span> Likes | <span id="post2-dislikes">0</span> Dislikes
+                                </div>
+                                <div class="comments mt-4">
+                                    <h5>Comentários:</h5>
+                                    <div id="post2-comments" class="comment-list"></div>
+                                    <textarea id="comment-input-post2" class="form-control" placeholder="Escreva um comentário..."></textarea>
+                                    <button class="btn btn-primary mt-2" onclick="addComment('post2')">Enviar Comentário</button>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+                <button class="btn btn-primary">Mais posts &rarr;</button>
+            </section>
+        </div>
+    </main>
+
+    <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="loginModalLabel">Login</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form id="loginForm">
+                        <div class="form-group">
+                            <label for="username">Fernandez</label>
+                            <input type="text" class="form-control" id="username" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="password">Senha</label>
+                            <input type="password" class="form-control" id="password" required>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Entrar</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const likes = {
+            post1: 0,
+            post2: 0
+        };
+
+        const dislikes = {
+            post1: 0,
+            post2: 0
+        };
+
+        const userInteractions = {
+            post1: null,
+            post2: null
+        };
+
+        const comments = {
+            post1: [],
+            post2: []
+        };
+
+        let loggedInUser = null;  // Guarda o nome do usuário logado
+
+        function likePost(postId) {
+            if (loggedInUser) {
+                if (userInteractions[postId] !== 'like') {
+                    likes[postId]++;
+                    if (userInteractions[postId] === 'dislike') {
+                        dislikes[postId]--;
+                    }
+                    userInteractions[postId] = 'like';
+                    updateLikesDislikes(postId);
+                }
+            } else {
+                alert("Por favor, faça login para curtir.");
+            }
+        }
+        function updateSidebarUserInfo() {
+            const userInfoDiv = document.getElementById('user-info');
+            const userPhotoSidebar = document.getElementById('userPhotoSidebar');
+            const userName = document.getElementById('userName');
+        
+            if (loggedInUser) {
+                userPhotoSidebar.src = 'https://via.placeholder.com/60';  // Substitua pelo link da foto do usuário se disponível
+                userName.innerText = loggedInUser;
+                userInfoDiv.style.display = 'block';  // Exibe a seção do usuário
+            } else {
+                userInfoDiv.style.display = 'none';  // Esconde se não houver usuário logado
+            }
+        }
+        
+        // Chame a função após o login
+        document.getElementById('loginForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const username = document.getElementById('username').value;
+            if (username) {
+                loggedInUser = username;  // Guarda o nome do usuário logado
+                document.getElementById('loginItem').style.display = 'none';
+                document.getElementById('logoutItem').style.display = 'block';
+                document.getElementById('userPhoto').src = 'https://via.placeholder.com/40';
+                document.getElementById('userPhoto').style.display = 'block';
+                updateSidebarUserInfo();  // Atualiza as informações do usuário na barra lateral
+                $('#loginModal').modal('hide');
+            }
+        });
+        
+        function dislikePost(postId) {
+            if (loggedInUser) {
+                if (userInteractions[postId] !== 'dislike') {
+                    dislikes[postId]++;
+                    if (userInteractions[postId] === 'like') {
+                        likes[postId]--;
+                    }
+                    userInteractions[postId] = 'dislike';
+                    updateLikesDislikes(postId);
+                }
+            } else {
+                alert("Por favor, faça login para descurtir.");
+            }
+        }
+
+        function updateLikesDislikes(postId) {
+            document.getElementById(`${postId}-likes`).innerText = likes[postId];
+            document.getElementById(`${postId}-dislikes`).innerText = dislikes[postId];
+        }
+
+        function addComment(postId) {
+            const commentInput = document.getElementById(`comment-input-${postId}`);
+            const commentText = commentInput.value;
+            if (commentText) {
+                comments[postId].push({ user: loggedInUser || 'Visitante', text: commentText });
+                commentInput.value = '';
+                renderComments(postId);
+            }
+        }
+
+        function renderComments(postId) {
+            const commentList = document.getElementById(`${postId}-comments`);
+            commentList.innerHTML = '';
+            comments[postId].forEach(comment => {
+                const commentElement = document.createElement('div');
+                commentElement.innerHTML = `<strong>${comment.user}</strong>: ${comment.text}`;
+                commentElement.className = 'comment-meta';
+                commentList.appendChild(commentElement);
+            });
+        }
+
+        function toggleLogin() {
+            $('#loginModal').modal('show');
+        }
+
+        function logout() {
+            loggedInUser = null;
+            document.getElementById('logoutItem').style.display = 'none';
+            document.getElementById('loginItem').style.display = 'block';
+            document.getElementById('userPhoto').style.display = 'none';
+        }
+
+        document.getElementById('loginForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const username = document.getElementById('username').value;
+            if (username) {
+                loggedInUser = username;  // Guarda o nome do usuário logado
+                document.getElementById('loginItem').style.display = 'none';
+                document.getElementById('logoutItem').style.display = 'block';
+                document.getElementById('userPhoto').src = 'https://via.placeholder.com/40';
+                document.getElementById('userPhoto').style.display = 'block';
+                $('#loginModal').modal('hide');
+            }
+        });
+    </script>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

@@ -9,5 +9,15 @@ class Cometario extends Model
 {
     use HasFactory;
 
-    protected $fillable = ['coteudo','data_cometario','foto'];
+    protected $fillable = ['coteudo','foto','user_id', 'publicacao_id'];
+
+    public function user()
+    {
+        return $this->belongsTo(User::class);
+    }
+
+    public function publicacao()
+    {
+        return $this->belongsTo(Publicacao::class);
+    }
 }

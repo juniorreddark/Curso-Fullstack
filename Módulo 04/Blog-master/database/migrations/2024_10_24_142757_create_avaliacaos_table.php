@@ -13,6 +13,18 @@ return new class extends Migration
     {
         Schema::create('avaliacaos', function (Blueprint $table) {
             $table->id();
+            $table->string('like');
+            $table->string('deslike');
+            $table->unsignedBigInteger('user_id');
+            $table->foreign('user_id')
+                    ->references('id')
+                    ->on('users')
+                    ->onDelete('cascade');
+            $table->unsignedBigInteger('publicacao_id');
+            $table->foreign('publicacao_id')
+                    ->references('id')
+                    ->on('publicacaos')
+                    ->onDelete('cascade');
             $table->timestamps();
         });
     }
