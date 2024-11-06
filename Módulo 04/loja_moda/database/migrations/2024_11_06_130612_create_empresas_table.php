@@ -20,12 +20,12 @@ return new class extends Migration
             $table->string('telefone');
             $table->string('numero');
             $table->string('rede_social');
-            
-           
-            $table->unsignedBigInteger('produto_id')->nullable();
-            $table->unsignedBigInteger('categoria_id')->nullable();
-            $table->foreign('produto_id')->references('id')->on('produtos');
-            $table->foreign('categoria_id')->references('id')->on('categorias');
+            $table->unsignedInteger('produto_id');
+            $table->foreign('produto_id')->references('id')->on('produtos')->onDelete('cascade');
+            $table->unsignedInteger('categoria_id');
+            $table->foreign('categoria_id')->references('id')->on('categorias')->onDelete('cascade');
+            $table->unsignedInteger('pedido_id');
+            $table->foreign('pedido_id')->references('id')->on('pedidos')->onDelete('cascade');
             $table->timestamps();
         });
     }

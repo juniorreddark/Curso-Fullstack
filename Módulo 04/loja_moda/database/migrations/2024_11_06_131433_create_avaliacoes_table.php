@@ -16,8 +16,13 @@ return new class extends Migration
             $table->integer('nota')->nullable();
             $table->longText('cometario')->nullable();
             $table->date('data_avaliacoes')->nullable();
-            $table->foreign('produto_id')->references('id')->on('produtos');
-            $table->foreign('user_id')->references('id')->on('users');
+            $table->unsignedInteger('produto_id');
+            $table->foreign('produto_id')->references('id')->on('produtos')->onDelete('cascade');
+            $table->unsignedInteger('user_id');
+            $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
+            $table->unsignedInteger('pedido_id');
+            $table->foreign('pedido_id')->references('id')->on('pedidos')->onDelete('cascade');
+            
             $table->timestamps();
         });
     }

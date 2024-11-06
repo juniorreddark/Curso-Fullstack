@@ -15,8 +15,10 @@ return new class extends Migration
             $table->id();
             $table->integer('quantidade')->nullable();
             $table->float('preco_unitario')->nullable();
-            $table->foreign('pedido_id')->references('id')->on('pedidos');
-            $table->foreign('produto_id')->references('id')->on('produtos');
+            $table->unsignedInteger('produto_id');
+            $table->foreign('produto_id')->references('id')->on('produtos')->onDelete('cascade');
+            $table->unsignedInteger('pedido_id');
+            $table->foreign('pedido_id')->references('id')->on('pedidos')->onDelete('cascade');
             $table->timestamps();
         });
     }

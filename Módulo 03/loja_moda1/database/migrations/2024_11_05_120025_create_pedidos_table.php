@@ -16,7 +16,7 @@ return new class extends Migration
             $table->date('data_pedido')->nullable();
             $table->string('status')->nullable();
             $table->float('total')->nullable();
-            $table->foreign('user_id')->references('id')->on('users');
+            $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
             $table->timestamps();
         });
     }
