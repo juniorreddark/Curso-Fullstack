@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu site</title>
+   <link rel="stylesheet" href="style.css">
+<link rel="shortcut icon" href="/meusite/logDOSITE.png" type="image/x-icon">
+</head>
+<body>
+<header>
+    <img  id="logo"src="/meusite/logDOSITE.png" alt="logo" width="100">
+        <nav >
+        <a class="home" href="#">Home </a>
+        <a class="home" href="#">produtos</a>
+        <a class="home" href="#">contatos</a> 
+</nav> 
+</header>
+    <section><h1>Roupas para cachorros</h1></section>
+   
+<main >
+   
+<div id="pet1" class="produto">
+<img  class="cachorros"   src="/meusite/roupapet1.webp" alt="pet1" width="200" height="200"> <br>
+<button id="Abrir1" onclick="exibir()"> Abrir</button>
+<dialog id="dialog1">
+<h2>A Roupa para Cachorro Pequeno:</h2>
+ <p>Ela vai te ajudar a manter seu pet aquecido.
+    Conforto:Resistente aos raior solares,muito macio.
+    Ajuste: Disponível em tamanhos diversos.
+     <button id="valor">valor: R$20,00</button>
+    <br>
+<button id="tamanho1">
+    P
+</button>
+
+<button id="tamanho2">
+    M
+</button>
+<button id="tamanho3">
+    G
+</button>
+
+</p> 
+
+
+<button id="fecha1"onclick="fecha()">fechar</button>    
+</dialog>
+</div>
+<!-- ajustes da imagem 2 -->
+<div id="pet2" class="produto">
+<img  class="cachorros"  src="/meusite/pet2.webp" alt="pet2" width="200" height="200"> <br>
+<button id="Abrir2" onclick="exibir()"> Abrir</button>
+<dialog id="dialog2">
+<h2>A Roupa para Cachorro Pequeno:</h2>
+ <p>Ela vai te ajudar seu pet a correr com mais facilidade,resistente a água.
+Ajuste: Disponível em tamanhos diversos.
+<mark>valor: R$40,00</mark>
+    <br>
+<button id="medida1">
+    P
+</button>
+
+
+
+<button id="medida2">
+    M
+</button>
+<button id="medida3">
+    GG
+</button>
+
+</p> 
+
+
+<button id="fecha2"onclick="fecha()">fechar</button>   
+
+
+</dialog>
+</div>
+
+<!-- ajuste da imagem 3  -->
+ <div id="pet3" class="produto">
+ <img class="cachorros"  src="/meusite/pet3.jpg" alt="pet3" width="200" height="200">  <br>
+ <button id="Abrir3" onclick="exibir()"> Abrir</button> 
+ <dialog id="dialog1">
+ <h2>A Roupa para Cachorro Pequeno:</h2>
+  <p>Ela vai te ajudar a manter seu pet aquecido
+ e na moda!Conforto:Resistente aos raior solares,muito macio.
+     Ajuste: Disponível em tamanhos diversos.</p>
+     <mark>valor: R$50,00</mark> 
+    
+     <br>
+ <button id="largura1">P</button>
+ 
+ <button id="largura2">M</button>
+
+ <button id="largura3">G</button>
+ 
+ 
+ 
+ 
+ <button id="fecha3"onclick="fecha()">fechar</button>    
+ </dialog>
+</div>
+</main>
+<footer>desenvolvido por &copy;Amanda</footer>
+</body>
+
+<script src="modal.js"></script>
+</html>

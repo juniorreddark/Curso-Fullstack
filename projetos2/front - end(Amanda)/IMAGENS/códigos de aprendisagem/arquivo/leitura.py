@@ -1,0 +1,6 @@
+arquivo = open('arquivo/arquivo.txt', 'w')
+#conteudo = arquivo.read()
+#print(arquivo.readble())
+arquivo.write('escrevendo no arquivo\n')
+arquivo.close()
+#print(conteudo)

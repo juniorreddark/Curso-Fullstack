@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>interação</title>
+    <style>
+        #area{
+            width: 200px;
+            height: 200px;
+            background-color: chocolate;
+            padding: 10px;
+            color: white;
+            text-align: center;
+            line-height: 10px;
+            font-size: 1.4em ;
+
+            cursor: pointer;
+        }
+
+       
+    </style>
+</head>
+<body>
+    <div id="area" onclick="clicou()" onmouseenter="entrou()" onmouseout="saiu()">
+        interaja...
+    </div>
+
+    <p>Este é um paragráfo</p>
+    <div id="conteiner"></div>
+    
+</body>
+<script>
+    var area = document.getElementById("area")
+    function clicou(){
+        area.innerText = 'Clicou'
+        area.style.backgroundColor = 'blue'
+    }
+    function entrou(){
+        area.innerText = 'entrou'
+        area.style.backgroundColor = 'black'
+ 
+    }
+
+    function saiu(){
+        area.innerText = 'Saiu'
+        area.style.backgroundColor ='red'
+    }
+
+
+    let paragrafo = document.createElement("p")
+    paragrafo.textContent = "Paragráfo criado com JS"
+
+    let elemente = document.getElementById("conteiner")
+    elemente.appendChild(paragrafo)
+
+
+
+</script>
+</html>

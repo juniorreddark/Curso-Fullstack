@@ -1,0 +1,76 @@
+:root{
+    --cor1:#A0B2A6;
+    --cor2:#D0CFCF;
+    --cor3:#FFFFFF;
+    --cor4:#565254;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--cor2);
+}
+header{
+    background-color: blanchedalmond;
+    padding: 10PX;
+    margin: 10PX;
+    background-color: var(--cor4);
+
+}
+header > h1{
+    text-shadow: 2px 1px 1px yellow;
+    box-shadow: 10PX 2PX 4PX black;
+}
+
+main{
+    background-color: lightgray;
+    padding: 10PX;
+    margin: 10PX;
+    box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.465);
+    
+}
+.circulo{
+    background-color: rgba(27, 27, 131, 0.388);
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+article{
+    background-color: beige;
+    padding: 5px;
+}
+aside{
+    background-color: azure;
+    padding: 5px;
+}
+footer{
+    background-color: azure;
+    color: black;
+    text-align: center;
+    padding: 1px;
+}
+footer > p{
+    margin: 0;
+}
+nav{
+    background-color: gray;
+
+
+
+
+                                                                                                                                        
+    padding: 5PX;
+}
+nav >  a {
+    color: blue;
+    text-decoration: none;
+    font-weight: bold;
+    margin-right: 5px;
+}
+nav > a:hover{
+    color: brown;
+    text-decoration: underline;
+}
+
+
+
+/*border-radius: 5px; sever para deixar a imagem redonda*/

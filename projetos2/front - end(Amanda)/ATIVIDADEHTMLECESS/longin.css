@@ -1,0 +1,40 @@
+:root{
+    background-color:bisque ;
+}
+
+body{
+    background-image: url(climadehoje.jpeg);
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    background-color: bisque;
+    color: rgb(221, 106, 106);
+    background-repeat: no-repeat;
+    background-size: cover;
+    right: 600px;
+    }
+h2{
+    text-align: center;
+}
+form{
+    width: 500px;
+    min-height: 300px;
+    padding: 10px;
+    
+    
+}
+button{
+    padding: 5px;
+    border: 5px solid coral;
+    border-radius: 10px; 
+    cursor: pointer;
+    
+}
+label , input{
+   width: 1350px;
+    display: block;
+}
+label{
+    display: block;
+    margin-inline: 5px;
+    font-weight: bold;
+}
+  
