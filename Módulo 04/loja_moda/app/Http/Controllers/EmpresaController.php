@@ -12,7 +12,8 @@ class EmpresaController extends Controller
      */
     public function index()
     {
-        //
+        $empresas = Empresa::all();
+        return view('empresa.index', compact('empresas'));
     }
 
     /**
@@ -20,7 +21,7 @@ class EmpresaController extends Controller
      */
     public function create()
     {
-        //
+        return view('empresa.create');
     }
 
     /**
@@ -28,15 +29,29 @@ class EmpresaController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $request->validate([
+            'razao_social'=>'required',
+            'cnpj' => 'required',
+            'endereco' => 'required',
+            'numero' => 'required',
+            'telefone' => 'required',
+            'cep' =>'required',
+            'logo' =>'required',
+            'rede_social' => 'required',
+            'pedido_id' => 'required',
+
+        ]);
+
+        $empresa = Empresa::create($request->all());
+        return redirect()->route('empresas.index')->with('success', 'Empresa criada com sucesso.');
     }
 
     /**
      * Display the specified resource.
      */
-    public function show(Empresa $empresa)
+    public function show($id)
     {
-        //
+        return view('empresa.show', compact('empresa'));
     }
 
     /**
@@ -44,22 +59,40 @@ class EmpresaController extends Controller
      */
     public function edit(Empresa $empresa)
     {
-        //
+        $empresa = Empresa::find($id);
+        return view('empresa.editar', compact('empresa'));
     }
 
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, Empresa $empresa)
+    public function update(Request $request, $id)
     {
-        //
+        $request->validate([
+            'razao_social'=>'required',
+            'cnpj' => 'required',
+            'endereco' => 'required',
+            'numero' => 'required',
+            'telefone' => 'required',
+            'cep' =>'required',
+            'logo' =>'required',
+            'rede_social' => 'required',
+            'pedido_id' => 'required',
+
+        ]);
+
+        $empresa = Empresa::find($id);
+        $empresa->update($request->all());
+        return redirect()->route('empresas.index')->with('success', 'Empresa atualizada com sucesso');
     }
 
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(Empresa $empresa)
+    public function destroy( $id)
     {
-        //
+        $empresa = Empresa::find($id);
+        $empresa->delete();
+        return redirect()->route('empresas.index')->with('sucess', 'Empresa removida com sucesso');
     }
 }
