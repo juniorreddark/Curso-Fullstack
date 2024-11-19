@@ -5,6 +5,8 @@ namespace App\Http\Controllers;
 use App\Models\Produto;
 use Illuminate\Http\Request;
 use Illuminate\support\Facades\Validator;
+use App\Models\Categoria;
+use App\Models\Empresa;
 
 class ProdutoController extends Controller
 {
@@ -14,7 +16,9 @@ class ProdutoController extends Controller
     public function index()
     {   
         $produtos = Produto::all();
-        return view('produtos.index', compact('produtos'));
+        $categorias = Categoria::all();
+       
+        return view('produtos.index', compact('produtos','categorias'));
     }
 
     /**
@@ -29,23 +33,35 @@ class ProdutoController extends Controller
      * Store a newly created resource in storage.
      */
     public function store(Request $request)
-    {
+    {   
         $request->validate([
-            'nome' => 'required',
-            'preco'=> 'required|numeric',
-            'descricao' =>'required',
-            'estoque' =>'required',
-            'categoria_id' => 'required'                         
+                
+            'foto' => 'nullable|image|mimes:jpeg,png,jpg,gif,svg|max:2048', // Validação de imagem
         ]);
 
-        Produto::create($request->all());
+        // Processar a imagem, se ela for fornecida
+        if ($request->hasFile('foto')) {
+            $fotoPath = $request->file('foto')->store('fotos', 'public'); // Armazenar a imagem na pasta 'public/logos'
+        } else {
+            $fotoPath = null; // Caso não haja imagem, o campo será nulo
+        }
+          
+        $produtos = Empresa::all();  
+                
+        $produto = new Produto();
+        $produto->nome= $request->nome;
+        $produto->categoria_id= $request->categoria_id;
+        $produto->preco = $request->preco;
+        $produto->descricao = $request->descricao;
+        $produto->foto = $fotoPath;
+        $produto->save();
         return redirect()->route('produtos.index')->with('success', 'Produto criado com sucesso.');
     }
 
     /**
      * Display the specified resource.
      */
-    public function show(Produto $produto)
+    public function show($id)
     {
         return view('produtos.show', compact('produtos'));
     }
@@ -64,14 +80,7 @@ class ProdutoController extends Controller
      */
     public function update(Request $request, $id)
     {
-        $request->validate([
-            'nome' => 'required',
-            'preco' => 'required|numeric',
-            'descricao' => 'required',
-            'estoque' =>'required',
-            'categoria_id' => 'required' 
-            
-        ]);
+       
 
         $produto = Produto::find($id);
         $produto->update($request->all());
@@ -83,7 +92,7 @@ class ProdutoController extends Controller
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(Produto $produto)
+    public function destroy($id)
     {
         $produto = Produto::find($id);
         $produto->delete();

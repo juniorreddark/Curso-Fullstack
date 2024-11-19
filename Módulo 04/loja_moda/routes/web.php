@@ -9,6 +9,8 @@ use App\Http\Controllers\PedidoController;
 use App\Http\Controllers\EmpresaController;
 use App\Http\Controllers\AvaliacoeController;
 use App\Http\Controllers\Itens_PedidoController;
+use App\Http\Controllers\PublicacoeController;
+
 
 Route::get('/', function () {
     return view('welcome');
@@ -43,6 +45,9 @@ Route::delete('/categorias/{id}', [CategoriaController::class, 'destroy'])->name
 Route::put('/categorias/{id}', [CategoriaController::class, 'update'])->name('categorias.update');
 Route::get('/categorias/{id}', [CategoriaController::class, 'show'])->name('categorias.show');
 
+
+
+Route::resource('pedidos', PedidoController::class);
 Route::get('/pedidos', [PedidoController::class, 'index'])->name('pedidos.index');
 Route::get('/pedidos_salvar', [PedidoController::class, 'create'])->name('pedidos.create');
 Route::get('pedidos/editar/{id}', [PedidoController::class, 'edit'])->name('pedidos.edit');
@@ -82,4 +87,12 @@ Route::post('/itens_pedidos', [Itens_PedidoController::class, 'store'])->name('i
 Route::delete('/itens_pedidos/{id}', [Itens_PedidoController::class, 'destroy'])->name('itens_pedidos.destroy');
 Route::put('/itens_pedidos/{id}', [Itens_PedidoController::class, 'update'])->name('itens_pedidos.update');
 Route::get('/itens_pedidos/{id}', [Itens_PedidoController::class, 'show'])->name('itens_pedidos.show');
+
+Route::get('/publicacoes', [PublicacoeController::class,'index'])->name('publicacoes.index');
+Route::get('/publicacoes_salvar', [PublicacoeController::class, 'create'])->name('publicacoes.create');
+Route::get('/publicacoes/editar/{id}', [PublicacoeController::class, 'edit'])->name('publicacoes.edit');
+Route::post('/publicacoes', [PublicacoeController::class, 'store'])->name('publicacoes.store');
+Route::delete('/publicacoes/{id}', [PublicacoeController::class, 'destroy'])->name('publicacoes.destroy');
+Route::put('/publicacoes/{id}', [PublicacoeController::class, 'update'])->name('publicacoes.update');
+Route::get('/publicacoes/{id}', [PublicacoeController::class, 'show'])->name('publicacoes.show');
 

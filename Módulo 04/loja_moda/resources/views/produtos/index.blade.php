@@ -6,7 +6,9 @@
     <body>
         <button><a href="">Página inicial</a></button>
         <h1>Produto</h1>
-        <form action="{{ route('produtos.store') }}" method="POST">
+    
+        <form action="{{ route('produtos.store') }}" method="POST" enctype="multipart/form-data">
+    
             @csrf
             <label for="">NOME: </label>
             <input type="text" name="nome" id="nome">
@@ -20,6 +22,10 @@
                     <option value="{{ $categoria->id }}">{{ $categoria->nome }}</option>
                 @endforeach
             </select>
+            <div>
+                <label for="foto">Foto do Produto</label>
+                <input type="file" name="foto" id="foto">
+            </div>
             <button type="submit">Salvar</button>
         </form>
         <!--<a href="{{ route('produtos.create') }}">Cadastrar Produtos</a>-->
@@ -43,6 +49,14 @@
                         <td>{{ $produto->nome }}</td>
                         <td>{{ $produto->preco }}</td>
                         <td>{{ $produto->descricao }}</td>
+                        <td>
+                            @if ($produto->foto)
+                                <img src="{{ asset('storage/'.$produto->foto) }}" alt="foto do produto" width="50px">
+                            @else
+                                sem foto
+                            @endif
+                        </td>
+                            
                         <td>
                             <button><a href="{{ route('produtos.edit', $produto->id) }}">Editar</a></button>
                             <form action="{{ route('produtos.destroy', $produto->id) }}" method="POST" style="display:inline">

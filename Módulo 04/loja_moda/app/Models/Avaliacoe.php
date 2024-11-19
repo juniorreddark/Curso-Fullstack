@@ -8,7 +8,7 @@ class Avaliacoe extends Model
 {
     use HasFactory;
 
-    protected $fillable = ['pedido_id','produto_id','user_id', 'nota', 'comentario','data_avaliacao'];
+    protected $fillable = ['produto_id','user_id', 'nota', 'comentario','data_avaliacao'];
 
     public function produtos()
     {

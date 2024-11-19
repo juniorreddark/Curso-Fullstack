@@ -9,11 +9,21 @@ class Produto extends Model
 {
     use HasFactory;
 
-    protected $fillable = ['nome', 'preco', 'descricao', 'estoque', 'categoria_id'];
+    protected $fillable = ['nome', 'preco', 'descricao','foto','estoque', 'categoria_id'];
 
     public function categoria()
     {
         return $this->belongsTo(Categoria::class);
+    }
+    
+    public function carrinho()
+    {
+        return $this->hasMany(Carrinho::class);
+    }
+    
+    public function empresas()
+    {
+        return $this->belongsTo(Empresas::class);
     }
 }
   

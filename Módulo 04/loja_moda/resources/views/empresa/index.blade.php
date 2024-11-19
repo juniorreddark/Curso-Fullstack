@@ -6,31 +6,55 @@
 
     </head>
     <body>
-        <button><a href="{{ route('empresas.index') }}">Página Inicial</a></button>
+       
 
         <h1> Empresas </h1>
 
         <body>
-            <form action="{{ route('empresas.store') }}" method="POST">
+        <form action="{{ route('empresas.store') }}" method="POST" enctype="multipart/form-data">
                 @csrf
-                <label for="">RAZÃO SOCIAL</label>
-                <input type="text" name="razao_social" id="razao_social">
-                <label for="">CNPJ</label>
-                <input type="text" name="cnpj" id="cnpj">
-                <label for="">ENDEREÇO</label>
-                <input type="text" name="endereco" id="endereco">
-                <label for="">NUMERO</label>
-                <input type="string" name="numero" id="numero">
-                <label for="">TELEFONE</label>
-                <input type="text" name="telefone" id="telefone">
-                <label for="">CEP</label>
-                <input type="text" name="cep" id="cep">
-                <button type="submit">Salvar</button>
-            </form>
+                <div class="col-sm">
+                    <label for="">RAZÃO SOCIAL</label>
+                    <input type="text" name="razao_social" id="razao_social">
+                    <label for="">CNPJ</label>
+                    <input type="text" name="cnpj" id="cnpj">
+                    <label for="">ENDEREÇO</label>
+                    <input type="text" name="endereco" id="endereco">
+                    <label for="">NUMERO</label>
+                
+                    <input type="string" name="numero" id="numero">
+                </div>
+                <div class="col-sm">
+                    <label for="">TELEFONE</label>
+                    <input type="text" name="telefone" id="telefone">
+                    <label for="">Rede Social</label>
+                    <input type="text" name="rede_social" id="rede_social">
+                    <label for="">Produto:</label>
+                    <select name="produto_id">
+                        @foreach ($produtos as $produto)
+                            <option value="{{ $produto->id }}">{{ $produto->nome }}</option>
+                        @endforeach
+                    </select>
+                    <label for="">Categoria:</label>
+                    <select name="categoria_id">
+                        @foreach ($categorias as $categoria)
+                            <option value="{{ $categoria->id }}">{{ $categoria->nome }}</option>
+                        @endforeach
+                    </select>
+                    <div>
+                        <label for="logo">Logo</label>
+                        <input type="file" name="logo" id="logo">
+                    </div>
+                    
+                
+                    <button type="submit">Salvar</button>
+                </div> 
+        </form>
             @if (session('success'))
                 <div>{{ session('success') }}</div>
 
             @endif
+        
             <table class="table">
                 <thead>
                     <tr>
@@ -40,10 +64,11 @@
                         <th scope="col">ENDEREÇO</th>
                         <th scope="col">NÚMERO</th>
                         <th scope="col">TELEFONE</th>
-                        <th scope="col"> CEP </th>
-                        <th scope="col">OPÇÕES</th>
+                        <th scope="col">Logo</th>
                     </tr>
                 </thead>
+              
+         
                 <tbody>
                     @foreach ($empresas as $empresa)
                         <tr>
@@ -53,7 +78,14 @@
                             <td>{{ $empresa->endereco }}</td>
                             <td>{{ $empresa->numero }}</td>
                             <td>{{ $empresa->telefone }}</td>
-                            <td>{{ $empresa->cep }}</td>
+                            <td>
+                                @if ($empresa->logo)
+                                    <img src="{{ asset('storage/'.$empresa->logo) }}" alt="foto da empresa" width="50px">
+                                @else
+                                    sem foto
+                                @endif
+                            </td>
+
 
                             <td>
                                 <button>

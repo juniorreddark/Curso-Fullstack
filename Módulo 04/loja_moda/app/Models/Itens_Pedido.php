@@ -8,7 +8,7 @@ class Itens_Pedido extends Model
 {
     use HasFactory;
 
-    protected $fillable = ['pedido_id', 'produto_id', 'quantidade', 'preco_unitario'];
+    protected $fillable = [ 'produto_id', 'quantidade', 'preco_unitario'];
 
     public function pedidos()
     {

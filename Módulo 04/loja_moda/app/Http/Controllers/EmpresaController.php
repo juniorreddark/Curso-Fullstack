@@ -3,6 +3,9 @@
 namespace App\Http\Controllers;
 
 use App\Models\Empresa;
+use App\Models\Produto;
+use App\Models\Categoria;
+use Illuminate\Support\Facades\Validator;
 use Illuminate\Http\Request;
 
 class EmpresaController extends Controller
@@ -13,7 +16,10 @@ class EmpresaController extends Controller
     public function index()
     {
         $empresas = Empresa::all();
-        return view('empresa.index', compact('empresas'));
+        $produtos = Produto::all();
+        $categorias = Categoria::all();
+        
+        return view('empresa.index', compact('empresas','produtos','categorias'));
     }
 
     /**
@@ -29,21 +35,32 @@ class EmpresaController extends Controller
      */
     public function store(Request $request)
     {
-        $request->validate([
-            'razao_social'=>'required',
-            'cnpj' => 'required',
-            'endereco' => 'required',
-            'numero' => 'required',
-            'telefone' => 'required',
-            'cep' =>'required',
-            'logo' =>'required',
-            'rede_social' => 'required',
-            'pedido_id' => 'required',
-
-        ]);
-
-        $empresa = Empresa::create($request->all());
-        return redirect()->route('empresas.index')->with('success', 'Empresa criada com sucesso.');
+        
+            $request->validate([
+                
+                'logo' => 'nullable|image|mimes:jpeg,png,jpg,gif,svg|max:2048', // Validação de imagem
+            ]);
+    
+            // Processar a imagem, se ela for fornecida
+            if ($request->hasFile('logo')) {
+                $logoPath = $request->file('logo')->store('logos', 'public'); // Armazenar a imagem na pasta 'public/logos'
+            } else {
+                $logoPath = null; // Caso não haja imagem, o campo será nulo
+            }
+                         
+            $empresa = new Empresa();
+            $empresa->razao_social = $request->razao_social;
+            $empresa->cnpj = $request->cnpj;
+            $empresa->numero = $request->numero;
+            $empresa->endereco= $request->endereco;
+            $empresa->telefone = $request->telefone;
+            $empresa->produto_id =$request->produto_id;
+            $empresa->categoria_id = $request->categoria_id;
+            
+            $empresa->rede_social= $request->rede_social;
+            $empresa->logo = $logoPath;
+            $empresa->save();
+            return redirect()->route('empresas.index')->with('success', 'Empresa criada com sucesso.');
     }
 
     /**
@@ -75,9 +92,9 @@ class EmpresaController extends Controller
             'numero' => 'required',
             'telefone' => 'required',
             'cep' =>'required',
-            'logo' =>'required',
+            'logo' => 'nullable|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
             'rede_social' => 'required',
-            'pedido_id' => 'required',
+           
 
         ]);
 
