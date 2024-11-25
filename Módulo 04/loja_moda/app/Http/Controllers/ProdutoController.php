@@ -2,20 +2,20 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Produto;
+use App\Models\produto;
 use Illuminate\Http\Request;
 use Illuminate\support\Facades\Validator;
 use App\Models\Categoria;
 use App\Models\Empresa;
 
-class ProdutoController extends Controller
+class produtoController extends Controller
 {
     /**
      * Display a listing of the resource.
      */
     public function index()
     {   
-        $produtos = Produto::all();
+        $produtos = produto::all();
         $categorias = Categoria::all();
        
         return view('produtos.index', compact('produtos','categorias'));
@@ -46,9 +46,9 @@ class ProdutoController extends Controller
             $fotoPath = null; // Caso não haja imagem, o campo será nulo
         }
           
-        $produtos = Empresa::all();  
+        $empresas = Empresa::all();  
                 
-        $produto = new Produto();
+        $produto = new produto();
         $produto->nome= $request->nome;
         $produto->categoria_id= $request->categoria_id;
         $produto->preco = $request->preco;
@@ -71,7 +71,7 @@ class ProdutoController extends Controller
      */
     public function edit($id)
     {
-        $produto = Produto::find($id);
+        $produto = produto::find($id);
         return view('produtos.editar', compact('produto'));
     }
 
@@ -82,7 +82,7 @@ class ProdutoController extends Controller
     {
        
 
-        $produto = Produto::find($id);
+        $produto = produto::find($id);
         $produto->update($request->all());
 
         return redirect()->route('produtos.index')->with('success', 'Produto atualizado com sucesso.');
@@ -94,7 +94,7 @@ class ProdutoController extends Controller
      */
     public function destroy($id)
     {
-        $produto = Produto::find($id);
+        $produto = produto::find($id);
         $produto->delete();
         return redirect()->route('produtos.index')->with('success', 'Produto removido com sucesso.');
     }

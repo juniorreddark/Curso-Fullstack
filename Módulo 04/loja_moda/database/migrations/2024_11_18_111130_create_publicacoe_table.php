@@ -11,10 +11,11 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('publicacoe', function (Blueprint $table) {
+        Schema::create('publicacao', function (Blueprint $table) {
                 $table->id();// chave primária
                 $table->foreignId('user_id')->constrained()->onDelete('cascade'); // chave estrangeira para users
                 $table->foreignId('empresa_id')->constrained()->onDelete('cascade'); // chave estrangeira para empresas
+                $table->foreignId('produto_id')->constrained()->onDelete('cascade'); // chave estrangeira para empresas
                 $table->string('titulo');
                 $table->text('conteudo');
                 $table->timestamps();   // created_at, updated_at
@@ -26,6 +27,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('publicacoe');
+        Schema::dropIfExists('publicacaos');
     }
 };

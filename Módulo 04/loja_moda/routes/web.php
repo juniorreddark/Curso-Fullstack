@@ -2,14 +2,14 @@
 
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\ProdutoController;
+use App\Http\Controllers\produtoController;
 use App\Http\Controllers\CategoriaController;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\PedidoController;
 use App\Http\Controllers\EmpresaController;
 use App\Http\Controllers\AvaliacoeController;
 use App\Http\Controllers\Itens_PedidoController;
-use App\Http\Controllers\PublicacoeController;
+use App\Http\Controllers\publicacaoController;
 
 
 Route::get('/', function () {
@@ -29,13 +29,13 @@ Route::middleware('auth')->group(function () {
 require __DIR__.'/auth.php';
 
 
-Route::get('/produtos',[ProdutoController::class,'index'])->name('produtos.index');
-Route::get('/produtos_salvar',[ProdutoController::class,'create'])->name('produtos.create');
-Route::get('produtos/editar/{id}',[ProdutoController::class,'edit'])->name('produtos.edit');
-Route::post('/produtos',[ProdutoController::class,'store'])->name('produtos.store');
-Route::delete('/produtos/{id}',[ProdutoController::class,'destroy'])->name('produtos.destroy');
-Route::put('/produto/{id}', [ProdutoController::class,'update'])->name('produtos.update');
-Route::get('/produtos/{id}', [ProdutoController::class,'show'])->name('produtos.show');
+Route::get('/produtos',[produtoController::class,'index'])->name('produtos.index');
+Route::get('/produtos_salvar',[produtoController::class,'create'])->name('produtos.create');
+Route::get('produtos/editar/{id}',[produtoController::class,'edit'])->name('produtos.edit');
+Route::post('/produtos',[produtoController::class,'store'])->name('produtos.store');
+Route::delete('/produtos/{id}',[produtoController::class,'destroy'])->name('produtos.destroy');
+Route::put('/produtos/{id}', [produtoController::class,'update'])->name('produtos.update');
+Route::get('/produtos/{id}', [produtoController::class,'show'])->name('produtos.show');
 
 Route::get('/categorias', [CategoriaController::class, 'index'])->name('categorias.index');
 Route::get('/categorias_salvar', [CategoriaController::class, 'create'])->name('categorias.create');
@@ -47,7 +47,6 @@ Route::get('/categorias/{id}', [CategoriaController::class, 'show'])->name('cate
 
 
 
-Route::resource('pedidos', PedidoController::class);
 Route::get('/pedidos', [PedidoController::class, 'index'])->name('pedidos.index');
 Route::get('/pedidos_salvar', [PedidoController::class, 'create'])->name('pedidos.create');
 Route::get('pedidos/editar/{id}', [PedidoController::class, 'edit'])->name('pedidos.edit');
@@ -57,7 +56,6 @@ Route::put('/pedidos/{id}', [PedidoController::class, 'update'])->name('pedidos.
 Route::get('pedidos/{id}', [PedidoController::class, 'show'])->name('pedidos.show');
 
 Route::get('/empresas', [EmpresaController::class, 'index'])->name('empresas.index');
-Route::get('/empresas_salvar', [EmpresaController::class, 'create'])->name('empresas.create');
 Route::get('/empresas/editar/{id}', [EmpresaController::class, 'edit'])->name('empresas.edit');
 Route::post('/empresas', [EmpresaController::class, 'store'])->name('empresas.store');
 Route::delete('/empresas/{id}', [EmpresaController::class, 'destroy'])->name('empresas.destroy');
@@ -88,11 +86,11 @@ Route::delete('/itens_pedidos/{id}', [Itens_PedidoController::class, 'destroy'])
 Route::put('/itens_pedidos/{id}', [Itens_PedidoController::class, 'update'])->name('itens_pedidos.update');
 Route::get('/itens_pedidos/{id}', [Itens_PedidoController::class, 'show'])->name('itens_pedidos.show');
 
-Route::get('/publicacoes', [PublicacoeController::class,'index'])->name('publicacoes.index');
-Route::get('/publicacoes_salvar', [PublicacoeController::class, 'create'])->name('publicacoes.create');
-Route::get('/publicacoes/editar/{id}', [PublicacoeController::class, 'edit'])->name('publicacoes.edit');
-Route::post('/publicacoes', [PublicacoeController::class, 'store'])->name('publicacoes.store');
-Route::delete('/publicacoes/{id}', [PublicacoeController::class, 'destroy'])->name('publicacoes.destroy');
-Route::put('/publicacoes/{id}', [PublicacoeController::class, 'update'])->name('publicacoes.update');
-Route::get('/publicacoes/{id}', [PublicacoeController::class, 'show'])->name('publicacoes.show');
+Route::get('/publicacaos', [publicacaoController::class,'index'])->name('publicacaos.index');
+Route::get('/publicacaos_salvar', [publicacaoController::class, 'create'])->name('publicacaos.create');
+Route::get('/publicacaos/editar/{id}', [PublicacaoController::class, 'edit'])->name('publicacaos.edit');
+Route::post('/publicacaos', [publicacaoController::class, 'store'])->name('publicacaos.store');
+Route::delete('/publicacaos/{id}', [publicacaoController::class, 'destroy'])->name('publicacaos.destroy');
+Route::put('/publicacaos/{id}', [publicacaoController::class, 'update'])->name('publicacaos.update');
+Route::get('/publicacaos/{id}', [publicacaoController::class, 'show'])->name('publicacaos.show');
 

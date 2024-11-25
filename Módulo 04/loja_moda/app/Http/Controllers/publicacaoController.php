@@ -1,49 +1,57 @@
 <?php
 
 namespace App\Http\Controllers;
-use Illuminate\support\Facades\Validator;
+use Illuminate\Support\Facades\Validator;
 use Illuminate\Http\Request;
-use App\Models\Publicacoe;
+use App\Models\Publicacao;
 use App\Models\User;
 use App\Models\Empresa;
-use App\Models\Produto;
+use App\Models\produto;
 use App\Models\Categoria;
 
-class PublicacoeController extends Controller
+class PublicacaoController extends Controller
 {
     public function index()
-    {
+    {   
+      
         $empresas = Empresa::all();
         $produtos = Produto::all();
         $categorias = Categoria::all();
-        $publicacoe = Publicacoe::all();
-        return view('publicacoes.index', compact('publicacoes'));
+        // Obter todos os registros da tabela publicacaos
+        $publicacoes = Publicacao::all();  // Usando Eloquent para buscar todos os dados
+        // Passar a variável para a visualização
+        
+        return view('publicacoes.index', compact('publicacoes','empresas','produtos','categorias',));  // Passando o nome correto
     }
 
     public function create()
-    {
-        $empresas = Empresa::all(); // Buscar todas as empresas
-        return view('publicacoes.create', compact('users', 'empresas'));
+    {   
+      
+        $empresas = Empresa::all();
+        $produtos = produto::all();
+        $categorias = Categoria::all();
+        $publicacoes = publicacao::all();
+        $users = User::all();
+
+        return view('publicacoes.create', compact('users', 'empresas', 'produtos','categorias','publicacoes',));
     }
 
     public function store(Request $request)
     {
-        $request->validate([
-            'titulo' => 'required|string|max:255',
-            'conteudo' => 'required|string',
-            'user_id' => 'required|exists:users,id',
-            'empresa_id' => 'required|exists:empresas,id',
-        ]);
+     
 
-        publicacoe::create($request->all());
-        return redirect()->route('publicacoes.index')->with('success', 'Publicação criada com sucesso!');
+        Publicacao::create($request->all());
+        return redirect()->route('publicacaos.index')->with('success', 'Publicação criada com sucesso!');
     }
 
     public function edit($id)
     {
-        $users = User::all();
+       
+        $categorias = Categoria::all();
+        $publicacaos = Publicacao::all();
+        $produtos = produto::all();
         $empresas = Empresa::all();
-        return view('publicacoes.edit', compact('publicacao', 'users', 'empresas'));
+        return view('publicacoes.edit', compact('publicacaos','empresas'));
     }
 
     public function update(Request $request, $id)
@@ -53,16 +61,17 @@ class PublicacoeController extends Controller
             'conteudo' => 'required|string',
             'user_id' => 'required|exists:users,id',
             'empresa_id' => 'required|exists:empresas,id',
+            'produto_id' => 'required|existes:produtos,id',
         ]);
 
         $publicacoe->update($request->all());
-        return redirect()->route('publicacoes.index')->with('success', 'Publicação atualizada com sucesso!');
+        return redirect()->route('publicacaos.index')->with('success', 'Publicação atualizada com sucesso!');
     }
 
     public function destroy($id)
     {
         $publicacao->delete();
-        return redirect()->route('publicacoes.index')->with('success', 'Publicação deletada com sucesso!');
+        return redirect()->route('publicacaos.index')->with('success', 'Publicação deletada com sucesso!');
     }
 
     /*$user = User::find(1); // Encontrar um usuário

@@ -1,0 +1,147 @@
+h1{
+    color:blue
+}
+
+html{
+    height: 100%;
+}
+
+body{
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    margin: 0px;
+    justify-content: space-between;
+    background-color: rgb(37,37,37);
+    
+}
+.nav{
+    
+    color:white;
+    background-color: rgb(87,87, 87);
+    
+}
+
+.lista-nav{
+    display: flex;
+    padding: 10px 0px;
+    margin: 0px;
+    justify-content: space-around;
+    
+    list-style: none;
+    
+}
+
+.lista-nav-item{
+    font-size: 20px;
+    font-weight: bold;
+    height: 100%;
+
+}
+
+footer{
+    padding: 10px 0px;
+    color:white;
+    text-align: center;
+    background-color: rgb(87,87, 87);
+    font-weight: bold;
+}
+
+.lista-card{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+    row-gap:10px ;
+    border-radius: 5px solid #fff;
+    background-color: white;
+    margin-top: 10px;
+    padding: 20px;
+    
+    
+    
+    
+}
+
+.card{
+    border: 10px solid #333;
+    border-radius: 10px;
+    margin: 5px 5px 10px 10px;
+    padding: 3px;
+    
+    
+    
+    
+    
+}
+
+
+
+
+
+.lista-card{
+    text-align: center;
+}
+
+h4{
+    text-align: left;
+
+}
+
+.list-cariinho{
+    border: 3px solid #Ffd700;
+    padding: 10px;
+}
+
+.carrinho{
+    text-align: center;
+    display: flex;
+    padding: 10px;
+    
+}
+
+button{
+    width: 23px;
+    text-align: center;
+    column-gap: 10px;
+    border-radius: 40px;
+    background-color: rgb(245, 245, 13);
+    color: yellowgreen;
+    
+    
+}
+
+.botão{
+    text-align: center;
+    width:auto;
+    padding: 10px;
+    color: yellowgreen;
+}
+
+img{
+    padding: 10px;
+    
+}
+
+.texto02{
+    text-align: center;
+    border: 2px solid #Ffd700;
+    margin-top: 10px;
+    color: yellowgreen;
+    
+}
+
+span{
+    color: yellowgreen;
+}
+
+    
+
+
+
+
+
+
+
+
+
