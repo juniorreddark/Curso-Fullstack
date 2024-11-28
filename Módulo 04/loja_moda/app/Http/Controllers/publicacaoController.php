@@ -16,6 +16,7 @@ class PublicacaoController extends Controller
       
         $empresas = Empresa::all();
         $produtos = Produto::all();
+        /*$produtos = Produto::limit(5)->get();*/
         $categorias = Categoria::all();
         // Obter todos os registros da tabela publicacaos
         $publicacoes = Publicacao::all();  // Usando Eloquent para buscar todos os dados
@@ -38,8 +39,7 @@ class PublicacaoController extends Controller
 
     public function store(Request $request)
     {
-     
-
+        
         Publicacao::create($request->all());
         return redirect()->route('publicacaos.index')->with('success', 'Publicação criada com sucesso!');
     }

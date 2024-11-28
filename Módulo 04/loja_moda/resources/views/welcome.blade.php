@@ -62,8 +62,6 @@
                 </div>
             </div>
         </div>
-       <a href="{{ route('produtos.index') }}"> <button>PRODUTO</button></a>
-        <button><a href="{{ route('empresas.index') }}">CATEGORIA</a></button>
-        <button><a href="{{ route('categorias.index') }}">EMPRESA</a></button>
+       
     </body>
 </html>

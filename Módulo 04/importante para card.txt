@@ -1,0 +1,49 @@
+    <style>
+        /* Estilo para o card */
+.custom-card {
+    border-radius: 10px;  /* Borda arredondada */
+    overflow: hidden;     /* Garante que a borda arredondada se aplica corretamente */
+    border: 1px solid #ddd;  /* Borda suave */
+    transition: transform 0.3s ease-in-out;  /* Transição para o efeito de hover */
+}
+
+.custom-card:hover {
+    transform: translateY(-5px);  /* Efeito de elevação ao passar o mouse */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);  /* Sombras mais intensas ao passar o mouse */
+}
+
+.custom-title {
+    font-size: 1.2rem;  /* Tamanho da fonte */
+    font-weight: bold;  /* Negrito */
+    color: #333;  /* Cor do texto */
+    margin-bottom: 10px;  /* Espaçamento abaixo do título */
+}
+
+/* Estilo para a imagem do card */
+.card-img-top {
+    width: 100%;  /* Imagem ocupa toda a largura do card */
+    height: 200px;  /* Altura fixa para a imagem */
+    object-fit: cover;  /* Garantir que a imagem cubra o espaço sem distorcer */
+}
+
+/* Estilo para o corpo do card */
+.card-body {
+    background-color: #f8f9fa;  /* Cor de fundo suave */
+    padding: 15px;
+}
+
+/* Estilo para o texto do card */
+.card-text {
+    font-size: 0.9rem;  /* Ajusta o tamanho da fonte */
+    color: #555;  /* Cor do texto */
+    margin-bottom: 5px;  /* Espaçamento entre os parágrafos */
+}
+
+/* Ajustes responsivos */
+@media (max-width: 576px) {
+    .custom-card {
+        margin-bottom: 15px;  /* Margem inferior maior em telas menores */
+    }
+}
+
+    </style>
