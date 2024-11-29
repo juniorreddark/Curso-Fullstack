@@ -22,6 +22,6 @@ class Empresa extends Model
 
     public function publicacoes()
     {
-        return $this->hasMany(Publicacao::class);
+        return $this->belongsTo(Publicacao::class);
     }
 }

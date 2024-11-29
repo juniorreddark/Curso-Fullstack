@@ -11,7 +11,7 @@ class Publicacao extends Model
 
     protected $table = 'publicacao';
 
-    protected $fillable = ['empresa_id','categoria_id','produto_id', 'titulo', 'conteudo'];
+    protected $fillable = ['empresa_id','categoria_id','foto','produto_id', 'titulo', 'conteudo'];
 
     public function user()
     {
@@ -26,6 +26,7 @@ class Publicacao extends Model
     public function produto()
     {
         return $this->belongsTo(Produto::class);
+        
     }
 
     public function categoria()

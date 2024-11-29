@@ -9,7 +9,7 @@ class produto extends Model
 {
     use HasFactory;
 
-    protected $fillable = ['nome', 'preco', 'descricao','foto','estoque', 'categoria_id'];
+    protected $fillable = ['nome', 'preco', 'descricao','foto','estoque', 'categoria_id', 'publicacao_id'];
 
     public function categoria()
     {
@@ -23,7 +23,12 @@ class produto extends Model
     
     public function empresas()
     {
-        return $this->belongsTo(Empresas::class);
+        return $this->belongsTo(Empresa::class);
+    }
+
+    public function publicacoes()
+    {
+        return $this->belongsTo(Publicacao::class);
     }
 }
   

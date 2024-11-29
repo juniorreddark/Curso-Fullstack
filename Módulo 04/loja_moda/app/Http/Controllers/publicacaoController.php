@@ -13,16 +13,17 @@ class PublicacaoController extends Controller
 {
     public function index()
     {   
-      
+        $publicacoes = Publicacao::with('empresa','produto','categoria','user')->get();  // Usando Eloquent para buscar todos os dados
         $empresas = Empresa::all();
         $produtos = Produto::all();
         /*$produtos = Produto::limit(5)->get();*/
         $categorias = Categoria::all();
+        $users = User::all();
         // Obter todos os registros da tabela publicacaos
-        $publicacoes = Publicacao::all();  // Usando Eloquent para buscar todos os dados
+       
         // Passar a variável para a visualização
         
-        return view('publicacoes.index', compact('publicacoes','empresas','produtos','categorias',));  // Passando o nome correto
+        return view('publicacoes.index', compact('publicacoes','empresas','produtos','categorias','users'));  // Passando o nome correto
     }
 
     public function create()
