@@ -17,6 +17,7 @@ class produtoController extends Controller
     {   
         $produtos = produto::all();
         $categorias = Categoria::all();
+        
        
         return view('produtos.index', compact('produtos','categorias'));
     }

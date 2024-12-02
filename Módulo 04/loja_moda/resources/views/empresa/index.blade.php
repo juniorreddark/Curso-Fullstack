@@ -6,7 +6,7 @@
 
     </head>
     <body>
-       
+        <button > <a href="{{ route('publicacaos.index') }}" >Página inicial </a></button>
 
         <h1> Empresas </h1>
 
@@ -88,6 +88,7 @@
 
 
                             <td>
+                                
                                 <button>
                                     <a href="{{ route('empresas.edit', $empresa->id) }}">
                                             

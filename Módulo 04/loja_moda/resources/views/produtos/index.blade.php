@@ -5,7 +5,7 @@
         <title>Lista de Produtos</title>
     </head>
     <body>
-        <button><a href="">Página inicial</a></button>
+        <button > <a href="{{ route('publicacaos.index') }}" >Página inicial </a></button>
         <h1>Produto</h1>
     
         <form action="{{ route('produtos.store') }}" method="POST" enctype="multipart/form-data">
@@ -40,6 +40,7 @@
                     <th scope="col">NOME</th>
                     <th scope="col">VALOR</th>
                     <th scope="col">DESCRIÇÃO</th>
+                    <th scope="col">FOTOS</th>
                     <th scope="col">OPÇÕES</th>
                 </tr>
             </thead>
