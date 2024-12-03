@@ -91,7 +91,7 @@
                                 
                                 <button>
                                     <a href="{{ route('empresas.edit', $empresa->id) }}">
-                                            
+                                       editar     
                                     </a>
                                 </button>
 
@@ -99,7 +99,7 @@
                                     @csrf
                                     @method('DELETE')
                                     <button type="submit">
-                                            <img src="https://img.icons8.com/?size=100&id=e6TWwmmzpzFh&format=png&color=000000" height="35" width="35">excluir
+                                            excluir
                                     </button>
                                 </form>
                             </td>
