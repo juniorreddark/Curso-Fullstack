@@ -8,10 +8,17 @@ class Categoria extends Model
 {
     use HasFactory;
 
-    protected $fillable = ['nome', 'descricao',];
+    protected $fillable = ['nome', 'descricao','publicacao_id'];
 
     public function produtos()
     {
         return $this->belongsTo(Produto::class);
+    }
+
+   
+
+    public function publicacoes()
+    {
+        return $this->hasMany(Publicacao::class);
     }
 }
