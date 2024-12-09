@@ -1,25 +1,56 @@
-<DOCTYPE html>
-<html>
+<!DOCTYPE html>
+<html lang="pt-br">
     <head>
-        <title> Editar Empresa </title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Editar Empresa</title>
     </head>
     <body>
-        <h1> Editar Empresa</h1>
+        <h1>Editar Empresa</h1>
 
-        <form action="{{ route('empresas.update', $empresa->id) }}" method="POST">
+        <form action="{{ route('empresas.update', $empresa->id) }}" method="POST" enctype="multipart/form-data">
             @csrf 
             @method('PUT')
-            <label for="">RAZÃO SOCIAL</label>
-            <input type="text" name="razao_social" >
-            <label for="">CNPJ</label>
-            <input type="text" name="cnpj" id="cnpj">
-            <label for="">ENDEREÇO</label>
-            <input type="text" name="endereco" id="endereco">
-            <label for="">NUMERO</label>
-            <input type="string" name="numero" id="numero">
-            <button type="submit">Salvar</button>
             
+            <div class="col-sm">
+                <label for="razao_social">RAZÃO SOCIAL</label>
+                <input type="text" name="razao_social" id="razao_social" value="{{ $empresa->razao_social }}">
+                
+                <label for="cnpj">CNPJ</label>
+                <input type="text" name="cnpj" id="cnpj" value="{{ $empresa->cnpj }}">
+                
+                <label for="endereco">ENDEREÇO</label>
+                <input type="text" name="endereco" id="endereco" value="{{ $empresa->endereco }}">
+                
+                <label for="numero">NUMERO</label>
+                <input type="number" name="numero" id="numero" value="{{ $empresa->numero }}">
+            </div>
 
+            <div class="col-sm">
+                <label for="telefone">TELEFONE</label>
+                <input type="text" name="telefone" id="telefone" value="{{ $empresa->telefone }}">
+
+                <label for="rede_social">Rede Social</label>
+                <input type="text" name="rede_social" id="rede_social" value="{{ $empresa->rede_social }}">
+
+                
+
+                <label for="categoria_nome">Categoria</label>
+                <input type="text" name="categoria_nome" id="categoria_nome" value="{{ $empresa->categoria->nome }}">
+
+
+                
+
+                <div>
+                    <label for="logo">Logo</label>
+                    <input type="file" name="logo" id="logo">
+                    @if($empresa->logo)
+                        <img src="{{ asset('storage/' . $empresa->logo) }}" alt="Logo" width="100">
+                    @endif
+                </div>
+
+                <button type="submit">Atualizar</button>
+            </div>
         </form>
     </body>
 </html>

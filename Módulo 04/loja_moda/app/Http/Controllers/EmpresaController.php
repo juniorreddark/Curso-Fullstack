@@ -74,11 +74,14 @@ class EmpresaController extends Controller
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit(Request $request,$id)
+    public function edit($id)
     {
        
         $empresa = Empresa::find($id);
-        return view('empresa.editar', compact('empresa'));
+        $produto = Produto::find($id);
+        $categoria = Categoria::find($id);
+   
+        return view('empresa.editar', compact('empresa','produto','categoria'));
     }
 
     /**

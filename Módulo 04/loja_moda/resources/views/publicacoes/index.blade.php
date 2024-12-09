@@ -70,7 +70,9 @@
 </nav>
 
     <div class="mt-5">
+      
         <h1 class="m-4">AJ Modas Masculina</h1>
+        <h2 style="text-align: center;">Aqui você é que faz a moda</h2>
     </div>
             
 
@@ -109,11 +111,21 @@
                             <p class="card-text">Valor R$: {{ $publicacoe->produto ? $publicacoe->produto->preco : 'N/A' }}</p>
                             <p class="card-text">Empresa: {{ $publicacoe->empresa ? $publicacoe->empresa->razao_social : 'N/A' }}</p>
                             <p class="card-text">Categoria: {{ $publicacoe->categoria ? $publicacoe->categoria->nome : 'N/A' }}</p>
+                        
+                            
+               
                         </div>
                     </div>
                 </div>
             @endforeach
         </div>
+    </div>
+    <div class="texto">
+        <br>
+        <span>Todos os estilos para você e uma grande variedades de roupas</span>
+        <br>
+        <span>com um preço acessivel para você </span> 
+        </span>uma loja perto de você </span>
     </div>
 
     <!-- Footer -->

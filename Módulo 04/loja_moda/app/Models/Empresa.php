@@ -8,7 +8,7 @@ class Empresa extends Model
 {
     use HasFactory;
 
-    protected $fillable = ['razao_social', 'cnpj', 'endereco', 'rede_social','telefone','numero','logo','produto_id'];
+    protected $fillable = ['razao_social', 'cnpj', 'endereco', 'rede_social','telefone','numero','logo','produto_id','categoria_id'];
 
     public function produtos()
     {
