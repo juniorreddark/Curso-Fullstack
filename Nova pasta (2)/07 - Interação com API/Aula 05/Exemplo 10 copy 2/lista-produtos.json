@@ -1,0 +1,49 @@
+[
+    {   "id":3,
+        "img":"https://a-static.mlcdn.com.br/800x560/relogio-masculino-technos-analogico-prata-militar-2115myn-1a-calendario/rbmwebshop/15873725206/8572153155b32932894c858c18be8cc6.jpeg",
+        "nome":"Relógio Masculino Technos ",
+        "descricao":"relógio para ver a hora",
+        "valorComDesconto":4250.87,
+        "valorSemDesconto":4800.00
+    },
+
+    {   "id":4,
+        "img":"https://a-static.mlcdn.com.br/800x560/smartphone-samsung-galaxy-a14-64-gb-preto-4g-octa-core-4gb-ram-66-cam-tripla-selfie-13mp-dual-chip/magazineluiza/237063500/fcffda15fc0c804be29635dca144c277.jpg",
+        "nome":"Smartphone Samsung Galaxy A14 ",
+        "descricao":"para me comunicar com o mundo",
+        "valorComDesconto":4250.87,
+        "valorSemDesconto":4800.00
+    },
+
+    {   "id":5,
+        "img":"https://a-static.mlcdn.com.br/800x560/smartphone-samsung-galaxy-a14-128gb-prata-5g-octa-core-4gb-ram-66-cam-tripla-selfie-13mp/magazineluiza/236591900/8b1090aa70f218aee19eaeca7654d2a5.jpg",
+        "nome":"Smartphone Samsung Galaxy A14 ",
+        "descricao":"para me comunicar com o mundo",
+        "valorComDesconto":4250.87,
+        "valorSemDesconto":4800.00
+    },
+
+    {   "id":6,
+        "img":"https://a-static.mlcdn.com.br/800x560/notebook-asus-vivobook-15-intel-core-i3-4gb-256gb-ssd-156-full-hd-linux-endless-os-x1500ea-ej3665/magazineluiza/237655500/412ded7e08ead2f00fc8294302fa063d.jpg",
+        "nome":"Notebook Asus Vivobook 156",
+        "descricao":"para criar trabalhos",
+        "valorComDesconto":4250.87,
+        "valorSemDesconto":4800.00
+    },
+
+    {   "id":2,
+        "img":"https://a-static.mlcdn.com.br/800x560/notebook-hp-intel-core-i3-8gb-256gb-ssd-156-windows-11-256-g9/magazineluiza/237612600/efdbef0744b833112f7b98e184831cfb.jpg",
+        "nome":"Notebook HP Intel Core i3",
+        "descricao":"para criar trabalhos",
+        "valorComDesconto":4250.87,
+        "valorSemDesconto":4800.00
+    },
+
+    {   "id":1,
+        "img":"https://a-static.mlcdn.com.br/800x560/pc-gamer-completo-3green-fps-intel-core-i7-16gb-ram-placa-de-video-geforce-gtx-4gb-ssd-512gb-monitor-20-75hz-fonte-500w-3gf-040/3greentechnology/74575/04847f8beee301f47150cc74fbd622eb.jpeg",
+        "nome":"PC Gamer Completo 3green",
+        "descricao":"para me divertir",
+        "valorComDesconto":4250.87,
+        "valorSemDesconto":4800.00
+    }
+]

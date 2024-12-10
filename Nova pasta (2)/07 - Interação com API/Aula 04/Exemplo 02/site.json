@@ -1,0 +1,109 @@
+[
+    {
+        
+      "img": "https://images.macrumors.com/t/-HGPXQyihIQgBXw3GXeXF12JJ2A=/1600x/article/2011/01/13/140418-cdma_iphone_4.jpg",
+      "nome": "phone_4",
+      "descricao": "Celular de última geração",
+      "valorSemDesconto": 2500.00,
+      "valorComDesconto": 1000.99,
+      "tipoEntrega": "Frete GRÁTIS"
+    
+    },
+
+    {
+        "img": "https://images-na.ssl-images-amazon.com/images/I/71-KPO1tHuL._SL1500_.jpg",
+        "nome": "phone_15",
+        "descricao": "Celular de última geração",
+        "valorSemDesconto": 3500.00,
+        "valorComDesconto": 2000.99,
+        "tipoEntrega": "Frete GRÁTIS"
+    },
+
+    {
+        "img": "https://cdn.shopify.com/s/files/1/0583/0328/3400/products/title_iphone_61_thinfit_blk_01_1200x.jpg?v=1662661069",
+        "nome": "phone_16",
+        "descricao": "Celular de última geração",
+        "valorSemDesconto": 4500.00,
+        "valorComDesconto": 2500.99,
+        "tipoEntrega": "Frete GRÁTIS"
+    
+    },
+
+    {
+        "img": "https://smartmania.cz/wp-content/uploads/2016/04/HP_Spectre_13.jpg",
+        "nome": "Notebook ",
+        "descricao": "Notebook ultrafino e potente",
+        "valorSemDesconto": 5500.00,
+        "valorComDesconto": 3500.99,
+        "tipoEntrega": "Frete GRÁTIS"
+    
+    },
+
+    {
+        "img": "https://static.ticimax.cloud/40115/uploads/editoruploads/laptop.png?t=20201121124732",
+        "nome": "Notebook phone ",
+        "descricao": " última geração",
+        "valorSemDesconto": 6500.00,
+        "valorComDesconto": 3500.99,
+        "tipoEntrega": "Frete GRÁTIS"
+    
+    },
+
+    {
+        "img": "https://www.notebookcheck-tr.com/uploads/tx_nbc2/SamsungNotebook9Pro13__2_.JPG",
+        "nome": "Notebook tablet s9 ",
+        "descricao": "Nova geração",
+        "valorSemDesconto": 7500.00,
+        "valorComDesconto": 3500.99,
+        "tipoEntrega": "Frete GRÁTIS"
+    },
+
+    {
+        "img": "https://freepngimg.com/thumb/electronics/85585-gaming-laptop-multimedia-game-computer-video-technology.png",
+        "nome": "PC Games ",
+        "descricao": "Nova geração",
+        "valorSemDesconto": 8500.00,
+        "valorComDesconto": 4500.99,
+        "tipoEntrega": "Frete GRÁTIS"
+    },
+
+    {
+        "img": "https://asset.msi.com/global/picture/news/2018/monitor/desktop-20180912-2.jpg",
+        "nome": "Conjunto Completo PC Games ",
+        "descricao": "Nova Plus geração",
+        "valorSemDesconto": 10500.00,
+        "valorComDesconto": 84500.99,
+        "tipoEntrega": "Frete GRÁTIS"
+    },
+
+    {
+
+        "img": "https://images7.alphacoders.com/449/thumb-1920-449346.jpg",
+        "nome": "Jogos Para Video Games ",
+        "descricao": "Nova geração",
+        "valorSemDesconto": 500.00,
+        "valorComDesconto": 200.99,
+        "tipoEntrega": "Frete GRÁTIS"
+    },
+
+    {
+
+        "img": "https://www.nextgenbase.com/files/2015/10/the-crew.jpg",
+        "nome": "Jogos Para Video Games ",
+        "descricao": "Nova geração",
+        "valorSemDesconto": 400.00,
+        "valorComDesconto": 200.99,
+        "tipoEntrega": "Frete GRÁTIS"
+    },
+    
+    {
+
+        "img": "http://i.playground.ru/i/pix/2200803/image.jpg",
+        "nome": "Jogos Para Video Games ",
+        "descricao": "Nova geração",
+        "valorSemDesconto": 400.00,
+        "valorComDesconto": 200.99,
+        "tipoEntrega": "Frete GRÁTIS"
+    }
+
+]

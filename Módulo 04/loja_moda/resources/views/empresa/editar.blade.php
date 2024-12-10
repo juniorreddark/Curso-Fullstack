@@ -8,7 +8,7 @@
     <body>
         <h1>Editar Empresa</h1>
 
-        <form action="{{ route('empresas.update', $empresa->id) }}" method="POST" enctype="multipart/form-data">
+        <form action="{{ route('empresas.update', $empresa->id) }}" method="POST" >
             @csrf 
             @method('PUT')
             
@@ -41,13 +41,7 @@
 
                 
 
-                <div>
-                    <label for="logo">Logo</label>
-                    <input type="file" name="logo" id="logo">
-                    @if($empresa->logo)
-                        <img src="{{ asset('storage/' . $empresa->logo) }}" alt="Logo" width="100">
-                    @endif
-                </div>
+                
 
                 <button type="submit">Atualizar</button>
             </div>

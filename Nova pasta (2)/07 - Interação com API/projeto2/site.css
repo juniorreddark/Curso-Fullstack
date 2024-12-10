@@ -1,0 +1,591 @@
+nav{
+    background: rgb(233, 109, 8);
+    padding: 10px;
+    color:white;
+    display: flex;
+    width: 100%;
+    height: auto;
+    align-items: center;
+    flex-wrap: wrap;
+    
+}
+
+.sigla{
+    color: rgb(241, 123, 13);
+    font-size: 30px;
+    margin: 10px;
+}
+
+.nome{
+    color: rgb(226, 213, 22);
+    font-size: 30px;
+    margin: 10px;
+}
+
+.logo{
+    color: rgb(179, 255, 0);
+    font-size: 30px;
+    margin: 10px;
+}
+
+.todos{
+    width: 100%;
+    height: 200px;
+    background-color: rgb(29, 28, 29);
+    
+    margin: 30px;
+    padding: 10px;
+}
+
+.grupo-cards{
+  
+    width: 325px;
+   flex-direction: column;
+   align-items: center;
+   padding: 10px;
+   
+    display: flex;
+   
+    
+    
+}
+
+.cards{
+    border: 1px solid #333;
+    width: 350px;
+ 
+    padding: 10px;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 10px;
+    row-gap: 10px;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 15px;
+    box-shadow:3px 3px 4px rgb(177, 176, 176) ;
+    background-color:white;
+    transition: 0.5s;
+   
+}
+
+.cards:hover{
+    width: 372px;
+    height: 459px;
+
+}
+
+.grupo-cards:hover{
+    width: 328px;
+    height: 250px;
+}
+
+
+
+ 
+
+.list-cards{
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 20px;
+    row-gap: 20px;
+
+    align-items: center;
+    justify-content: center;
+    margin: 15px;
+    padding: 10px;
+   
+    
+}
+
+.valores{
+    background-color:rgb(177, 247, 13);
+    border-radius: 15px;
+    padding: 6px;
+}
+
+.valorComDesconto{
+    font-size: large;
+    font-weight: bold;
+}
+
+.valorSemDesconto{
+  font-size: small;
+  color: red;
+  text-decoration: line-through;  
+}
+
+.tex{
+    color: #333;
+}
+
+.cardImg{
+   display: flex;
+   flex-direction: column;
+   flex-wrap: wrap;
+   border: 1px solid #333; 
+   width: 55%;
+   height: 615px;
+   padding: 9px;
+   align-items: center;
+   margin: 15px;
+   border-radius: 10px;
+   background-color: #fff;
+
+}
+
+.imagens{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width:fit-content;
+    margin: 20px;
+    border:1px solid #333;
+    border-radius: 15px;
+    padding: 11px;
+}
+
+.mini-img{
+    display: flex;
+    flex-direction: row;
+    column-gap: 10px;  
+}
+
+.miniatura{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+body{
+    background-color: #fafafa;
+    display: flex;
+
+    height: 100vh;
+    margin: 0;
+    transition: background 0.2s linear;
+}
+
+body.dark{
+    background: #232c35;
+}
+
+.checkbox {
+    opacity: 0;
+    position: absolute;
+}
+
+.label {
+    background-color: #111;
+    border-radius: 50px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+    position: relative;
+    height: 26px;
+    width: 50px;
+    transform: scale(1.5);
+}
+
+.label .ball {
+    background-color: #fff;
+    border-radius: 50%;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    height: 22px;
+    width: 22px;
+    transform: translateX(0px);
+    transition: transform 0.2s linear;
+}
+
+.checkbox:checked + .label .ball {
+    transform:translateX(24px) ;
+}
+
+.fa-moon{
+    color: #f1c40f;
+}
+
+.fa-sun{
+    color: #f39c12;
+}
+
+.chkt{
+    margin: 10px;
+   
+    padding: 15px;
+}
+
+.marca{
+    margin: 15px;
+    border: 1px solid #333;
+}
+
+button{
+    width: fit-content;
+}
+
+.cont{
+  display: flex;
+  column-gap: 10px;
+  align-items: center;
+  justify-content: center;
+  margin-left: 150px;
+}
+
+.detalhes{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-left: 115px;
+}
+
+body{
+    background:linear-gradient(90deg,#554dca,#7e22ce);
+}
+
+
+
+
+.cardt{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    border: 1px solid;
+    box-shadow: 3px 3px 4px;
+    padding: 10px;
+    align-items: center;
+    border-radius: 15px;
+    background-color: #fff;
+  
+}
+
+.produto{
+    display: flex;
+    align-items: center;
+    border: 1px solid #333;
+    background-color: #fff;
+    border-radius: 15px;
+    flex-direction: column;
+    height: 630px;
+    width: 680px;
+    margin: 10px;
+    
+}
+
+
+
+.bot{
+    width:40px;
+    height: 27px;
+    margin: 15px;
+}
+
+.cardts{
+    border: 1px solid #333;
+    align-items: center;
+    flex-direction: column;
+    display: flex;
+    margin: 10px;
+   
+    flex-wrap: wrap;
+    row-gap: 20px;
+    column-gap: 20px;
+}
+
+.nav{
+    width: 1436px;
+    height: 151px;
+    margin: 10px;
+}
+
+.geral{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 25px;
+}
+
+
+.list-cards{
+    margin: 10px;
+}
+
+.lists-nav{
+    width: 100%;
+}
+
+.listy-nav{
+    margin: 10px;
+    padding: 10px;
+}
+
+.carrossel{
+    position: static;
+    width: 590px;
+    margin: auto;
+    align-items: center;
+   
+}
+
+.slides{
+    width: 590px;
+    height: 445px;
+    position: fixed;
+    margin: 0px 30px 0px 30px;
+    border: 1px solid #333;
+    border-radius: 15px;
+    position: static;
+    background-color: #f39c12;
+    margin-top: -30px;
+   
+    
+
+}
+
+.slide{
+    margin: auto;
+    padding: 41px;
+    
+}
+
+.listcard{
+    background-color: blue;
+    padding: 40px;
+    align-items: center;
+  
+}
+
+
+.button{
+    width: 649px;
+    display: flex;
+    justify-content: space-between;
+    height: 300px;
+    align-items: center;
+    margin-top: -331px;
+   
+}
+
+.button .button{
+    background: rgb(0,0,0,0.5);
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 50;
+}
+
+.click{
+    background-color: rgb(233, 57, 14);
+    width: 80px;
+    height: 29px;
+    align-items: center;
+    text-align: center;
+    margin: 15px;
+    margin-left: 95%;
+    padding: 5px;
+  
+}
+
+.formaspg{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    column-gap: 20px;
+}
+
+.Cartão{
+    background-color: red;
+    height: 24px;
+    width: 70px;
+    align-items: center;
+    text-align: center;
+    padding: 5px;
+    border-radius: 15px;
+    color: #fff;
+}
+
+.Pix{
+    background-color: rgb(9, 236, 40);
+    height: 24px;
+    width: 70px;
+    align-items: center;
+    text-align: center;
+    padding: 5px;
+    border-radius: 15px;
+    color: #fff;
+  
+}
+
+.display{
+    background-color: yellow;
+    height: 24px;
+    width: 70px;
+    align-items: center;
+    text-align: center;
+    padding: 5px;
+    border-radius: 15px;
+    color: blue;
+}
+
+.comprar{
+    background-color: rgb(11, 146, 236);
+    height: 24px;
+    width: 70px;
+    align-items: center;
+    text-align: center;
+    padding: 5px;
+    border-radius: 15px;
+    color: #fff;
+
+}
+
+.buscar-box{
+    width: 80px;
+    height: 80px;
+    background-color: #fff;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    transition: .5s;
+    background-color: rgb(17, 17, 17);
+    border-radius: 15px;
+    margin-left: 10px;
+    margin-top: -50px;
+    
+
+    
+    
+}
+
+.buscar-box .lupa-buscar .buscar-box .btn-fechar{
+    min-width: 80px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.buscar-box.ativar{
+    height: 370px;
+    width: 400px;
+}
+
+.buscar-box .btn-fechar{
+    font-size: 27px;
+    margin-left: 15px;
+    color: #fff;
+ 
+}
+
+.buscar-box .lupa-buscar{
+    font-size: 70px;
+    color: #fff;
+}
+
+.buscar-box .input-buscar{
+    position: absolute;
+    left: 80px;
+    width: calc(100%-120px);
+    height: 100%;
+    line-height: 80px;
+}
+
+.buscar-box .input-buscar input{
+    border: 0;
+    outline: 0;
+    font-size: 20px;
+}
+
+.item{
+    border: 1px solid #333;
+    display: flex;
+    width: 250px;
+    height: 90px;
+    margin: 20px;
+    align-items: center;
+    justify-content: center;
+    background-color: #eeb854;
+    border-radius: 10px;
+    flex-direction: column;
+}
+
+.texto{
+    display: flex;
+    padding: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+
+.buscar-boxk{
+    width: 80px;
+    height: 80px;
+    background-color: #fff;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    transition: .5s;
+    background-color: rgb(241, 19, 130);
+    margin-left: 75%;
+}
+
+.buscar-boxk.ativar{
+    width: 400px;
+}
+
+.buscar-boxk .lupa-buscark, .buscar-boxk .btn-fechar{
+    min-width: 80px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+
+}
+
+
+.buscar-boxk .btn-fechark{
+    font-size: 20px;
+    margin-left: 15px;
+    color: #fff;
+
+}
+
+.buscar-boxk .lupa-buscark i{
+    font-size: 35px;
+    color: #fff;
+   
+    
+}
+
+.buscar-boxk .input-buscark{
+    position: absolute;
+    left: 80px;
+    width: calc(100%-120px);
+    height: 100%;
+    line-height: 80px;
+  
+
+}
+
+.buscar-boxk .input-buscark input{
+    border: 0;
+    outline: 0;
+    font-size: 20px;
+}
+
+
+

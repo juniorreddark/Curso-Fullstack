@@ -1,0 +1,132 @@
+.card{
+    border: 1px solid #868686;
+    width: 250px;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 6px 6px 8px rgb(146, 146, 146);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+body{
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 20px;
+    row-gap: 20px;
+   
+
+    
+}
+
+
+.lista-card{
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 10px;
+    row-gap: 15px;
+    
+   
+}
+
+.valorSemDesconto{
+    font-size: small;
+    color: red;
+    text-decoration-line: line-through;
+}
+
+.valorComDesconto{
+    font-size: large;
+    font-weight: bold;
+}
+
+.titulo{
+    font-weight: bold;
+    padding: 10px;
+}
+
+.img{
+    width: 240px;
+    height: 240px;
+    flex-wrap: wrap;
+    row-gap: 10px;
+    column-gap: 10px;
+    display: flex;
+    margin-right: 35px;
+    
+    
+}
+.card{
+    display: flex;
+    flex-wrap: wrap;
+    border: 1px solid#333;
+    align-items: center;
+    column-gap: 10px;
+    row-gap: 10px;
+    flex-direction: column;
+    margin: 20px;
+    width: 300px;
+    box-shadow: 3px  3px 3px 3px rgb(177, 176, 176);
+    border-radius: 15px;
+    padding: 10px;
+    
+    
+    
+    
+    
+    }
+    
+    body{
+        display: flex;
+        flex-wrap: wrap;
+        column-gap: 20px;
+        row-gap: 20px;
+       
+    
+        
+    }
+    .lista-card{
+        display: flex;
+        flex-wrap: wrap;
+        
+       
+    }
+    
+    .valorSemDesconto{
+        font-size: small;
+        color: red;
+        text-decoration-line: line-through;
+    }
+    
+    .valorComDesconto{
+        font-size: large;
+        font-weight: bold;
+    }
+    
+    .titulo{
+        font-weight: bold;
+        padding: 10px;
+    }
+    
+    .grupo-img{
+        width: 250px;
+        height: 250px;
+        display: flex;
+        flex-direction:row;
+        justify-content: center;
+        
+        
+      
+        
+        
+        
+    }
+    .textos{
+        height: 100%;
+        justify-content: space-between;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    

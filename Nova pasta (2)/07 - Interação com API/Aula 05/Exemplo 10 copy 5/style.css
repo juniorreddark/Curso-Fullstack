@@ -1,0 +1,137 @@
+.card{
+    display: flex;
+    flex-wrap: wrap;
+    border: 1px solid#333;
+    align-items: center;
+    column-gap: 10px;
+    row-gap: 10px;
+    flex-direction: column;
+    margin: 10px;
+    width: 300px;
+    box-shadow: 3px  3px 3px 3px rgb(177, 176, 176);
+    border-radius: 15px;
+    padding: 10px;
+    
+
+}
+    
+
+.lista-card{
+    display: flex;
+    flex-wrap: wrap;
+    
+    
+}
+
+.valorSemDesconto{
+    font-size: small;
+    color: red;
+    text-decoration-line: line-through;
+}
+
+.valorComDesconto{
+    font-size: large;
+    font-weight: bold;
+}
+
+.titulo{
+    font-weight: bold;
+    padding: 10px;
+}
+
+.img{
+    width: 240px;
+    height: 240px;
+    flex-wrap: wrap;
+    row-gap: 10px;
+    column-gap: 10px;
+    display: flex;
+    margin-right: 35px;
+    
+}
+
+.grupoValores{
+    border:1px solid black;
+    width: fit-content;
+    column-gap: 15px;
+    flex-direction: row;
+    display: flex;
+    
+    
+}
+
+.list-card{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin-top: 150px;
+
+}
+
+.cardImg{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #333;
+    width:fit-content;
+    padding: 9px;
+    align-items: center;
+    margin: 15px;
+ 
+    
+
+}
+
+nav{
+    background: red;
+    padding: 10px;
+    color: white;
+    width: 100%;
+    
+}
+
+
+
+footer{
+    text-align: center;
+    background: red;
+    padding: 15px;
+    color: white;
+   
+   
+}
+
+button{
+    margin: 10px;
+    height: 100%;
+    
+}
+
+
+
+h1{
+    color: blueviolet;
+}
+
+.imagens{
+    width: 100%;
+    height: 100%;
+    margin: 20px;
+}
+
+.grupos{
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content:space-between;
+    row-gap: 10px;
+    column-gap: 10px;
+    border:solid 1px #333;
+    margin: 20px;
+    padding: 100px;
+}
+
+.mini-img{
+    display: flex;
+    flex-direction: row;
+    column-gap: 10px;
+}

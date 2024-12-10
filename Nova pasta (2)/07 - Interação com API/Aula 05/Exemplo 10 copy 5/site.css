@@ -1,0 +1,21 @@
+nav{
+    background: blueviolet;
+    padding: 10px;
+    color:white;
+    
+}
+
+.sigla{
+    color: blue;
+    font-size: 30px;
+}
+
+.nome{
+    color: rgb(0, 255, 47);
+    font-size: 30px;
+}
+
+.logo{
+    color: red;
+    font-size: 30px;
+}

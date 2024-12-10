@@ -1,0 +1,28 @@
+.card{
+    border: 1px solid #333;
+    align-items: center;
+    flex-direction: column;
+    display: flex;
+    margin: 10px;
+   
+    flex-wrap: wrap;
+    row-gap: 20px;
+    column-gap: 20px;
+}
+
+nav{
+    background: red;
+    padding: 10px;
+    color: white;
+    width: 100%;
+}
+
+footer{
+    text-align: center;
+    background: red;
+    padding: 15px;
+    color: white;
+    
+   
+   
+}

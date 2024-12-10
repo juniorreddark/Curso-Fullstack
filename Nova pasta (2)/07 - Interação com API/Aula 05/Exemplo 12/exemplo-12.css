@@ -1,0 +1,64 @@
+.lista-card{
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 10px;
+    row-gap: 10px;
+    
+    
+}
+
+.card{
+    display: flex;
+    flex-direction:column;
+    column-gap: 10px;
+    row-gap: 10px;
+    border: 1px solid #333;
+    width: 350px;
+    align-items: center;
+    border-radius: 6px 6px 6px;
+    box-shadow: 3px 3px 5px rgb(151, 150, 150);
+    
+
+  
+}
+
+.img{
+    width: 350px;
+    height: 250px;
+    display: flex;
+    padding: 10px;
+
+    
+}
+
+body{
+    display: flex;
+    flex-direction: row;
+    column-gap: 20px;
+    row-gap: 20px;
+    
+}
+
+.valores{
+    align-items: center;
+    padding: 10px;
+    flex-wrap: wrap;
+    
+
+    
+}
+
+.ComDesconto{
+    font-size: large;
+    font-weight: bold;
+}
+
+.SemDesconto{
+    font-size: small;
+    color: red;
+    text-decoration: line-through;
+}
+
+.texto{
+    margin: 0px;
+}
